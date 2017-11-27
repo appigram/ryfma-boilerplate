@@ -1,4 +1,4 @@
-MO.ST website
+Boilerplate for Ryfma website
 ===================
 
 A starter project for React &amp; Meteor 1.5+ &amp; Apollo
