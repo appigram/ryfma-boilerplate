@@ -1,0 +1,71 @@
+.ui.card.sidebar-card {
+  border: none!important;
+  box-shadow: none!important;
+  & > .content > .header:not(.ui) {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.1em;
+  }
+  .body.content {
+    padding-top: 0;
+    border-top: none;
+    .header {
+      text-align: left;
+      font-size: 1.2em!important;
+      margin-top: 0.5em;
+      height: 1.3rem;
+      overflow: hidden;
+    }
+    .ui.avatar.image {
+      width: 3.7rem;
+      height: 3.7rem;
+      margin-right: 1em;
+      padding: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .meta {
+      margin-top: 0.2rem;
+    }
+  }
+  .description {
+    margin-top: 8px;
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+  .extra {
+    padding-top: 0;
+    text-align: center;
+    border-top: none!important;
+  }
+  .ui.items > .item .meta > a:not(.ui) {
+    font-size: 1em;
+  }
+  .ui.items > .item > .image + .content {
+    padding-left: 0;
+  }
+  &.latest-tags {
+    a {
+      display: inline-block;
+      margin-right: 0.5em;
+      color: rgba(0, 0, 0, 0.4);
+      margin-bottom: 0.5em;
+      &:hover, &:focus, &:active {
+        color: $main;
+        i.icon {
+          color: $main;
+        }
+      }
+      i.icon {
+        font-size: 0.85em;
+        color: rgba(0, 0, 0, 0.4);
+        margin: 0;
+        margin-top: -4px;
+      }
+    }
+  }
+}

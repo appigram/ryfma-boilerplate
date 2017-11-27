@@ -1,0 +1,23 @@
+.stories {
+  padding-bottom: 24px;
+  .add-story {
+    text-align: center;
+    display: inline-block;
+    color: $main;
+    i.huge.icon {
+      font-size: 4.2em;
+      vertical-align: 10%;
+    }
+  }
+  .header {
+    padding: 0 12px;
+  }
+  .story {
+    text-align: center;
+    display: inline-block;
+    .ui.avatar.image img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+.top-header {
+  &.ui.secondary.menu {
+    position: relative;
+    z-index: 1000;
+    height: 4rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 0;
+    &.transparent {
+      background-color: transparent;
+      border-bottom: none;
+      .item > .top-menu-link {
+        &:hover {
+          border-bottom: 2px solid transparent;
+        }
+      }
+      .readability-mode, .language-toggle, .notif-topmenu {
+        border: none;
+        color: $white;
+        &:hover {
+          color: $main;
+        }
+      }
+      .new-post-button {
+        background-color: $white;
+        color: $gray-dark;
+        &:hover {
+          background-color: $main;
+          color: $white;
+        }
+      }
+      .search {
+        input {
+          background-color: transparent;
+          color: $white;
+          border: 1px solid rgba(255,255,255,0.2);
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+        i.icon {
+          color: $white;
+        }
+      }
+      .login-button {
+        background-color: $white;
+        color: $gray-dark;
+        font-weight: bold!important;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+  .item {
+    padding: 0!important;
+    & > .top-menu-link {
+      padding: 1.58571em 0.92857em 1.18571em 0.92857em !important;
+      border-bottom: 2px solid transparent;
+      font-weight: bold;
+      &.active, &:hover {
+        color: $main;
+        border-bottom: 2px solid $main;
+      }
+    }
+    .label {
+      top: 2.2em !important;
+      padding: 4px!important;
+      margin: 0em 0em 0em -0.9em !important;
+      background-color: #F65C76!important;
+      outline: none;
+    }
+  }
+  .ui.search {
+    margin-right: 1em;
+  }
+  .user-topmenu {
+    position: relative;
+    display: inline-block;
+    .icon.dropdown {
+      color: $gray-dark;
+      margin: 0;
+      font-size: 0.9em;
+    }
+    .avatar {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 999em;
+      vertical-align: -75%;
+    }
+    .icon {
+      vertical-align: -5%;
+      font-size: 1.2em;
+      margin-left: 4px;
+    }
+  }
+  .ui.dropdown .menu.user-menu {
+    margin-top: 24px!important;
+    padding: 6px!important;
+    & > .item {
+      padding: 0!important;
+      a, &.sign-out {
+        font-weight: 400!important;
+        padding: 0.78571429em 1.14285714em !important;
+        display: block;
+        &:hover, &:active, &:focus {
+          background: $gray-lighter !important;
+          color: $main!important;
+        }
+      }
+      .ui.empty.circular.label {
+        top: 1em!important;
+        left: 87%!important;
+      }
+      .upgrade {
+        color: $danger!important;
+        &:hover, &:active, &:focus {
+          color: $danger!important;
+        }
+      }
+    }
+  }
+}
+
+a.logo {
+  height: 2.2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  img {
+    height: 100%;
+    border-radius: 999rem;
+    vertical-align: -50%;
+    margin-right: 6px;
+  }
+  span {
+    font-size: 1.6rem;
+  }
+  &:active, &:focus {
+    color: $gray-dark!important;
+  }
+}
+
+.new-post-button {
+  margin: 0 1em;
+  background-color: $main;
+  color: $white;
+  transition: background-color 0.5s ease;
+  &:hover, &:active, &:focus {
+    background-color: $main-light;
+    color: $white;
+  }
+}
+
+.ui.pointing.dropdown > .menu:after {
+  top: -0.35em;
+}
+
+.messages-menu, .notif-topmenu {
+  margin: 0 6px;
+  & > span {
+    vertical-align: 15%;
+  }
+  .ui.empty.circular.label {
+    top: -0.3!important;
+  }
+  .event .label {
+    background-color: transparent!important;
+    top: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+  }
+}
+
+.messages-menu, .notif-topmenu > span {
+  vertical-align: 15%;
+}

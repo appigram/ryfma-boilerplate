@@ -1,0 +1,64 @@
+.toast-notification {
+  & > span {
+    padding: 12px 30px!important;
+  }
+  .error {
+    background-color: #FAEDED!important;
+    color: $danger!important;
+    border: 1px solid $danger;
+  }
+  .success {
+    background-color: #E7F9F1!important;
+    color: $success!important;
+    border: 1px solid $success;
+  }
+  .warning {
+    background-color: #FFF8E4!important;
+    color: $warning!important;
+    border: 1px solid $warning;
+  }
+}
+
+.loading-event .summary {
+  text-align: center!important;
+}
+
+
+.notif-topmenu {
+  margin: 0 2em 0 1em;
+  .feed {
+    padding: 15px 16px;
+    width: 440px;
+    & > * {
+      white-space: normal;
+    }
+  }
+}
+
+.notif-menu {
+  .notif-menu-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 362px;
+  }
+  .ui.small.feed {
+    margin: 0!important;
+    position: relative;
+    &::after {
+      border-bottom: $border;
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 58px;
+      position: absolute;
+      right: 12px;
+    }
+    .summary {
+      font-weight: normal;
+      line-height: 1.4;
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}

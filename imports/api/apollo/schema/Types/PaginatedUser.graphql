@@ -1,0 +1,4 @@
+type PaginatedUser {
+  pageCount: Int
+  items: [User]
+}

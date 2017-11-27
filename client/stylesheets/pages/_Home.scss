@@ -1,0 +1,128 @@
+.ui.menu.menu-hidden {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  background: #ffffff;
+  display: none;
+}
+
+.no-hero {
+  #home .masthead {
+    display: none;
+  }
+}
+
+#home {
+  margin-top: -4rem;
+  .outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .information {
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    padding-left: 5%;
+  }
+  .banner {
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    .banner-grad {
+      position: absolute;
+      top: -35%;
+      right: -115%;
+      height: 175%;
+      width: 200%;
+      z-index: 0;
+      border-radius: 500rem;
+      background: #00a9ff; /* Old browsers */
+      background: -moz-linear-gradient(top, #00a9ff 10%, #301d82 90%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #00a9ff 10%, #301d82 90%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #00a9ff 10%, #301d82 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a9ff', endColorstr='#392b76',GradientType=0 ); /* IE6-9 */
+    }
+    .image-wrapper {
+      position: relative;
+      top: 18%;
+      img {
+        position: absolute;
+        left: 3%;
+        top: 0;
+        max-width: 100%;
+        z-index: 10;
+      }
+    }
+  }
+  .segment h1 {
+    font-size: 3em;
+  }
+  p.lead {
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 0.7em;
+  }
+  .ui.vertical.feature.segment p {
+    font-weight: 300;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    line-height: 1.5;
+  }
+  .masthead .information .button {
+    margin: 40px 0 20px;
+    padding-left: 1em!important;
+    padding-right: 1em!important;
+    display: block;
+    width: auto;
+    max-width: 200px;
+    background-color: $main;
+    color: $white;
+    font-size: 1.4em!important;
+    font-weight: bold!important;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: $main-light;
+    }
+    .visible.content {
+      margin-right: 2.5em;
+    }
+    .hidden.content {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .hidden {
+    display: block;
+  }
+}
+
+.masthead.segment {
+  min-height: 540px;
+  height: 101vh;
+  padding: 0em;
+  overflow: hidden;
+  margin: 0em;
+  border: none;
+}

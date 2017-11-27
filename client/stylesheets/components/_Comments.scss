@@ -1,0 +1,118 @@
+.ui.comments {
+  &:last-child {
+    margin-bottom: 8em;
+  }
+  h3 {
+    i {
+      color: #AFAFAF;
+      font-size: 0.9em;
+    }
+  }
+  .auth-required {
+    background-color: $gray-lighter;
+    padding: 1em;
+    text-align: center;
+    a {
+      color: $main;
+    }
+  }
+  .comment {
+    margin-top: 0.75em;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+    padding: 0.75em;
+    .avatar {
+      padding: 0;
+      width: 3em;
+      margin: 0;
+      img {
+        border-radius: 500px;
+      }
+      & ~ .content {
+        margin-left: 4em;
+      }
+    }
+    &.active {
+      background-color: #fff8db;
+    }
+    .mention-link {
+      margin-right: 4px;
+      color: $main-light;
+    }
+    &:hover, &:active, &:focus {
+      background-color: $gray-lighter;
+      border-radius: 4px;
+      .owner-actions {
+        display: block;
+      }
+    }
+    .owner-actions {
+      display: none;
+      position: absolute;
+      top: 0.75em;
+      right: 0.75em;
+    }
+    .actions.no-reply {
+      font-size: 0;
+    }
+    .text {
+      margin: 0.3em 0em 0.5em;
+      font-size: 1.05em;
+      &.emoji-only {
+        font-size: 1.8em;
+        margin-top: -0.1em;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  .submitCommentForm {
+    .comment {
+      margin: 0;
+      padding: 0;
+      &:hover, &:active, &:focus {
+        background-color: $white;
+      }
+      & > .avatar {
+        width: 3.5em;
+        & ~ .content {
+          margin-left: 4.5em;
+        }
+      }
+    }
+  }
+  .ui.form {
+    .field {
+      clear: none;
+    }
+    .button {
+      font-weight: normal;
+      font-size: 0.9em;
+      padding: 10px 24px;
+      .edit {
+        background-color: transparent;
+        padding-left: 4px;
+      }
+    }
+    .cancelButton {
+      padding-left: 1em!important;
+      box-shadow: none;
+    }
+  }
+  .spam-block {
+    color: $gray;
+    font-size: 0.85em;
+    margin-left: 0.5em;
+    font-weight: 100;
+  }
+  .set-rating-block {
+    display: inline-flex;
+    align-items: center;
+    color: $gray;
+    .ui.rating {
+      margin-right: 0.5em;
+    }
+  }
+}

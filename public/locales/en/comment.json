@@ -1,0 +1,19 @@
+{
+  "markedAsSpam": "Marked as spam",
+  "deleteCommentHeader": "Delete Comment",
+  "deleteCommentText": "Are you sure you want to delete comment?",
+  "writeReply": "Write your reply",
+  "writeOpinion": "Write your opinion",
+  "addReply": "Add Reply",
+  "addReview": "Add Review",
+  "addComment": "Add Comment",
+  "writeReview": "Write Review",
+  "writeComment": "Write Comment",
+  "reviews": "Reviews",
+  "comments": "Comments",
+  "firstReview": "Be the first one to review.",
+  "firstComment": "Be the first one to comment.",
+  "loginReq1": "You need to be",
+  "loginReqLink": "signed in",
+  "loginReq2": "to post comments"
+}

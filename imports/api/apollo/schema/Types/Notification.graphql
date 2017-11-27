@@ -1,0 +1,13 @@
+type Notification {
+  _id: ID!
+  createdAt: String!
+  currId: String!
+  userId: String!
+  author: User!
+  text: String!
+  notifType: Int!
+  notifObjectId: String!
+  objectType: String!
+  objectId: String!
+  objectName: String!
+}

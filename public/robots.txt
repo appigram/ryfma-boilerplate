@@ -1,0 +1,4 @@
+User-agent: *
+
+Host: http://sf.welyx.com
+Sitemap: http://sf.welyx.com/sitemap-index.xml

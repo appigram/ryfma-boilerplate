@@ -1,0 +1,44 @@
+type Mutation {
+  # Follow / Unfollow
+  followUser(_id: ID!): Boolean!
+  unFollowUser(_id: ID!): Boolean!
+
+  # Save user profile info
+  saveProfile(
+    username: String
+    image: String
+    name: String
+    gender: String
+    birthday: String
+    location: String
+    bio: String
+  ): Boolean!
+
+  # Save user basic info
+  saveSettings(
+    username: String
+    emailCommentedPost: Boolean
+    emailFeaturedPost: Boolean
+    emailPrivateMessage: Boolean
+    emailMentionsMe: Boolean
+    subscribeToEmail: Boolean
+    subscribeSponsorEmail: Boolean
+    allowPrivateMessages: Boolean
+    adsFree: Boolean
+  ): Boolean!
+
+  # Change user avatar url
+  changeUserAvatar (avatarUrl: String!): Boolean!
+
+  # Check if username taken
+  checkIfUsernameExists (username: String!): Boolean!
+
+  # Send invites by email
+  sendInvitesEmail (emails: [String]!): Boolean!
+
+  # change Levitan counter
+  changeLevitanCount(_id: ID!): Boolean!
+
+  # send verification link
+  sendVerificationLink: Boolean!
+}

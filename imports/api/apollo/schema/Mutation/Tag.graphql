@@ -1,0 +1,10 @@
+type Mutation {
+  # Insert new tag
+  insertTag (
+    name: String!
+    slug: String!
+  ): Tag!
+
+  # Delete tag
+  deleteTag (_id: ID!): Tag!
+}

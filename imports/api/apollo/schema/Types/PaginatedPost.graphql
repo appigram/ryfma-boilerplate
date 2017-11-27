@@ -1,0 +1,4 @@
+type PaginatedPost {
+  pageCount: Int
+  items: [Post]
+}

@@ -1,0 +1,28 @@
+.admin-page {
+  .user-stats {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.85em;
+  }
+  .user-info .user-info-link .ui.avatar.image {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+  }
+  .user-info .content .header {
+    margin: -0.21425em 0em 0em;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .ui.labeled.icon.button {
+    padding: 0.8em 0em !important;
+    padding-left: 2.2em !important;
+    padding-right: 1em !important;
+  }
+  .ui.labeled.icon.button > .icon {
+    background-color: transparent;
+    left: 0.2em;
+  }
+}

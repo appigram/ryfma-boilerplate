@@ -1,0 +1,84 @@
+type User {
+  _id: ID!
+  # The unique username
+  username: String!
+  # The registration date
+  createdAt: String!
+  # The first user email
+  email: String!
+  # User profile
+  profile: UserProfile
+  # User stats
+  stats: UserStats
+  # User settings
+  settings: UserSettings
+  # List of emails that the user has
+  emails: [UserEmail]!
+  # The name of the roles the user has
+  roles: [ID]!
+  # Check if user following of current user
+  isFollowing: Boolean
+  # Current or last used DDP Connection ID
+  connection: String
+}
+
+type UserProfile {
+  name: String
+  firstname: String
+  lastname: String
+  image: String
+  gender: String
+  bio: String
+  htmlBio: String
+  locale: String
+  slug: String
+  website: String
+  twitterUser: String
+  instagramUser: String
+  vkUser: String
+  facebookUser: String
+  following: [String]
+  saved: [String]
+  reviewed: [String]
+  invitedByUserId: String
+  invitesCount: Int
+  karma: Int
+  nextKarma: Int
+  unreadNotifications: Boolean
+  online: Boolean
+  idle: Boolean
+  lastLogin: Date
+  lastPostCreated: Date
+}
+
+type UserEmail {
+  address: String!
+  verified: Boolean!
+}
+
+type UserStats {
+  postsCount: Int
+  followersCount: Int
+  followingCount: Int
+  savedCount: Int
+  strikeCount: Int
+  strikePostsCount: Int
+  postViewsCount: Int
+  maxPostViewsCount: Int
+}
+
+type UserSettings {
+  emailCommentedPost: Boolean
+  emailFeaturedPost: Boolean
+  emailPrivateMessage: Boolean
+  emailMentionsMe: Boolean
+  subscribeToEmail: Boolean
+  subscribeSponsorEmail: Boolean
+  allowPrivateMessages: Boolean
+  adsFree: Boolean
+}
+
+type UserLocation {
+  # Current or last used user's IP
+  ip: String
+}

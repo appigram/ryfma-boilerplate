@@ -1,0 +1,155 @@
+.post-page {
+  max-width: 680px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2em;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 1rem;
+  .post-title {
+    .post-title-info {
+      display: inline-block;
+      .post-title-header {
+        h1 {
+          display: inline-block;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .speech-block {
+          margin-left: 0.5rem;
+          padding: 0.35rem 0.3rem;
+          font-size: 1.7rem;
+          border-radius: 3px;
+          &:hover, &:active, &:focus {
+            background-color: $gray-lighter;
+            cursor: pointer;
+            i.volume {
+              color: $main;
+            }
+          }
+          i.volume {
+            color: $gray;
+            &.up {
+              color: $main;
+            }
+          }
+        }
+        .post-actions {
+          margin-left: 0.5rem;
+          a {
+            color: #AFAFAF;
+            &:hover, &:active, &:focus {
+              color: #777777;
+            }
+          }
+        }
+      }
+      .post-title-bottom {
+        color: #AFAFAF;
+        font-size: 9pt;
+        a {
+          color: #AFAFAF;
+          font-weight: 800;
+          &:hover, &:active, &:focus {
+            color: #1e70bf;
+          }
+        }
+        .post-date {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .description {
+    .img-placeholder {
+      max-height: 235px;
+      min-height: 100px;
+      height: 100%;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    margin-bottom: 0;
+  }
+  .image {
+    margin-bottom: 16px;
+    img {
+      width: 100%;
+    }
+  }
+  .extra, .meta {
+    margin: 1.5rem 0;
+  }
+  .post-like-label {
+    &:hover, &:active, &:focus {
+      cursor: pointer;
+      i.icon, a {
+        color: $danger!important;
+      }
+    }
+  }
+  .post-save-label {
+    &:hover, &:active, &:focus {
+      cursor: pointer;
+      i.icon, span {
+        color: $success!important;
+      }
+    }
+  }
+  .post-share-label {
+    &:hover, &:active, &:focus {
+      cursor: pointer;
+      i.icon, span {
+        color: $main!important;
+      }
+    }
+  }
+  .ui.label > a.post-likers-link {
+    opacity: 1;
+  }
+  & > .content {
+    margin-bottom: 4em;
+  }
+  .tags {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .post-from-album {
+    font-style: italic;
+    a {
+      color: $main;
+      &:hover, &:focus, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+  .post-footer {
+    .post-stat-share {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .ui.basic.label {
+        border: none;
+        font-size: 0.95em;
+        font-weight: normal;
+        padding-left: 0;
+        margin-right: 1em;
+        i {
+          margin-right: 4px;
+          font-size: 1.45em;
+          vertical-align: -10%;
+          width: 1.1em;
+        }
+      }
+    }
+    .ui.relaxed.items > .item {
+      margin: 2rem 0;
+    }
+  }
+}

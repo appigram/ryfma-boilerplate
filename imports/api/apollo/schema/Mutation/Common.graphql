@@ -1,0 +1,4 @@
+type Mutation {
+  # Remove image from S3
+  removeImageFromS3 (type: String, objectId: String, imgUrl: String!, silent: Boolean): Boolean!
+}

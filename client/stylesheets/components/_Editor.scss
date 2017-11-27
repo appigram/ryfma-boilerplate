@@ -1,0 +1,364 @@
+.editor-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  .ui.form .field .ui.input input#post-title {
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0.1rem 0;
+  }
+  .ryfma-toolbar {
+    border: none;
+    padding: 0;
+    .rdw-option-wrapper {
+      height: 25px;
+      border: none;
+    }
+    .rdw-dropdown-wrapper {
+      border: none;
+    }
+  }
+  .editor-wrapper, .ryfma-wrapper {
+    &:focus {
+      outline: none;
+    }
+  }
+  .ryfma-editor {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 8px;
+    min-height: 180px;
+    &.error {
+      background-color: #FFF6F6;
+      border-color: #E0B4B4;
+      color: #9F3A38;
+      box-shadow: none;
+    }
+    figure {
+      margin: 1em 0;
+    }
+    .public-DraftStyleDefault-block {
+      line-height: 1.5;
+      margin: 0;
+    }
+    .rdw-image-alignment-option {
+      height: 15px;
+      width: 25px;
+      border: none;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+  .post-actions {
+    margin-top: 24px;
+  }
+  .publish-button {
+    font-size: 1.2em!important;
+  }
+  .delete-button {
+    background-color: transparent;
+    color: $danger;
+    font-size: 1.2em!important;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+    }
+  }
+  .content-status {
+    position: fixed;
+    right: 30px;
+    top: 24px;
+    color: #B1B1B1;
+    &.success {
+      color: rgba(33, 186, 69, 0.65);
+    }
+  }
+  .extra-panel {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    .ui.basic.button {
+      width: 2.7rem;
+      height: 2.7rem;
+      margin-right: 0.5rem;
+      padding: 0!important;
+      text-align: center;
+      &:hover, &:active, &:focus {
+        background-color: $gray-lighter!important;
+      }
+      i.icon, i.icons {
+        margin: 0;
+        font-size: 1.3rem;
+        color: #333333;
+      }
+      &.playing {
+        background-color: $black!important;
+        border: none;
+        i.icon {
+          color: $white!important;
+          opacity: 1;
+        }
+      }
+      &.typewriter-mode {
+        &.active {
+          background-color: $main!important;
+          box-shadow: none!important;
+          &:hover, &:active, &:focus {
+            background-color: $main-lighter!important;
+          }
+          i.icon {
+            color: $white!important;
+          }
+        }
+      }
+    }
+    .ryfmator-button {
+      line-height: 2.2rem;
+      span {
+        font-weight: bold!important;
+        font-size: 1.6em!important;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+.shortcuts {
+  div {
+    font-weight: bold;
+  }
+  b {
+    border: $border;
+    border-radius: 3px;
+    padding: 2px 4px;
+  }
+  ul {
+    padding-left: 2em;
+    font-size: 0.9em;
+    li {
+      margin: 6px 0;
+    }
+  }
+}
+
+.editor-popup {
+  min-width: 16rem!important;
+}
+
+.ui.table.ambience {
+  border: none;
+  tr {
+    border-top: $border;
+  }
+  td {
+    border: none;
+    font-size: 0.9em;
+    font-weight: 100;
+    padding: 0.75rem 0px;
+    border-top: 1px solid #f1f1f1;
+    cursor: pointer;
+    &:first-child {
+      padding-right: 1.5rem;
+    }
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+      i.icon {
+        background-color: $gray-lighter!important;
+      }
+    }
+    i.icon {
+      width: 2rem;
+      height: 2rem;
+      border: $border;
+      border-radius: 999em;
+      font-size: 1.1em;
+      margin-right: 0.5rem;
+      padding: 6px!important;
+      text-align: center;
+      &.active {
+        background-color: $black!important;
+        color: $white;
+        border: none;
+      }
+    }
+  }
+  thead th {
+    border-bottom: 1px solid #f1f1f1;
+    background: transparent;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+}
+
+.tag-enter {
+  color: $gray;
+  font-size: 0.9em;
+}
+
+.react-tags {
+  position: relative;
+  padding: 12px 0 0 0;
+  margin-top: 16px;
+  border-top: 1px solid #efefef;
+  border-radius: 1px;
+  text-align: left;
+
+  /* shared font styles */
+  font-size: 1em;
+  line-height: 1.2;
+
+  /* clicking anywhere will focus the input */
+  cursor: text;
+}
+
+.react-tags.is-focused {
+  border-color: #B1B1B1;
+}
+
+.react-tags__selected {
+  display: inline;
+  &:focus {
+    outline: none;
+  }
+}
+
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 6px 6px 0;
+  padding: 4px 8px;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  background: $white;
+  text-transform: capitalize;
+
+  /* match the font styles */
+  font-size: 0.9em;
+  line-height: inherit;
+  &:hover, &:active, &:focus {
+    background: #F1F1F1;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.react-tags__selected-tag:after {
+  content: '\2715';
+  color: #AAA;
+  margin-left: 8px;
+}
+
+.react-tags__selected-tag:hover,
+.react-tags__selected-tag:focus {
+  border-color: #B1B1B1;
+}
+
+.react-tags__search {
+  display: inline-block;
+  width: 100%;
+
+  /* match tag layout */
+  padding: 7px 2px;
+  margin-bottom: 6px;
+
+  /* prevent autoresize overflowing the container */
+  max-width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__search {
+    /* this will become the offsetParent for suggestions */
+    position: relative;
+  }
+
+}
+
+.react-tags__search input {
+  width: 100%!important;
+  /* prevent autoresize overflowing the container */
+  max-width: 100%;
+
+  /* remove styles and layout from this element */
+  margin: 0;
+  padding: 0!important;
+  border: 0!important;
+  outline: none!important;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__search input::-ms-clear {
+  display: none;
+}
+
+.react-tags__suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__suggestions {
+    width: 240px;
+  }
+
+}
+
+.react-tags__suggestions ul {
+  margin: 4px -1px;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.react-tags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+.react-tags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.react-tags__suggestions li:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.react-tags__suggestions li.is-active {
+  background: #b7cfe0;
+}
+
+.react-tags__suggestions li.is-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.pro-badge {
+  padding: 2px 6px;
+  margin-left: 4px;
+  font-size: 0.55rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #FF648A;
+  border: 1px solid #FF648A;
+  line-height: 10px;
+}
+
+.select-album {
+  .ui.radio.checkbox {
+    width: 100%;
+  }
+}

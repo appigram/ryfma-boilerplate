@@ -1,0 +1,8 @@
+{
+  "header": "Email verification",
+  "subheader": "Please check your email account for a verification email.",
+  "verified": "Your email has been verified.",
+  "goToWebsite": "Go to website",
+  "notVerified": "Email could not be verified.",
+  "sendAgain": "If you do not receive email, we can send again."
+}

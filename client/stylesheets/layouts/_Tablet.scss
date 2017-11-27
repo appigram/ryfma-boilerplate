@@ -1,0 +1,176 @@
+/* for-tablet-portrait-up */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  #react-root {
+    width: 100%;
+    height: 100%;
+  }
+  #home .banner .image-wrapper img {
+    max-width: 90%;
+  }
+  .sidebar, .mobile-app-download, .user-page-content .four.wide.column {
+    display: none!important;
+  }
+  .empty-block {
+    margin-right: 1em;
+  }
+  .ui.secondary.menu.top-tablet-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 4.5rem;
+    background-color: $white;
+    border-bottom: 1px solid $gray-light;
+    &.transparent {
+      background-color: transparent;
+      border: none;
+      i.icon, .language-toggle {
+        color: $white;
+      }
+      .logo {
+        margin-top: -4px;
+        span {
+          color: $white;
+        }
+      }
+      .search input {
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .readability-mode, .language-toggle {
+        border: none;
+        color: rgba(255,255,255,0.8);
+        &:hover {
+          color: #14a8ea;
+        }
+      }
+
+    }
+    .search input {
+      padding-right: 0.671429em !important;
+    }
+    .logo {
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+    .header-block {
+      &.menu-item {
+        padding-left: 0;
+      }
+      .menu-toggle {
+        padding-left: 12px;
+        padding-right: 6px;
+      }
+    }
+    .item {
+      height: 100%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0.5rem;
+      & > div {
+        border: none
+      }
+    }
+    .user-topmenu {
+      position: relative;
+      display: inline-block;
+    }
+    .ui.dropdown > .dropdown.icon {
+      margin-left: 0;
+    }
+    .ui.avatar.image, .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .messages-menu, .notif-topmenu {
+      margin: 0 0.75em 0 1em;
+    }
+    .new-post-button {
+      margin: 0;
+      padding: 0.25rem 0.5rem 0.75rem 0.5rem!important;
+      font-size: 1.3rem!important;
+      margin-top: 12px;
+      margin-left: 12px;
+      i.icon {
+        margin: 0;
+        vertical-align: -10%;
+      }
+    }
+  }
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 1.2em;
+      padding: 0.9rem 0;
+      i.icon {
+        margin-right: 0.8rem;
+      }
+    }
+  }
+  .ui.grid.post-list-wrapper .ui.segment {
+    padding-right: 0!important;
+  }
+  .ui.grid.post-list-wrapper {
+    & > .row > [class*="twelve wide"].column, & > .column.row > [class*="twelve wide"].column, & > [class*="twelve wide"].column, & > [class*="twelve wide"].column {
+      width: 100%!important;
+    }
+  }
+  .footer {
+    .ui.grid > .row > [class*="two wide"].column, .ui.grid > .column.row > [class*="two wide"].column, .ui.grid > [class*="two wide"].column, .ui.column.grid > [class*="two wide"].column {
+      width: 20%!important;
+    }
+    .ui.grid > .row > [class*="four wide"].column, .ui.grid > .column.row > [class*="four wide"].column, .ui.grid > [class*="four wide"].column, .ui.column.grid > [class*="four wide"].column {
+      width: 40%!important;
+    }
+  }
+  .ui.grid.user-page-content {
+    & > .row > [class*="twelve wide"].column, & > .column.row > [class*="twelve wide"].column, & > [class*="twelve wide"].column, &  > [class*="twelve wide"].column {
+      width: 100%!important;
+    }
+  }
+  .post-page, .user-page {
+    padding-top: 6rem;
+  }
+  .user-page {
+    .user-basic-info .extra {
+      padding: 0 4em;
+    }
+    .user-profile-actions .ui.button.follow {
+      font-size: 1.5em!important;
+    }
+  }
+  .ui.table.user-profile-menu {
+    td {
+      width: 100%!important;
+      display: block;
+      text-align: center;
+    }
+    h3 {
+      margin-right: 2rem;
+      margin-bottom: 0;
+      font-size: 1.8rem!important;
+      .sub.header {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .ui.grid.albums-list .album-list-item-preview .album-cover {
+    height: 12.4rem;
+  }
+  .ui.grid.dashboard .ui.card, .ui.grid.achievements .ui.card, .ui.centered.grid.invites .ui.card {
+    width: 100%;
+  }
+  .achievements-page .ui.card {
+    min-height: 18rem!important;
+  }
+  .landing-page {
+    padding-top: 7rem;
+  }
+}

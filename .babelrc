@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "react",
+    "meteor"
+  ],
+  "plugins": [
+    ["lodash", { "id": ["lodash", "semantic-ui-react"] }],
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-react-remove-prop-types",
+    "transform-react-constant-elements",
+    "transform-react-inline-elements",
+    "transform-dead-code-elimination"
+  ]
+}

@@ -1,0 +1,67 @@
+.spinner {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.inner-scope {
+    position: relative;
+    min-height: 60vh;
+  }
+}
+
+.spinner-text {
+  margin: 8px auto;
+  color: rgba(44, 192, 240, 1);
+  text-align: center;
+  width: 4.5rem;
+}
+/*coffee cup*/
+.coffee_cup{
+    width: 34px;
+    height: 40px;
+    border: 2px rgba(44, 192, 240, 1) solid;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    margin: 36px auto 8px;
+}
+.coffee_cup:after, .coffee_cup:before{
+    position: absolute;
+    content: "";
+}
+.coffee_cup:after{
+    width: 8px;
+    height: 18px;
+    border: 2px rgba(44, 192, 240, 1) solid;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    left: 32px;
+}
+.coffee_cup:before{
+    width: 2px;
+    height: 6px;
+    background-color: rgba(44, 192, 240, 1);
+    top: -12px;
+    left: 6px;
+    box-shadow: 8px 0px 0px 0px rgba(44, 192, 240, 1),
+                8px -8px 0px 0px rgba(44, 192, 240, 1),
+                16px 0px 0px 0px rgba(44, 192, 240, 1);
+    -webkit-animation: steam 1s linear infinite alternate;
+       -moz-animation: steam 1s linear infinite alternate;
+            animation: steam 1s linear infinite alternate;
+}
+
+@-webkit-keyframes steam{
+    0%{height: 0px;}
+    100%{height: 6px;}
+}
+@-moz-keyframes steam{
+    0%{height: 0px}
+    100%{height: 6px;}
+}
+@keyframes steam{
+    0%{height: 0px}
+    100%{height: 6px;}
+}

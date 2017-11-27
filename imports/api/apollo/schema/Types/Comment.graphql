@@ -1,0 +1,11 @@
+type Comment {
+  _id: ID!
+  createdAt: Date!
+  postedAt: Date!
+  content: String!
+  author: User!
+  objectType: String!
+  objectId: String!
+  userId: String!
+  spamScore: Int
+}

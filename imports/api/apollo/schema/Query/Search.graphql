@@ -1,0 +1,10 @@
+type Query {
+  # Returns list of users
+  searchUsers (keyword: String!, limit: Int): [User]!
+
+  # Returns list of posts
+  searchPosts (keyword: String!, limit: Int): [Post]!
+
+  # Returns list of tags
+  searchTags (keyword: String!): [Tag]!
+}

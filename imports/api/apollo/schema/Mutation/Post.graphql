@@ -1,0 +1,37 @@
+type Mutation {
+  # Insert new post
+  insertPost (
+    title: String!
+    slug: String!
+    htmlBody: String!
+    excerpt: String!
+    sticky: Boolean
+    colored: Boolean
+    status: String
+    coverImg: String
+    tags: [String]
+  ): Post!
+
+  # Delete post
+  deletePost (_id: ID!): Boolean!
+
+  # Update post
+  updatePost (
+    _id: ID!
+    title: String!
+    slug: String!
+    htmlBody: String!
+    excerpt: String!
+    sticky: Boolean
+    colored: Boolean
+    status: String
+    coverImg: String
+    tags: [String]
+  ): Boolean!
+
+  increasePostViewCount(_id: ID!): Boolean!
+  likePost(_id: ID!, title: String!, userId: String!): Boolean!
+  unLikePost(_id: ID!, userId: String!): Boolean!
+  savePost(_id: ID!, title: String!, userId: String!): Boolean!
+  unSavePost(_id: ID!, userId: String!): Boolean!
+}

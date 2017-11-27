@@ -1,0 +1,49 @@
+.auth-page {
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+  .social-login {
+    margin-top: 1.5rem;
+    button {
+      background: none;
+      color: $white;
+      border: 0;
+      margin: 0 8px;
+      padding: 0.78571429em 1.18571429em 0.78571429em!important;
+      border-radius: 3px;
+      width: 45.5%;
+    }
+    .facebook-login-button {
+      background: #4666A0;
+    }
+    .vk-login-button {
+      background-color: #507299;
+    }
+  }
+  .ui.form .field .ui.input input {
+    height: 3rem;
+  }
+  .fullwidth-button {
+    font-size: 1.2em!important;
+    border-radius: 4px!important;
+    margin-top: 1rem;
+  }
+  a {
+    font-weight: bold;
+  }
+  .auth-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    &.text-center {
+      text-align: center;
+      display: block;
+    }
+    div {
+      padding: 0 1rem;
+    }
+  }
+}

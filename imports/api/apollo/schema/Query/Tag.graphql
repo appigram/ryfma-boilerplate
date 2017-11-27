@@ -1,0 +1,4 @@
+type Query {
+  # Returns the latest tags
+  latestTags: [Tag]!
+}

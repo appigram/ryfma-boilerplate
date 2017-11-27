@@ -1,0 +1,108 @@
+.ui.card.recommended {
+  &.vertical, &.horizontal {
+    border: none;
+    box-shadow: none;
+    .content {
+      border: none;
+      padding: 0;
+      text-align: center;
+      .header {
+        margin-bottom: 36px;
+      }
+    }
+  }
+  &.related-books {
+    .ui.items {
+      & > .item {
+        display: block;
+        margin-bottom: 2rem;
+        padding: 0 1em;
+        .content {
+          padding: 0 1em;
+          overflow: hidden;
+          height: 8rem;
+        }
+        h3 {
+          margin: 0.5rem 0 0;
+          font-size: 1.1em;
+          height: 1.1em;
+          overflow: hidden;
+        }
+        img {
+          width: 150px;
+          height: 206px;
+        }
+        a, button {
+          display: block;
+        }
+        .rating {
+          margin: 12px 0;
+        }
+        button {
+          margin: 0 auto;
+          font-size: 0.9rem!important;
+          padding: 0.97143em 1.47143em !important;
+        }
+      }
+    }
+  }
+  &.horizontal.related-books {
+    width: 100%;
+    margin-bottom: 4em;
+    .header {
+      font-size: 2.1em;
+      margin-bottom: 12px;
+    }
+    .ui.items {
+      & > .item {
+        display: inline-block;
+        margin-bottom: 2rem;
+        width: 20%;
+        img {
+          width: 150px;
+          height: 206px;
+        }
+        a, button {
+          display: block;
+        }
+        .rating {
+          margin: 12px 0;
+        }
+        button {
+          margin: 0 auto;
+          font-size: 0.9rem!important;
+          padding: 0.97143em 1.47143em !important;
+        }
+      }
+    }
+  }
+  &.horizontal.related-posts {
+    width: 100%;
+    margin-top: 3em;
+    .header {
+      font-size: 1.6em;
+      margin-bottom: 12px;
+      text-align: left;
+    }
+    .ui.items {
+      & > .item {
+        display: inline-block;
+        margin-bottom: 1em;
+        padding: 0 1em;
+        width: 33%;
+        img, .img-placeholder {
+          width: 11rem;
+          height: 11rem;
+        }
+        .content {
+          margin-top: 8px;
+          height: 3.3em;
+          overflow: hidden;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}

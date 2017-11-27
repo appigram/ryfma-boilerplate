@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  color: $black;
+  font-family: $font-family;
+  background-color: $white;
+  backface-visibility: hidden;
+  letter-spacing: -0.2px;
+  position: relative;
+  height: 100%;
+}
+
+#lg_tkn {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.thin {
+  font-weight: 100;
+}
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+
+.error {
+  color: #FC1264;
+}
+
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  display: inline-block;
+}
+
+.page-content {
+  padding-top: 2rem;
+  min-height: 500px;
+}
+.no-content {
+  padding: 2rem;
+  text-align: center;
+  &.small {
+    padding: 1rem 0;
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+a {
+  transition: .3s color;
+  &:hover, &:active, &:focus {
+    color: $main;
+  }
+}
+
+.button {
+  border-radius: 999em!important;
+  transition: all 0.5s ease;
+  font-weight: 300!important;
+  font-size: 0.95rem!important;
+  padding: 0.77143em 1.87143em !important;
+}
+
+.fullwidth-button {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%!important;
+}
+
+.ui.horizontal.list {
+  line-height: 1;
+}
+
+.ui.pointing.dropdown > .menu {
+  border-radius: 0.58571429rem;
+}
+
+.ui.labeled.icon.button {
+  padding: 1.071429em 0em!important;
+  padding-left: 3.571429em!important;
+  padding-right: 2.571429em!important;
+
+  & > .icon {
+    background-color: transparent;
+    left: 0.7em;
+  }
+}
+
+.ui.labeled.icon.primary.button {
+  padding: 0.87143em 0em !important;
+  padding-left: 2.87143em !important;
+  padding-right: 1.77143em !important;
+  & > .icon {
+    left: 0.5em;
+  }
+}
+
+.ui.dividing.header {
+  padding-bottom: 0.614286rem;
+}
+
+.ui.floating.label {
+  outline: 2px solid #ffffff;
+  top: -0.2em;
+  left: 95%;
+}
+
+.ui.checkbox .box:after, .ui.checkbox label:after {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+.ui.star.rating .active.icon {
+  text-shadow: none!important;
+}
+
+i.icon.hastag {
+  margin: 0;
+  vertical-align: 10%;
+}
+
+/* Share button */
+.ui.horizontal.list.share-menu {
+  .share-button {
+    cursor: pointer;
+  }
+  & > .item {
+    margin-left: 0.5em;
+  }
+  &.big {
+    display: block;
+    text-align: center;
+  }
+}
+
+.ui.bottom.popup.share-small-popup {
+  margin-top: 12px;
+  margin-right: -8px;
+}
+
+.ui.blue-popup.popup {
+  background: $main-light!important;
+  border: none!important;
+  color: $white!important;
+  &::before {
+    background: $main-light!important;
+  }
+}
+
+.share-small {
+  margin-left: 24px!important;
+  box-shadow: none!important;
+}
+
+.ui.avatar.image, .avatar {
+  padding: 0;
+  &.social {
+    height: 10.75rem;
+    overflow: hidden;
+    width: 10.75rem;
+    border-radius: 500px;
+    border: 2px solid $success;
+    z-index: 1;
+    img {
+      position: absolute;
+      height: auto;
+      width: 100%;
+      left: 0%;
+      top: -30%;
+      margin: 0;
+      z-index: 0;
+    }
+  }
+}
+
+.ui.radio.checkbox .box:after, .ui.radio.checkbox label:after {
+  top: 2px;
+  left: 1px;
+}
+
+.ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after {
+  color: $main;
+}
+
+.ui.radio.checkbox input:checked ~ .box:after, .ui.radio.checkbox input:checked ~ label:after {
+  background-color: $main;
+}
+
+.ui.checkbox input:checked ~ .box:before, .ui.checkbox input:checked ~ label:before {
+  border-color: $main;
+}
+
+.ui.form textarea:focus {
+  border-color: $main;
+}
+
+.empty-block {
+  color: $gray;
+  text-align: center;
+  padding-top: 2em;
+  margin: 5em 1em;
+  margin-right: 12em;
+  i.icon {
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  h3 {
+    font-size: 1.5em;
+    color: $black;
+    margin-top: 0.5em;
+  }
+}
+
+.review-editor {
+  min-height: 4em;
+  border: 1px solid rgba(34,36,38,0.15);
+  color: rgba(0,0,0,0.8);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  margin: 0em 0em 1em;
+  font-size: 1.1em;
+  .DraftEditor-editorContainer {
+    padding: 0 2.5em 0 0.78571429em;
+  }
+  .public-DraftStyleDefault-block {
+    margin: 0.78571429em 0;
+  }
+}
+
+.emoji-picker {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  button {
+    margin: 0;
+    padding: 0;
+    font-size: 1.75em;
+  }
+  .draftJsEmojiPlugin__emojiSelectPopover__1J1s0 {
+    right: 0;
+  }
+  .draftJsEmojiPlugin__emojiSelectButton__3sPol, .draftJsEmojiPlugin__emojiSelectButtonPressed__2Tezu {
+    border: 0;
+    width: 1.5em;
+    font-size: 1.7em;
+    &:hover {
+      color: $main;
+    }
+  }
+}
+
+.verified {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.5em;
+  font-size: 1em;
+  color: $white;
+  .badge-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .content {
+      font-size: inherit;
+    }
+  }
+  .badge-layer {
+    border-radius: 20%;
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 3;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 0.9em;
+      width: 0.9em;
+      border-radius: 20%;
+      background-color: inherit;
+      transform: rotate(135deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0.9em;
+      width: 0.9em;
+      border-radius: 20%;
+      background-color: inherit;
+      transform: rotate(90deg);
+    }
+  }
+  .check {
+    &::after {
+      /*Add another block-level blank space*/
+      content: '';
+      display: block;
+      margin-top: -0.075em;
+      /*Make it a small rectangle so the border will create an L-shape*/
+      width: 0.15em;
+      height: 0.3em;
+      /*Add a white border on the bottom and left, creating that 'L' */
+      border: solid #fff;
+      border-width: 0 .125em .125em 0;
+      /*Rotate the L 45 degrees to turn it into a checkmark*/
+      transform: rotate(45deg);
+    }
+  }
+}

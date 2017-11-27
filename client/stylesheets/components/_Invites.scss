@@ -1,0 +1,51 @@
+.referral-block {
+  border-bottom: $border;
+  text-align: left;
+  padding: 2rem 0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  .sub.header {
+    max-width: 100%;
+  }
+  .ui.button {
+    font-size: 1.1em!important;
+  }
+}
+
+.invite-emails-form {
+  text-align: center;
+  .button {
+    margin: 1rem 0 2rem 0;
+  }
+  .invite-textarea {
+    margin-top: 1rem!important;
+  }
+  .send-invite {
+    width: 100%;
+    border-radius: 4px!important;
+  }
+}
+
+
+.invited {
+  margin-top: 3em;
+  div {
+    line-height: 1.2;
+    font-size: 1.5em;
+  }
+  .invited-count {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+}
+
+.ui.centered.grid.invites {
+  h3 {
+    padding-top: 16px;
+    font-size: 3rem;
+    margin-bottom: 4px;
+  }
+  i.icon, i.icons {
+    font-size: 1.5em;
+  }
+}

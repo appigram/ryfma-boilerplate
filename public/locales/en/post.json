@@ -1,0 +1,22 @@
+{
+  "seoBestPostTitle": "Best posts",
+  "seoBestPostDesc": "Best posts",
+  "seoTitle": "Read poem ",
+  "postNotFoundTitle": "Sorry, this page isn't available.",
+  "postNotFoundDesc": "The link you followed may be broken, or the page may have been removed.",
+  "postNotFoundLink": "Go back to MO.ST.",
+  "writeFirstPost": "Write your first post!",
+  "noPosts": "No posts",
+  "userNoPosts": "User dont have posts yet",
+  "postNotFound": "We cant find any posts.",
+  "readMore": "Read more",
+  "relatedPosts": "Related Posts",
+  "changesSaved": "Сhanges saved.",
+  "changesNotSaved": "Changes not saved yet",
+  "postSaving": "Saving post...",
+  "extraInfo": "Extra information (post albums, post image etc.)",
+  "selectAlbum": "Select post album",
+  "postCoverImg": "Post cover image",
+  "deletePost": "Delete post",
+  "deletePostText": "Are you sure you want to delete post?"
+}

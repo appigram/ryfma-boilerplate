@@ -1,0 +1,51 @@
+//Font Styling & Sizing
+//Import Fonts from Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic);
+
+$font-family:           -apple-system,BlinkMacSystemFont,Ubuntu,"Segoe UI",Roboto,Oxygen,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+
+$smaller-font:          0.8rem;
+$small-font:            0.9rem;
+$medium-font:           1rem;
+$large-font:            1.25rem;
+$larger-font:           1.35rem;
+
+$weight-thin:           300;
+$weight-regular:        400;
+$weight-bold:           700;
+
+//For RTL, Use It For Floatation
+$left: left;
+$right: right;
+
+//Ready Borders "Define The Average Size Of The Template Borders"
+$border : 1px solid #e2e2e2;
+$border-light : 1px solid $gray-light;
+$border-dark : 1px solid $gray-dark;
+$border-radius : 3px;
+
+@mixin activeHover {
+  &:hover{
+    background: $active-color;
+    color: $white;
+    border-color: $active-color;
+    text-decoration: none;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin border-radius {
+  border-radius: .25rem;
+}
+@mixin border {
+  border: $border;
+}

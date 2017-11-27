@@ -1,0 +1,438 @@
+@media screen and (max-width: 599px) {
+  #react-root {
+    width: 100%;
+    height: 100%;
+  }
+  .empty-block {
+    margin-right: 1em;
+  }
+  .page-content {
+    padding-top: 4rem;
+  }
+  .ui.secondary.menu.top-mobile-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: $white;
+    border-bottom: 1px solid $gray-light;
+    &.transparent {
+      background-color: transparent;
+      border: none;
+      i.icon, .language-toggle {
+        color: $white;
+      }
+    }
+    .logo {
+      img {
+        border-radius: 500px;
+        width: 2.2rem;
+        margin: 0;
+      }
+    }
+    .header-block {
+      width: 33%;
+      &.menu-item {
+        padding-left: 0;
+      }
+      .menu-toggle {
+        padding-left: 12px;
+      }
+      .language-toggle {
+        font-size: 1.1em;
+        float: right;
+      }
+      .readability-mode {
+        margin-right: 8px;
+        float: right;
+      }
+    }
+    .item {
+      height: 100%;
+      margin: 0;
+      .logo {
+        display: block;
+        margin: 0 auto;
+      }
+      & > div {
+        border: none
+      }
+    }
+  }
+  #home {
+    margin: 0;
+    border-radius: 0;
+    margin-top: -3.6rem;
+    .information {
+      width: 100%;
+    }
+    .segment {
+      border-radius: 0;
+      background: #00a9ff; /* Old browsers */
+      background: -moz-linear-gradient(top, #00a9ff 10%, #301d82 90%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #00a9ff 10%, #301d82 90%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #00a9ff 10%, #301d82 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a9ff', endColorstr='#392b76',GradientType=0 ); /* IE6-9 */
+      h1 {
+        font-size: 2.3em;
+        color: $white;
+      }
+    }
+    p.lead {
+      color: $white;
+      font-size: 1.2em;
+    }
+  }
+  .ui.secondary.menu.mobile-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    height: 3.5rem;
+    border-top: 1px solid $gray-light;
+    background-color: $white;
+    &.transparent {
+      border-top: none;
+      background-color: transparent;
+      .item {
+        a.active {
+          background-color: transparent;
+          i.icon {
+            color: $main-light;
+          }
+        }
+      }
+    }
+    .item {
+      width: 20%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      &:active {
+        a {
+          background-color: $gray-lighter;
+          i.icon {
+            color: $gray;
+          }
+        }
+      }
+      a.active {
+        background-color: $white;
+        i.icon {
+          color: $main-light;
+        }
+      }
+      a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
+      i.icon {
+        font-size: 1.6em;
+        color: #ccc;
+        vertical-align: -65%;
+        margin: 0;
+      }
+      .dropdown.icon {
+        display: none;
+      }
+      .write-post {
+        span {
+          width: 2.5rem;
+          height: 2.5rem;
+          background-color: $main-light;
+          border-radius: 500px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 6px;
+        }
+        i.icon {
+          color: $white;
+          vertical-align: -45%;
+        }
+      }
+      .ui.avatar.image, .avatar {
+        width: 2.5em;
+        height: 2.5em;
+      }
+      .star-badge {
+        bottom: -0.2em;
+        right: 0;
+        font-size: 0.6em;
+        i.icon {
+          font-size: 0.85rem;
+          color: #fff;
+          vertical-align: 0%;
+          margin-top: -0.35rem;
+        }
+      }
+    }
+    .user-mobile-menu > div {
+      margin: 0 auto;
+      .ui.dropdown .menu > .item {
+        width: 100%;
+        a {
+          text-align: left;
+          background-color: $white;
+          &.upgrade {
+            color: $danger;
+            i.icon {
+              color: $danger;
+            }
+          }
+        }
+        i.icon {
+          vertical-align: 0;
+          color: $gray;
+        }
+      }
+    }
+  }
+  .ui.inverted.segment.mobile-footer {
+    text-align: center;
+    padding: 0.5rem 0;
+    padding-bottom: 5rem!important;
+    border-radius: 0;
+    .ui.grid > .row > .column {
+      width: 100%!important;
+      text-align: center;
+      .ui.inverted.link.list .item {
+        padding: 1rem 0;
+        font-size: 1.2em;
+        text-align: center;
+      }
+    }
+    .mobile-app-download {
+      width: 100%;
+      margin: 1rem 0;
+      button {
+        float: none;
+        width: auto;
+        min-width: 10em;
+      }
+    }
+    .ui.horizontal.list.social-menu {
+      width: 100%;
+      text-align: center;
+      a {
+        padding: 0.5rem;
+      }
+    }
+    .menu-copyright {
+      padding-top: 1rem;
+      text-align: center;
+    }
+  }
+  .inner-content {
+    padding-top: 3.6rem;
+  }
+  .post-page {
+    padding-left: 0;
+    padding-right: 0;
+    .post-footer {
+      .post-stat-share {
+        display: block;
+        .share-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+  .ui.segment.posts-list-wrapper {
+    padding: 0;
+    padding-right: 0!important;
+  }
+  .ui.card.recommended.horizontal.related-posts .ui.items {
+    & > .item {
+      width: 46%;
+      padding: 0;
+      margin: 0 2%;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .ui.items:not(.unstackable) > .item {
+    flex-direction: row;
+  }
+  .book-list {
+    .book-items {
+      .book-list-item {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+  .book-sort-panel {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 0.5rem;
+  }
+  .book-page {
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
+    .content, .book-teaser {
+      padding: 0;
+    }
+  }
+  .post-list-item {
+    .content {
+      .post-title {
+        .post-title-info {
+          max-height: 4rem;
+          overflow: hidden;
+          max-width: 77%;
+          .post-title-header {
+            max-height: 1.7rem;
+            overflow: hidden;
+          }
+        }
+        .avatar, .img-placeholder {
+          margin-top: -2.3rem !important;
+        }
+      }
+    }
+  }
+  .user-page {
+    padding-top: 2rem;
+    .ui.container {
+      margin: 0!important;
+    }
+    .ui.table:not(.unstackable) tr {
+      padding-top: 0;
+      & > td {
+        padding: 0!important;
+        text-align: center;
+        width: 100%!important;
+      }
+    }
+    .user-profile-actions {
+      text-align: center;
+    }
+    .user-basic-info {
+      .extra {
+        padding: 0;
+      }
+    }
+  }
+  .user-page-content {
+    .ui.container {
+      margin: 0!important;
+    }
+    .ui.segment.user-posts {
+      padding: 0;
+      .item {
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+  }
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 1.2em;
+      padding: 0.9rem 0;
+      i.icon {
+        margin-right: 0.8rem;
+      }
+    }
+  }
+  .ryfmator-page {
+    min-height: calc(100vh - 4rem);
+  }
+  .Container {
+    display: block;
+  }
+  .ui.grid.achievements .ui.card {
+    min-height: 21rem;
+  }
+  .account-page .ui.centered.grid > .column:not(.aligned):not(.justified):not(.row) {
+    width: 50%;
+    .ui.card {
+      min-height: 17rem;
+    }
+  }
+  .ui.table:not(.unstackable) tr {
+    display: block!important;
+    width: 100%!important;
+  }
+  .ui.table:not(.unstackable) tr > th {
+    font-size: 0.7rem;
+  }
+  .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td {
+    display: inline-block!important;
+  }
+  .ui.table th.one.wide, .ui.table td.one.wide {
+    width: 6.25%!important;
+    padding: 0!important;
+  }
+  .ui.table th.four.wide, .ui.table td.four.wide {
+    width: 20%!important;
+    padding: 0!important;
+  }
+  .ui.table th.two.wide, .ui.table td.two.wide {
+    width: 12.5%!important;
+    padding: 0!important;
+  }
+  .ui.table:not(.unstackable) tr > td.user-info-td {
+    width: 47%!important;
+    max-width: 47%;
+    overflow: hidden;
+    padding: 0!important;
+    padding-left: 4px!important;
+  }
+  .ratings-wrapper-page .ui.table {
+    font-size: 0.8rem;
+    .user-info .user-info-link {
+      margin-right: 0.5rem;
+      .ui.avatar.image {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      .user-info-content a {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .auth-page {
+    width: 90%;
+    margin-top: -3.6rem;
+    .social-login {
+      button {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  .toast-notification {
+    width: 90%!important;
+  }
+  .editor-page {
+    padding: 0 12px;
+    margin-bottom: -2.3rem;
+  }
+  .react-tags {
+    margin: 1.5rem 0;
+    .react-tags__search-input {
+      input {
+        background-color: transparent!important;
+      }
+    }
+  }
+}
