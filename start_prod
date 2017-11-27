@@ -1,2 +1,2 @@
-export MAIL_URL=smtp://robot%40ryfma.ru:robot2015@smtp.mailgun.org:587/
+export MAIL_URL=smtp://email:pass@smtp.mailgun.org:587/
 meteor run --production --settings settings-production.json
