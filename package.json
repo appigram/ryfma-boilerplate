@@ -95,7 +95,7 @@
     "react-cropper": "^2.1.7",
     "react-csv": "^2.0.3",
     "react-day-picker": "^7.4.10",
-    "react-dom": "^17.0.2",
+    "react-dom": "^16.1.2",
     "react-dropzone": "^11.3.2",
     "react-facebook-login": "^4.1.1",
     "react-feather": "^2.0.9",
