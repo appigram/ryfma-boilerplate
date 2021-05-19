@@ -1,0 +1,541 @@
+.ui.container.contests-page {
+  .subheader {
+    font-size: 2.2rem;
+    &.manage {
+      a {
+        margin-left: 0.5em;
+        color: $main;
+        cursor: pointer;
+      }
+    }
+  }
+  .ui.segment.contest-filters {
+    padding: 0;
+  }
+  .subheader-block {
+    margin-bottom: 3em;
+  }
+}
+.page-background {
+  position: relative;
+  .back {
+    position: absolute;
+    z-index: 0;
+    width: 35rem;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url("https://cdn.ryfma.com/defaults/banners/back-contest.png");
+    opacity: 0.75;
+    &.back-1 {
+      left: -20rem;
+      top: 0;
+    }
+    &.back-2 {
+      right: -13rem;
+      top: -10rem;
+    }
+  }
+  .ui.button {
+    background-color: #7761EE;
+    color: $white;
+    margin-right: 1rem;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.event-background {
+    .back {
+      background-image: url("https://cdn.ryfma.com/defaults/banners/back-events.png");
+      opacity: 0.5;
+    }
+    .ui.button {
+      background-color: #FFB026;
+    }
+    .inner .info {
+      margin-top: 1rem;
+    }
+  }
+  &.duels-background {
+    .ui.button {
+      background-color: #FF562E;
+    }
+    .banner {
+      .image-wrapper {
+        max-width: 65%!important;
+        img {
+          margin-top: 1rem!important;
+        }
+      }
+    }
+  }
+  &.classic-background {
+    .back {
+      background-image: url("https://cdn.ryfma.com/defaults/banners/back-events.png");
+      opacity: 0.5;
+    }
+    .ui.button {
+      background-color: #FF4A64;
+    }
+    .banner {
+      img {
+        margin-top: 2rem;
+        max-width: 80%;
+        margin-left: 3rem;
+      }
+    }
+    .inner {
+      .info {
+        padding-top: 2rem;
+      }
+    }
+  }
+  &.ask-background {
+    .banner {
+      img {
+        max-width: 80%;
+        margin-left: 5rem;
+      }
+    }
+  }
+  &.fairytail-background {
+    .back-1 {
+      left: -15rem;
+      top: 0;
+      width: 440px;
+      height: 440px;
+    }
+    .back-2 {
+      right: -10rem;
+      top: -20rem;
+      width: 800px;
+      height: 800px;
+      background-size: contain;
+      transform: rotate(10deg);
+    }
+    .ui.button {
+      background-color: #47AD47;
+    }
+    .banner {
+      .image-wrapper {
+        max-width: 70%;
+      }
+    }
+  }
+  .outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+  .inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .info {
+      text-align: left;
+      display: inline-block;
+      width: 60%;
+      font-size: 1.4em;
+      z-index: 10;
+      overflow: hidden;
+      h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-top: 0;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      .ui.button {
+        font-size: 1em!important;
+      }
+    }
+    .choose-contest {
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+  }
+  .banner {
+    z-index: 10;
+    overflow: hidden;
+    .image-wrapper {
+      max-width: 70%;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.contests-page {
+  .duels-page-inner {
+    .duel-block {
+      .header {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    #duels {
+      margin: 0;
+    }
+    .ui.items .duel-item {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      .duel-images .user-avatar {
+        margin: 0 auto 1.5rem;
+      }
+    }
+  }
+  .ui.items {
+    .item.event-list-item {
+      position: relative;
+      display: flex;
+      width: 100%;
+      margin-bottom: 2rem;
+      margin-left: 0;
+      padding-bottom: 2em;
+      box-shadow: none;
+      border: 0;
+      border-bottom: $border;
+      .event-left {
+        .image {
+          margin-right: 1em;
+          width: 200px;
+          height: 200px;
+          max-height: 200px;
+          border-radius: $border-radius-big;
+          img {
+            width: 200px;
+            max-height: 200px;
+            border-radius: $border-radius-big;
+          }
+        }
+      }
+      .event-dates {
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        z-index: 10;
+        &.to-dates {
+          left: 0;
+          top: 1.5em;
+          .to-date {
+            padding: 0.35rem 0.75rem;
+            color: $white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            opacity: 0.9;
+            background-color: $danger;
+            border-top-right-radius: 10rem;
+            border-bottom-right-radius: 10rem;
+          }
+        }
+        .divider {
+          color: $white;
+        }
+        .event-date {
+          display: inline-block;
+          background-color: $white;
+          text-align: center;
+          border-radius: 0.2rem;
+          vertical-align: middle;
+          p {
+            background-color: $danger-light;
+            color: $white;
+            padding: 0.2em 0.5em;
+            margin-bottom: 0;
+          }
+          .header {
+            font-weight: bold;
+            padding: 0.4em 0.5em;
+            margin-top: 0;
+            font-size: 1.1em;
+          }
+        }
+      }
+      .prize {
+        text-align: center;
+        max-width: 200px;
+        h2, h3, h4 {
+          margin-top: 0;
+        }
+        .main-prize {
+          color: $danger;
+          h2, h3 {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 0;
+          }
+        }
+        .add-prize {
+          margin-top: 0.5em;
+          font-size: 0.9em;
+          p {
+            margin: 0;
+            font-weight: bold;
+          }
+        }
+      }
+      .content {
+        width: 100%;
+        padding-top: 0;
+        display: block;
+        padding-bottom: 0;
+        & > .header:not(.ui) {
+          font-size: 1.78571429em!important;
+        }
+        i.icon {
+          margin-left: 0.5rem;
+        }
+        i.grey.icon {
+          color: $gray-light!important;
+        }
+        .meta {
+          font-size: 1.2em;
+          margin-top: 0.35em;
+          a {
+            color: $main;
+          }
+        }
+        .event-body {
+          font-size: 1.1em;
+          margin-top: 0.5em;
+          height: auto;
+        }
+      }
+      .extra {
+        margin-top: 1em;
+        .tags {
+          margin-bottom: 1em!important;
+          .ui.label {
+          }
+        }
+        .event-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .paticipants {
+            a {
+              margin-left: -1.1em!important;
+              &:first-child {
+                margin-left: 0em!important;
+              }
+              .ui.image {
+                width: 3.6em;
+                height: 3.6em;
+                border: none;
+                margin: 0!important;
+                img {
+                  width: 3.6em;
+                  height: 3.6em;
+                  min-width: 44px;
+                  border-radius: 500px;
+                  border: 2px solid $white;
+                }
+              }
+            }
+            span {
+              color: $black;
+              margin-left: 0.5em;
+              font-size: 1.1em;
+            }
+          }
+          .entry-fee {
+            color: $black;
+            font-size: 1.2em;
+          }
+          button {
+            background-color: $main-light;
+            box-shadow: 0px 0px 8px 5px $main-lighter;
+            padding: 0.98571429em 1.5em 0.98571429em!important;
+            &.disabled {
+              background-color: $gray-light;
+              color: $gray-dark!important;
+              box-shadow: none;
+              font-size: 0.9rem!important;
+            }
+          }
+        }
+      }
+    }
+    .duel-item {
+      max-width: 23rem;
+      position: relative;
+      display: inline-block;
+      margin: 1rem 3rem;
+      padding-bottom: 0;
+      text-align: center;
+      .event-list-item {
+        border: 0;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        height: 2rem;
+        overflow: hidden;
+        text-align: center;
+      }
+      .duel-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .duel-man {
+          max-width: 50%;
+          min-width: 20rem;
+        }
+        .user-avatar {
+          margin: 0 auto;
+          margin-bottom: 0.5rem;
+          width: 8rem;
+          height: 8rem;
+          border-radius: $border-radius-big;
+          .user-avatar-inner {
+            border-radius: $border-radius-big;
+            img {
+              border-radius: $border-radius-big;
+              height: 8rem;
+              width: 8rem;
+            }
+            .waiting-user {
+              font-size: 8rem;
+              margin-top: 3.4rem;
+              margin-left: -0.75rem;
+              color: $gray;
+            }
+          }
+        }
+        .name {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        .karma {
+          margin-top: 0.35rem;
+          font-size: 1.2rem;
+          i {
+            margin-left: 0!important;
+          }
+        }
+        .likes {
+          color: $danger;
+          font-weight: bold;
+          font-size: 1.3rem;
+          margin-top: 0.5rem;
+        }
+      }
+      .vs {
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 0 1.25rem 0 0.75rem;
+        color: $gray;
+        width: 9rem;
+      }
+      .finished {
+        position: relative;
+        .vs {
+          .progress-circle {
+            img {
+              opacity: 0.3;
+            }
+            &.p50 .value-bar {
+              border: #f2e9e1;
+            }
+          }
+        }
+      }
+    }
+  }
+  #duels {
+    .slick-slider {
+      max-height: 18rem;
+      overflow: hidden;
+      .slick-prev {
+        left: 0;
+      }
+      .slick-next {
+        right: 0;
+      }
+    }
+  }
+  .ui.items.duels-list {
+    .duel-item {
+      display: inline-block;
+      margin-bottom: 0;
+      max-width: 100%;
+      .duel-images {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contest-subheader {
+  margin-bottom: 3rem;
+  h2 {
+    font-size: 2.5rem;
+  }
+  .top-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.win-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  .win-block-inner {
+    background-color: $danger;
+    color: $white;
+    padding: 0.15rem 0.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-weight: bold;
+    &.lose {
+      background-color: rgba(0,0,0,0.4);
+    }
+    &.no-winner {
+      background-color: rgba(0, 92, 235, 0.5);
+    }
+  }
+}
+
+.reward-block {
+  margin-top: 1rem;
+  width: 9rem;
+  .text {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+  }
+  b {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+#duels {
+  margin: 0 -2rem;
+}

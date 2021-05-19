@@ -2,11 +2,12 @@
 .fileStorage/
 .vscode
 .idea
-.deploy
 *.csv
 *.dat
 *.gz
 *.log
+*.rdb
+*.dump
 *.out
 *.pid
 *.seed
@@ -51,9 +52,12 @@ private/dump/*
 imports/plugins/custom/*
 !imports/plugins/custom/.gitkeep
 
+profiles/*
+
 .ryfma/config.json
 
-settings-development.json
-settings-production.json
 fullchain.pem
 privkey.pem
+
+.babel-cache
+.reify-cache

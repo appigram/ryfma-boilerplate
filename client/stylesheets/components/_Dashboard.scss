@@ -1,0 +1,1003 @@
+.ui.horizontal.list.settings-links {
+  width: 100%;
+  &>.item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0!important;
+    padding: 0!important;
+    width: auto;
+    min-width: 6rem;
+    a {
+      display: block;
+      text-decoration: none;
+      width: 100%;
+      padding: 1rem 0.5rem!important;
+      border-bottom: 3px solid transparent;
+      font-size: 1rem;
+      &:hover, &.active {
+        background-color: $gray-lighter;
+        border-bottom: 3px solid $main;
+        color: $main;
+      }
+    }
+  }
+}
+.ui.message.upgrade-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  b {
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .ui.button {
+    background-color: transparent;
+    color: $danger;
+    border: 2px solid $danger;
+    border-radius: 4px!important;
+    font-size: 1.1rem!important;
+    font-weight: bold!important;
+    text-decoration: none;
+    &:hover {
+      background-color: $danger-light;
+      color: $white;
+    }
+  }
+}
+.account-page {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  .sub.header {
+    a {
+      color: $main;
+    }
+  }
+  .ui.centered.grid > .column:not(.aligned):not(.justified):not(.row) {
+    text-align: center;
+  }
+  .ui.form .success.message {
+    display: block;
+  }
+
+  textarea {
+    min-height: 10em;
+  }
+
+  .ui.labeled.input > .label {
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding-left: 1.5em;
+    padding-right: 2.5em;
+    width: 130px;
+  }
+
+  h1.ui.header {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  h3.ui.header {
+    margin-bottom: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+  }
+  .sub.header {
+    max-width: 590px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin: 16px auto;
+  }
+
+  .email-field {
+    svg {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      &.success {
+        color: $success;
+      }
+      &.error {
+        color: $danger;
+      }
+    }
+  }
+
+  .ui.form .ui.message {
+    display: block;
+    .body {
+      margin: 1rem 0 0.5rem;
+      .button {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .referral-block {
+    h3.ui.header {
+      margin-top: 0;
+    }
+    .ui.input {
+      border: $border;
+      input {
+        border: 0;
+        padding: 0.75rem;
+        padding-right: 0.75rem!important;
+      }
+      svg {
+        cursor: pointer;
+        margin-top: 0.5rem;
+        margin-right: 0.45rem;
+        &:hover, &:focus {
+          color: $main;
+        }
+      }
+    }
+  }
+  #inviteByEmail {
+    color: $success;
+    cursor: pointer;
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+  .settings {
+    text-align: left;
+    a {
+      text-decoration: underline;
+    }
+    .ui.form .success.message, .ui.form .warning.message, .ui.form .error.message {
+      display: block;
+    }
+  }
+  .connect-social {
+    margin-bottom: 3em!important;
+    .soc-field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid $gray-light;
+      .user-soc-info {
+        display: flex;
+        align-items: center;
+        img {
+          width: 3rem;
+          height: 3rem;
+          margin-right: 0.5rem;
+          border-radius: 500rem;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        color: $white;
+        span {
+          display: flex;
+          align-items: center;
+        }
+        &.facebook-login-button {
+          background-color: #4666a0;
+          svg {
+            fill: #4666a0;
+          }
+        }
+        &.google {
+          background-color: #E8453C;
+          svg {
+            fill: #E8453C;
+          }
+        }
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .ui.green.button {
+    font-size: 1.2rem!important;
+  }
+  .account {
+    text-align: left;
+    span {
+      font-weight: bold;
+      color: $gray-dark;
+    }
+    .field.flexCenter {
+      margin-top: 3rem;
+      h3 {
+        margin-top: 0;
+      }
+    }
+    .ui.button {
+      min-width: 13rem;
+      font-size: 1.1rem!important;
+    }
+    .ui.form .field .ui.input.username-field {
+      input {
+        padding: 0.2rem 0.3rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        max-width: 100%;
+      }
+    }
+  }
+  .security {
+    text-align: left;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 2rem;
+      li {
+        font-size: 1.15rem;
+        margin: 0.75rem 0;
+      }
+    }
+    .terminate-sessions {
+      text-decoration: none;
+    }
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .email-page {
+    text-align: left;
+    &.unsubscribe {
+      .ui.button {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        font-size: 1.4rem!important;
+      }
+    }
+    .ui.checkbox {
+      width: 100%;
+      height: 1.5rem;
+    }
+    .ui.button {
+      font-size: 1.2rem!important;
+    }
+    .ui.checkbox label, .ui.checkbox+label {
+      padding-left: 2em;
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+    }
+    .ui.checkbox .box:before, .ui.checkbox label:before, .ui.checkbox .box:after, .ui.checkbox label:after {
+      font-size: 1.4rem;
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
+  .payments-page {
+    text-align: left;
+    .payments-description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > div {
+        padding-right: 2rem;
+      }
+      p {
+        margin: 0;
+      }
+      .add-card.dashed {
+        border: 1px dashed #e5e5e5;
+        border-radius: 3px!important;
+        padding: 2rem 4rem!important;
+        background-color: transparent;
+        &:hover {
+          background-color: $main-lighter;
+          border-color: $main-lighter;
+          color: $white;
+        }
+      }
+    }
+    .add-card.green {
+      margin-top: 1.5rem;
+    }
+    .ui.list:not(.horizontal) {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      &.payments-history {
+        .topup-border, .payout-border {
+          border-radius: 4px;
+          min-height: 4rem;
+          width: 0.35rem;;
+          position: absolute;
+          left: -3px;
+          top: 0.5rem;
+        }
+        .topup-border {
+          border: 3px solid $main;
+        }
+        .payout-border {
+          border: 3px solid $success;
+        }
+        .amount {
+          padding: 0.35rem 0.45rem;
+          border-radius: 4px;
+          max-width: 6rem;
+          text-align: center;
+          color: $white;
+          font-weight: bold;
+          &.topup {
+            background-color: $main-light;
+          }
+          &.payout {
+            background-color: $success-light;
+          }
+        }
+        .ui.header {
+          font-size: 1.5rem;
+        }
+        .time-extra {
+          font-size: 1.1rem;
+        }
+      }
+      & > .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        padding: 1rem 1.5rem;
+        position: relative;
+        border: $border;
+        &.hidden {
+          display: none;
+        }
+        &>div {
+          flex: 1;
+        }
+        b {
+          font-size: 1.4rem;
+        }
+        p {
+          color: $gray;
+          font-size: 0.95rem;
+        }
+        i.icon.close {
+          float: right;
+          font-size: 1.4rem;
+        }
+        &:hover {
+          background-color: $gray-lighter;
+          cursor: pointer;
+        }
+      }
+      .icon {
+        font-size: 1.75rem;
+        padding: 0!important;
+        margin-right: 1rem;
+      }
+    }
+  }
+  &.promote {
+    .rangeslider__handle-tooltip {
+      width: 90px;
+    }
+    .promote-wrong {
+      font-size: 1.5rem;
+      margin: 3rem 0;
+    }
+    .ui.items.post-list {
+      max-width: 40rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      .item.post-list-item.short-item {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-radius: $border-radius;
+        &:hover, &:focus {
+          background-color: $gray-light;
+          cursor: pointer;
+        }
+        .content .post-title .post-title-info {
+          max-width: 100%;
+        }
+      }
+    }
+    .ui.form.promote-form {
+      max-width: 640px;
+      text-align: left;
+      margin: 0 auto;
+      .estimate-reach {
+        text-align: center;
+        div {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+          i {
+            font-size: 1.3rem;
+            font-weight: 300;
+          }
+        }
+        i {
+          color: $gray;
+        }
+      }
+      .rangeslider {
+        margin: 3rem 0 4rem;
+        cursor: pointer;
+        .rangeslider__labels {
+          display: none;
+        }
+      }
+      .payWithCoins {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        label {
+          font-size: 1.3rem;
+        }
+      }
+      .pay-with-coins {
+        text-align: center;
+        a {
+          display: block;
+          color: $main;
+          font-size: 1.1rem;
+        }
+      }
+      .form-footer {
+        margin: 4rem 0;
+        text-align: center;
+        .total-block {
+          font-size: 2rem;
+          margin: 3rem 0;
+          line-height: 1.3;
+        }
+        .payment-hint {
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+          color: $gray;
+          font-size: 1.2rem;
+        }
+        .ui.button {
+          font-size: 1.5rem!important;
+        }
+        .payment-warning {
+          color: $gray;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+.add-payment-modal {
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: $border;
+  padding: 2rem 2rem 0.5rem;
+  margin-bottom: 2rem;
+  h2 {
+    padding: 0 3rem;
+  }
+  .adding-payment-method-loader {
+    text-align: center;
+    padding-bottom: 3rem;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+    .spinner.inner-scope {
+      min-height: 8rem;
+      .spinner-text {
+        display: none;
+      }
+    }
+  }
+  &.blueCard {
+    border: 0;
+    .ui.form {
+      max-width: 70%;
+      margin: 0 auto;
+      background-color: #246bff;
+      padding: 3rem 2.5rem;
+      border-radius: 0.85rem;
+      box-shadow: 0 4px 8px rgba(0,169,255,.3);
+      label, .card-separator {
+        color: $white!important;
+      }
+      .ui.input {
+        input {
+          border: 0;
+          box-shadow: none;
+          border-radius: 3px;
+          padding: .47857143em .37857143em;
+        }
+        &.card-number input {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .actions {
+      .ui.button {
+        background-color: $success!important;
+        margin-top: 1rem;
+        &:hover, &:focus {
+          background-color: $success-light!important;
+        }
+      }
+    }
+  }
+  .ui.form {
+    padding: 0 3rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    label {
+      font-weight: 400;
+      color: $gray;
+      display: flex;;
+      align-items: center;
+      svg {
+        margin-left: 0.35rem;
+      }
+    }
+
+    .ui.input {
+      input {
+        font-size: 1.4rem;
+        padding: .378em 0.57em;
+        &:active, &:focus {
+          border-color: 1px solid #246BFF;
+          box-shadow: 0 1px 2px rgba(0,169,255,.3);
+        }
+        &::placeholder {
+          color: $gray;
+          font-weight: 300;
+        }
+      }
+      &.card-number {
+        margin-bottom: 0.5rem;
+        input {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .card-exp {
+      display: flex;
+      align-items: center;
+      .ui.input {
+        max-width: 5.5rem;
+        input {
+          text-align: center;
+        }
+      }
+      .card-separator {
+        color: $gray;
+        margin: 0 .5rem;
+        font-size: 1.8rem;
+      }
+    }
+    .card-cvv {
+      .ui.input {
+        max-width: 7rem;
+      }
+    }
+
+    /* Mandarin styles */
+    .hosted-field {
+      position: relative;
+      height: 40px;
+      margin: 0;
+      outline: 0;
+      -webkit-appearance: none;
+      tap-highlight-color: transparent;
+      line-height: 1.21428571em;
+      padding: .67857143em 1em;
+      font-size: 1em;
+      background: #fff;
+      border: 1px solid rgba(34,36,38,.15);
+      color: rgba(0,0,0,.8);
+      border-radius: .28571429rem;
+      box-shadow: 0 0 0 0 transparent inset;
+      transition: color .1s ease,border-color .1s ease;
+      .glyphicon {
+        visibility: hidden;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: green;
+        float: right;
+      }
+    }
+
+    .mandarinpay-field-state-error {
+      background: #fff0f0;
+      border: 1px solid #900000;
+    }
+
+    .mandarinpay-field-state-focused {
+      background: #ffffff;
+      border: 1px solid yellowgreen;
+    }
+
+    .mandarinpay-field-state-valid {
+      background: #c0ffc0 !important;
+      border: 1px solid green !important;
+    }
+
+    .mandarinpay-field-state-valid  .glyphicon{
+      visibility: visible;
+    }
+  }
+  .actions {
+    text-align: center;
+    .ui.button {
+      font-size: 1.2rem!important;
+      font-weight: bold!important;
+      background-color: #246BFF;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: $main;
+      }
+      svg {
+        margin-right: 0.35rem;
+      }
+    }
+    .hint {
+      max-width: 90%;
+      color: $gray;
+      font-size: 0.9rem;
+      margin: 0.5rem auto;
+      &.all-required {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+  .payment-bottom {
+    padding: 0.5rem 1rem 0;
+    border-top: 1px solid $gray-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 1rem auto 0;
+    &>div {
+      color: $success;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 0.35rem;
+      }
+    }
+    img {
+      max-width: 30%;
+    }
+  }
+}
+.ui.grid.dashboard, .ui.grid.achievements, .ui.centered.grid.invites {
+  margin-top: 24px;
+  .ui.card {
+    border: $border;
+    border-radius: $border-radius-big;
+    box-shadow: none;
+    min-height: 18rem;
+    &.green {
+      border: 2px solid $success;
+      .header {
+        color: $success;
+      }
+    }
+    &:hover, &:active, &:focus {
+      background-color: $gray-lighter;
+    }
+    & > .content {
+      border-top: none;
+      padding: 1em 1.2em;
+      font-size: 1.2em;
+      border-bottom-left-radius: $border-radius-big!important;
+      border-bottom-right-radius: $border-radius-big!important;
+      .header {
+        font-weight: normal;
+        font-size: 1em;
+      }
+      .description {
+        color: $gray;
+        font-size: .85em;
+        font-weight: 300;
+        line-height: 1.3;
+        padding: 1em 0;
+      }
+    }
+  }
+  .extra {
+    padding: 0;
+    border: none!important;
+    font-size: 1.1em;
+    line-height: 18px;
+  }
+}
+
+.ui.grid.dashboard {
+  i.icon, i.icons {
+    font-size: 3em;
+    margin: 0.6em auto 4px;
+    color: $success;
+  }
+  .badge-icon {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    color: $gray;
+    i.icon, i.icons {
+      font-size: 1.5em;
+      margin: 0;
+      color: $danger;
+    }
+  }
+  .upgrade {
+    i.icon, i.icons {
+      color: $danger;
+    }
+    .badge {
+      i.icon, i.icons {
+        color: $danger!important;
+      }
+    }
+  }
+  .sales {
+    i.icon, i.icons {
+      color: $warning;
+    }
+    .badge {
+      i.icon, i.icons {
+        color: $warning!important;
+      }
+    }
+  }
+  .promote {
+    i.icon, i.icons {
+      color: $main;
+    }
+    .badge {
+      i.icon, i.icons {
+        color: $main!important;
+      }
+    }
+  }
+  .inactive {
+    i.icon, i.icons {
+      color: $gray;
+    }
+  }
+}
+
+.buy-more-page {
+  .page-background {
+    .inner .info {
+      width: 100%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .banner .image-wrapper {
+      max-width: 85%;
+    }
+  }
+  .packages-block {
+    background-color: #252525;
+    width: 100%;
+    padding: 3rem 1rem;
+    .header {
+      text-align: center;
+      color: $white;
+    }
+  }
+  .payment-packages {
+    margin: 2rem auto;
+    max-width: 54rem;
+    .pack {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 0.5rem;
+      width: 100%;
+      margin: 1.5rem 0;
+      background-color: $white;
+      overflow: hidden;
+      .pack-icon {
+        width: 14rem;
+        height: 10rem;
+        margin: 0;
+        background-color: #7761ee;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        img {
+          max-width: 75%;
+          margin: 0 auto;
+        }
+        .pack-badge {
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.25rem;
+          background-color: $warning;
+          color: $black;
+          font-weight: bold;
+        }
+        .pack-bonus {
+          position: absolute;
+          bottom: 50%;
+          right: -2rem;
+          height: 4rem;
+          width: 4rem;
+          margin-bottom: -2rem;
+          border-radius: 500rem;
+          color: $white;
+          background-color: $danger;
+          z-index: 2;
+          white-space: nowrap;
+          line-height: 1.1;
+          font-size: 0.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          b {
+            display: block;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .pack-content {
+        padding: 2rem 1rem 2rem 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .pack-coins {
+          font-size: 1.35rem;
+          display: flex;
+          align-items: center;
+          b {
+            font-size: 3rem;
+            display: block;
+            color: $success;
+            line-height: 1;
+          }
+        }
+      }
+      .pack-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+      }
+      .pack-price {
+        color: $white;
+        min-width: 10rem;
+        background-color: $danger;
+        font-weight: bold!important;
+        font-size: 1.2rem!important;
+        border-radius: .35rem!important;
+        &:hover {
+          background-color: $danger-light;
+        }
+      }
+      &.premium {
+        background-color: $danger;
+        .pack-content .pack-coins {
+          b {
+            color: #F6D739;
+          }
+        }
+        .pack-price {
+          background-color: #7761ee;
+          &:hover {
+            background-color: $danger-light;
+          }
+        }
+      }
+    }
+  }
+  .payment-block {
+    & > .ui.button {
+      margin-top: 2rem;
+      font-size: 1.2rem!important;
+      &.login-coins {
+        font-size: 1.35rem!important;
+      }
+    }
+  }
+  .payment-extra {
+    padding-top: 5rem;
+    color: $gray;
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 90%;
+    margin: 0 auto;
+    .ui.checkbox {
+      margin-bottom: 0.5rem;
+      label {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: $gray-dark;
+        svg {
+          margin-left: 0.5rem;
+        }
+        &:before {
+          border-color: $gray-dark;
+          width: 20px;
+          height: 20px;
+        }
+        &:after {
+          color: $gray-dark;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .coins-faq {
+    padding: 2rem 1rem;
+    h2 {
+      text-align: center;
+    }
+    .accordion.ui {
+      max-width: 54rem;
+      margin: 0 auto;
+      .faq-item {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        .title {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.tier-page {
+  .announcement-banner {
+    margin-bottom: 2rem;
+  }
+  .settings-links {
+    margin-bottom: 2rem;
+  }
+  .ui.form {
+    text-align: left;
+  }
+  .tier-packages {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 1rem 0;
+    .tier {
+      position: relative;
+      padding: 2rem 0.5rem;
+      margin: 0 1%;
+      width: 25%;
+      border-radius: 6px;
+      .tier-icon {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        img {
+          max-width: 100%;
+        }
+      }
+      .ui.input {
+        max-width: 7rem;
+        input {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "learnMoreOn": "Learn more ",
   "seoResetTitle": "Reset your password",
   "seoResetDesc": "Reset your password",
   "headerReset": "Reset password",
@@ -6,5 +7,6 @@
   "seoRecoverTitle": "Recover password page",
   "seoRecoverDesc": "Recover password page",
   "headerRecover": "Recover password",
-  "subheaderRecover": "Enter your email below and we’ll send you instructions on how to retrieve your password."
+  "subheaderRecover": "Enter your email below and we’ll send you instructions on how to retrieve your password.",
+  "subheaderRecoverSpam": "Don't forget to check Spam folder. Try to select email and click Not Spam button. Then you can see our emails in your Inbox"
 }

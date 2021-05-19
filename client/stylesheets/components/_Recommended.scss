@@ -1,107 +1,364 @@
 .ui.card.recommended {
-  &.vertical, &.horizontal {
+
+  &.vertical,
+  &.horizontal {
     border: none;
     box-shadow: none;
+
     .content {
       border: none;
       padding: 0;
       text-align: center;
+
       .header {
         margin-bottom: 36px;
       }
     }
   }
-  &.related-books {
+
+  &.horizontal.related-books {
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    &>.content.related-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+
+      .header {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .content.body {
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    .book-item .book-item-content .book-cover .book-cover-wrapper .book-cover-text .book-author {
+      margin-top: 0rem;
+    }
+  }
+
+  &.horizontal.related-posts {
+    width: 100%;
+    background-color: $gray-lighter;
+    margin-bottom: -44px;
+    margin-top: 2em;
+
+    .fullwidth_block {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      min-height: 10rem;
+
+      .rad-wrapper {
+        .upgrade-link {
+          height: auto;
+        }
+      }
+    }
+
+    .related-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 104px 40px;
+      width: 100%;
+    }
+
+    .header {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      text-align: left;
+    }
+
+    .content.body {
+      margin: 0 -1em;
+    }
+
     .ui.items {
-      & > .item {
+      &>.item {
         display: block;
-        margin-bottom: 2rem;
-        padding: 0 1em;
-        .content {
-          padding: 0 1em;
-          overflow: hidden;
-          height: 8rem;
+        margin: 0;
+        padding: 1rem;
+        width: 33%;
+        float: left;
+
+        &.rad-banner {
+          text-align: center;
+
+          .rad-wrapper {
+            max-height: 310px;
+          }
         }
-        h3 {
-          margin: 0.5rem 0 0;
-          font-size: 1.1em;
-          height: 1.1em;
-          overflow: hidden;
+
+        &:hover,
+        &:focus {
+          a {
+            color: $main !important;
+          }
         }
-        img {
-          width: 150px;
-          height: 206px;
+
+        &>a.post-image {
+          background-color: $gray-light;
         }
-        a, button {
+
+        &>a {
           display: block;
+          position: relative;
+          height: 10rem;
+          overflow: hidden;
+          border-radius: $border-radius-big;
+
+          img,
+          .img-placeholder {
+            position: absolute;
+            height: auto;
+            left: 22%;
+            top: 0;
+            transform: translateY(0%) translateX(-22%);
+            height: 100%;
+            width: 100%;
+
+            &.default-avatar {
+              img {
+                left: 11%;
+              }
+            }
+          }
         }
-        .rating {
-          margin: 12px 0;
-        }
-        button {
-          margin: 0 auto;
-          font-size: 0.9rem!important;
-          padding: 0.97143em 1.47143em !important;
+
+        .content {
+          margin-top: 8px;
+          font-size: 1.3em;
+          text-align: left;
+          height: 10rem;
+
+          p {
+            color: $gray;
+            font-size: 0.8em;
+          }
+
+          h3 {
+            font-size: 1.1em;
+          }
+
+          .promo-badge {
+            display: inline-block;
+            ;
+            background-color: $success-light;
+            font-size: .9rem;
+            font-weight: 700;
+            color: $white;
+            padding: .4px .6rem;
+            border-radius: 4px;
+          }
+
+          .content-link {
+            max-height: 4rem;
+            overflow: hidden;
+            display: block;
+          }
+
+          .user-link {
+            margin-top: 0.5em;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .user-avatar {
+              width: 3em;
+              height: 3em;
+              margin-right: 0.25em;
+
+              img {
+                width: 100%;
+                height: 100%;
+                max-height: 4.5em;
+              }
+            }
+
+            div {
+              a {
+                overflow: hidden;
+                display: block;
+              }
+            }
+
+            a {
+              color: $black;
+              font-weight: 500;
+              display: inline-block;
+
+              img {
+                width: 3em;
+                height: 3em;
+              }
+            }
+          }
         }
       }
     }
   }
+
+  &.prev-next-posts {
+    max-width: 54rem;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+
+    .content {
+      .header {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .related-sublings {
+      width: 100%;
+    }
+
+    .ui.items {
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      .item {
+        width: 50%;
+        display: block;
+        margin: 0 0.5rem;
+
+        .image-link {
+          display: block;
+          position: relative;
+          height: 8rem;
+          overflow: hidden;
+          border-radius: 12px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .content-link {
+          text-align: left;
+          margin-top: 0.5rem;
+          display: block;
+        }
+
+        .pub-date {
+          font-size: 0.85rem;
+          color: $gray-dark;
+          text-align: left;
+          display: block;
+        }
+      }
+    }
+  }
+
   &.horizontal.related-books {
     width: 100%;
-    margin-bottom: 4em;
+    background-color: transparent;
+
+    .related-wrapper {
+      padding: 0;
+    }
+
     .header {
       font-size: 2.1em;
       margin-bottom: 12px;
     }
+
+    .book-preview-list {
+      margin: 0;
+      padding: 0 1.4rem;
+      text-align: left;
+
+      .book-preview-item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
     .ui.items {
-      & > .item {
+      &>.item {
         display: inline-block;
         margin-bottom: 2rem;
         width: 20%;
+
         img {
           width: 150px;
           height: 206px;
         }
-        a, button {
+
+        a,
+        button {
           display: block;
         }
+
         .rating {
           margin: 12px 0;
         }
+
         button {
           margin: 0 auto;
-          font-size: 0.9rem!important;
+          font-size: 0.9rem !important;
           padding: 0.97143em 1.47143em !important;
         }
       }
     }
   }
-  &.horizontal.related-posts {
-    width: 100%;
-    margin-top: 3em;
+}
+
+.ui.card.sidebar-card.popular-tags {
+  .body.content {
     .header {
-      font-size: 1.6em;
-      margin-bottom: 12px;
-      text-align: left;
+      margin-top: 0;
     }
-    .ui.items {
-      & > .item {
-        display: inline-block;
-        margin-bottom: 1em;
-        padding: 0 1em;
-        width: 33%;
-        img, .img-placeholder {
-          width: 11rem;
-          height: 11rem;
+  }
+}
+
+.ui.card.sidebar-card.recommended-users {
+  .body.content {
+    .header {
+      margin-top: 0;
+    }
+
+    .description {
+      padding-right: 0;
+      margin-top: 4px;
+    }
+  }
+
+  .ui.relaxed.items {
+    margin: 0.75rem 0;
+
+    &>.item {
+      margin: 0;
+
+      .user-avatar {
+        width: 3.2rem;
+        height: 3.2rem;
+
+        .ui.avatar.image {
+          width: 3.2rem;
+          height: 3.2rem;
         }
-        .content {
-          margin-top: 8px;
-          height: 3.3em;
-          overflow: hidden;
-        }
-        a {
-          display: block;
-        }
+      }
+
+      .ui.button.follow {
+        font-size: 0.85rem !important;
+        padding: 0.6rem 0.85rem !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
       }
     }
   }

@@ -1,0 +1,4 @@
+export MAIL_URL=
+export REDIS_URL=redis://127.0.0.1:6379
+export NODE_OPTIONS='--perf-prof --perf-prof-unwinding-info --perf-basic-prof'
+meteor run --production --settings settings-production.json

@@ -1,0 +1,249 @@
+.create-album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 54rem;
+  margin: 2rem auto 0;
+  border-radius: 4px;
+  border: 1px solid $main;
+  padding: .75rem;
+  background-color: $main-lighter;
+  svg {
+    margin-right: 0.5rem;
+  }
+  &:hover, &:active, &:focus {
+    border: 1px solid transparent;
+    color: $main;
+  }
+}
+
+.ui.list.list-view {
+  padding-top: 16px;
+  .ui.button.create-album {
+    padding: 1.2rem!important;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: $main !important;
+    font-size: 1.5rem;
+  }
+  & > .item {
+    position: relative;
+    text-transform: capitalize;
+    border-top: 0;
+    padding: 1.3em 0!important;
+  }
+  .album-post-count {
+    margin-left: 6px;
+    font-size: 0.8em;
+    color: $black;
+  }
+  .album-updated {
+    font-size: 0.75em;
+    margin-top: 4px;
+  }
+}
+
+.ui.grid.albums-list {
+  width: 100%;
+  &.empty-block {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .album-list-item-preview {
+    width: 18.75rem;
+    margin: 1rem 0.5rem;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    .content {
+      height: 100%;
+      a {
+        display: block;
+      }
+    }
+    .album-cover {
+      height: 13rem;
+      background-color: $gray-light;
+      color: $white;
+      border: $border;
+      border-radius: 0.5rem;
+      text-align: center;
+      svg {
+        margin: 4.75rem 0;
+      }
+      &.no-border {
+        border: none;
+      }
+    }
+    .badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      color: $black;
+      opacity: 1;
+      width: 2rem;
+      height: 2rem;
+    }
+    .album-wrap {
+      padding: 1rem 1rem;
+      width: 100%;
+      .album-wrap-inner {
+        text-align: center;
+        font-size: 1.1rem;
+        .album-title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          &:first-letter {
+            text-transform: capitalize;
+          }
+        }
+        .album-stats {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+          font-size: 1rem;
+          color: $gray-dark;
+        }
+      }
+    }
+    .image {
+      height: 174px;
+      background-color: $gray-light;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.album-page {
+  max-width: 54rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 1rem;
+  .ui.container {
+    padding-left: 0;
+    padding-right: 0;
+    .user-posts {
+      padding: 0;
+    }
+  }
+  & > .content {
+    position: relative;
+    .album-title, .description {
+      text-align: center;
+      img {
+        width: 100%;
+        margin: 1em 0;
+        border-radius: 10px;
+      }
+    }
+    .description {
+      margin-top: 1.5em;
+      font-size: 1.2rem;
+    }
+    .album-title {
+      padding: 0 80px;
+      word-break: break-word;
+    }
+  }
+  &.edit-album-page {
+    padding-top: 5em;
+    .sub.header {
+      margin-bottom: 24px;
+    }
+  }
+  .album-author {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 1em;
+    text-transform: capitalize;
+  }
+  .user-posts-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    min-height: 3rem;
+    .user-search {
+      &>* {
+        margin-left: 1rem;
+      }
+      .user-search-posts-form {
+        margin-left: 0;
+        .ui.input>input {
+          padding-left: 2.5rem;
+        }
+      }
+    }
+  }
+  .ui.horizontal.list {
+    font-size: 1.2rem;
+    z-index: 1;
+    margin: 0;
+    a {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      display: inline-block;
+      &.active {
+        color: $main;
+      }
+    }
+  }
+  .item.post-list-item.short-item{
+    margin: 0;
+    .content {
+      .post-title-info {
+        max-width: 100%;
+        .post-title-header {
+          display: flex;
+          align-items: center;
+          padding: 1rem 1rem;
+          border-radius: 4px;
+          &:hover, &:focus, &:active {
+            background-color: $gray-lighter;
+          }
+        }
+      }
+    }
+  }
+}
+
+.album-actions {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  a {
+    font-size: 0.9rem;
+    margin: 0 6px;
+    color: rgba(0, 0, 0, 0.4)!important;
+    &:hover, &:active, &:focus {
+      color: $main!important;
+    }
+  }
+}
+
+.album-left-actions {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  .icon {
+    vertical-align: -15%!important;
+  }
+}
+.delete-album-actions {
+  margin-top: 36px!important;
+}
+.delete-album-button {
+  background-color: transparent!important;
+  color: $danger!important;
+}

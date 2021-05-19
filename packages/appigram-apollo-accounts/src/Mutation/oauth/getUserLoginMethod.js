@@ -1,8 +1,8 @@
-import {Accounts} from 'meteor/accounts-base'
+import { Accounts } from 'meteor/appigram:accounts-base'
 
 export default function (email) {
   if (!email) return 'unknown'
-  const {services} = email.indexOf('@') !== -1 ? Accounts.findUserByEmail(email) : Accounts.findUserByUsername(email)
+  const { _id, services } = email.indexOf('@') !== -1 ? Accounts.findUserByEmail(email) : Accounts.findUserByUsername(email)
   const list = []
   for (const key in services) {
     if (key === 'email') continue
@@ -14,5 +14,5 @@ export default function (email) {
     }
   }
   const allowedServices = [...Accounts.oauth.serviceNames(), 'password']
-  return list.filter(service => allowedServices.indexOf(service) !== -1).join(', ')
+  return { _id, services, method: list.filter(service => allowedServices.indexOf(service) !== -1).join(', ')}
 }

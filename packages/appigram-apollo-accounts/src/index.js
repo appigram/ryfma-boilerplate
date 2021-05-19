@@ -1,30 +1,34 @@
 import './checkNpm'
 import SchemaTypes from './Auth'
 import SchemaMutations from './Mutations'
+import SchemaQueries from './Queries'
 import Mutation from './Mutation'
-import LoginMethodResponse from './LoginMethodResponse'
+import Query from './Query'
 import callMethod from './callMethod'
-import {loadSchema} from 'graphql-loader'
+import {loadSchema} from '@appigram/graphql-loader'
 
 const initAccounts = function (givenOptions) {
   const defaultOptions = {
     CreateUserProfileInput: 'name: String',
-    loginWithFacebook: false,
-    loginWithGoogle: false,
+    loginWithFacebook: true,
+    loginWithGoogle: true,
     loginWithLinkedIn: false,
-    loginWithVK: false,
+    loginWithVK: true,
     loginWithPassword: true
   }
+
   const options = {
     ...defaultOptions,
-    ...givenOptions
+    // ...givenOptions
   }
 
-  const typeDefs = [SchemaTypes(options), ...SchemaMutations(options)]
-  const resolvers = {...Mutation(options), ...LoginMethodResponse(options)}
+
+  const typeDefs = [SchemaTypes(options), ...SchemaMutations(options), ...SchemaQueries(options)]
+  const resolvers = {...Mutation(options), ...Query(options)}
 
   loadSchema({typeDefs, resolvers})
 }
+
 
 export {
   callMethod,

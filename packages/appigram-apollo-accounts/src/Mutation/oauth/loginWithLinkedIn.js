@@ -1,11 +1,11 @@
 import resolver from './resolver'
-import {HTTP} from 'meteor/http'
-import {ServiceConfiguration} from 'meteor/service-configuration'
+import {fetch} from 'meteor/fetch'
+import {ServiceConfiguration} from 'meteor/appigram:service-configuration'
 
-const handleAuthFromAccessToken = function ({code, redirectUri}) {
+const handleAuthFromAccessToken = async function ({code, redirectUri}) {
   // works with anything also...
-  const accessToken = getAccessToken(code, redirectUri)
-  const identity = getIdentity(accessToken)
+  const accessToken = await getAccessToken(code, redirectUri)
+  const identity = await getIdentity(accessToken)
 
   const serviceData = {
     ...identity,
@@ -27,27 +27,46 @@ const getTokens = function () {
   }
 }
 
-const getAccessToken = function (code, redirectUri) {
-  const response = HTTP.post('https://www.linkedin.com/oauth/v2/accessToken', {
+const getAccessToken = async function (code, redirectUri) {
+  const url = new URL("https://www.linkedin.com/oauth/v2/accessToken")
+  const params = {
+    grant_type: 'authorization_code',
+    code,
+    redirect_uri: redirectUri,
+    ...getTokens()
+  }
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+  const response = await fetch(url, { method: 'POST' })
+  const data = await response.json()
+  /* const response = HTTP.post('https://www.linkedin.com/oauth/v2/accessToken', {
     params: {
       grant_type: 'authorization_code',
       code,
       redirect_uri: redirectUri,
       ...getTokens()
     }
-  }).data
+  }).data */
 
-  return response.access_token
+  return data.access_token
 }
 
-const getIdentity = function (accessToken) {
+const getIdentity = async function (accessToken) {
   try {
-    return HTTP.get('https://www.linkedin.com/v1/people/~:(id,email-address,first-name,last-name,headline)', {
+    const url = new URL("https://www.linkedin.com/v1/people/~:(id,email-address,first-name,last-name,headline)")
+    const params = {
+      oauth2_access_token: accessToken,
+      format: 'json'
+    }
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+    const response = await fetch(url)
+    const data = await response.json()
+    /* return HTTP.get('https://www.linkedin.com/v1/people/~:(id,email-address,first-name,last-name,headline)', {
       params: {
         oauth2_access_token: accessToken,
         format: 'json'
       }
-    }).data
+    }).data */
+    return data
   } catch (err) {
     throw new Error('Failed to fetch identity from LinkedIn. ' + err.message)
   }

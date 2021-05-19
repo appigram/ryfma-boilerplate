@@ -1,0 +1,200 @@
+.user-memberships {
+  .ui.horizontal.list.list-actions {
+    .item {
+      font-size: 1.2rem!important;
+      margin-left: 2em;
+      &.active {
+        font-weight: bold
+      }
+    }
+  }
+  .user-list {
+    .user-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      &.premium {
+        border-radius: 6px;
+        border: 1px solid $warning-light;
+        background-color: $warning-lighter;
+        .membership-actions {
+          .edit-membership {
+            background-color: $warning;
+          }
+        }
+
+        &.active {
+          border: 1px solid $success-light;
+          background-color: $success-lighter;
+          .membership-actions {
+            .edit-membership {
+              background-color: $success;
+            }
+          }
+        }
+      }
+      &.paused {
+        border: 1px solid $warning;
+        background-color: $warning-lighter;
+      }
+      &.cancelled {
+        border: 1px solid $danger;
+        background-color: $danger-light;
+      }
+      .user-info {
+        display: flex;
+        h3 {
+          margin-bottom: 0;
+          margin-left: 1rem;
+          text-align: left;
+        }
+        .user-avatar {
+          margin: 0;
+          width: 4rem;
+          height: 4rem;
+          display: block;
+        }
+        .user-info-link {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .user-info-content {
+          text-align: left;
+          margin-left: 1rem;
+        }
+        .membership-info {
+          margin-top: 0.5rem;
+          font-size: 1.1rem;
+          .price {
+            font-weight: bold;
+            color: $gray-dark;
+          }
+          .status {
+            color: $gray-dark;
+          }
+        }
+      }
+      .membership-actions {
+        .edit-membership {
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          color: $white;
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.membership-edit {
+  .ui.tiny.modal.showDonationModal {
+    position: relative!important;
+    display: block!important;
+    width: 100%;
+    z-index: 0;
+    box-shadow: none;
+    border: 1px solid $gray-light;
+    .donate-user {
+      background-color: transparent;
+      text-align: center;
+      border-bottom: 0;
+      padding-bottom: 0;
+      .donate-user-wrapper {
+        display: block;
+        .user-avatar {
+          margin: 0 auto;
+        }
+      }
+      .donate-desc {
+        margin-top: 1.5rem;
+        h2 {
+          text-align: center;
+          color: $black;
+        }
+      }
+    }
+    .donate-nextTime {
+      text-align: center;
+      margin-top: 1.5rem;
+      h3 {
+        margin-top: 0.35rem;
+      }
+      .days {
+        font-size: 1.2rem;
+      }
+    }
+    .user-list {
+      padding: 3rem 2rem;
+    }
+    .donate-actions {
+      .ui.button {
+        background-color: $success;
+        &:hover {
+          background-color: $success-light;
+        }
+      }
+      .membership-isactive {
+        color: $main;
+        font-size: 1.75rem;
+        padding: 1rem 1rem 2rem;
+      }
+      .cancel-membership {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.ui.tiny.modal.cancel-membership-modal {
+  b {
+    font-weight: bold;
+  }
+}
+
+.sponsors-billing-page {
+  .ratings-wrapper-page {
+    padding-top: 0;
+    .members-actions {
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      text-align: right;
+      .button {
+        background-color: $main-lighter;
+        color: $main;
+        svg {
+          margin-right: 0.25rem;
+        }
+      }
+    }
+    .total-sum {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0 1rem 0;
+      &>div {
+        margin: 0 1rem;
+      }
+    }
+    .badge {
+      width: max-content;
+      height: auto;
+      background-color: $main-lighter;
+      padding: 0.1rem 0.5rem;
+      opacity: 1;
+      border-radius: 0.25rem;
+      font-size: 0.7rem;
+    }
+    .ui.table [class*="single line"], .ui.table[class*="single line"] {
+      white-space: normal;
+      .no-content {
+        text-align: center;
+        min-width: 0;
+      }
+    }
+  }
+}

@@ -1,5 +1,8 @@
 {
-  "header": "404",
-  "subheader": "We can't seem to find the page you're looking for",
-  "backToHome": "Back to homepage"
+  "notFoundHeader": "404",
+  "notFoundSubheader": "We can't seem to find the page you're looking for",
+  "backToHome": "Back to homepage",
+  "accessDeniedHeader": "403",
+  "accessDeniedSubheader": "Access denied. Please login first.",
+  "goToLogin": "Go to login"
 }

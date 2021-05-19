@@ -1,7 +1,7 @@
 Boilerplate for Ryfma website
 ===================
 
-A starter project for React &amp; Meteor 1.5+ &amp; Apollo
+A starter project for React &amp; Meteor 2.1+ &amp; Apollo
 
 This repo aims to get you up and running. It has sane defaults that most apps will use (router, accounts).
 
@@ -31,7 +31,7 @@ Start the app
 git clone https://github.com/appigram/ryfma-boilerplate your-project-name
 cd your-project-name
 meteor npm install
-meteor
+./start
 ```
 
 Architecture
@@ -41,25 +41,37 @@ Based on: https://guide.meteor.com/structure.html
 
 ```
 client
-└── main.js // Just a proxy for "/imports/startup/client"
-server
-└── main.js // Just a proxy for "/imports/startup/server"
-imports/startup
-├── client
-│   └── index.js // Loads everything for the client on initial load
-└── server
-    ├── fixtures.js // Demo Data
+├── stylesheets // All SCSS styles
+├── main.js // Client main file
+└── service-worker.js // Basic script for Service Worker
+imports
+├── graphqls // Graphql's mutations and queries
+├── hooks // Global hooks (Settings, Auth)
+├── shared // Common shared libs
+└── ui // All React components
+lib // Shared libs for both client and server
+packages // Meteor specific packages
+private // Email templates and data
+public
+├── critical // Critical CSS for pages
+├── data // Initial data
+└── locales // Locales for languages
     └── index.js // Load everything for the server, when meteor is started
-imports/api
-├── apollo // Apollo quieries and mutations
+server
+├── api/apollo // Apollo quieries and mutations
 │   ├── resolvers // Apollo resolvers
 │   └── schema // Apollo resolvers
 │       ├── index.js // Apollo initialization
-├── collections
+├── api/collections
 │   ├── {collectionName}
 │   ├── index.js // linking information
 │   └── Schema.js // schema for the collection
-imports/ui // All React components
+├── config // Server config files
+├── jobs // Cron jobs
+├── seo // SEO methods (Turbo and Sitemap)
+├── ssr // SSR methods
+└── main.js // Server main file
+
 ```
 
 Have fun!
@@ -90,13 +102,13 @@ Place these 2 files into your Meteor app’s folder.
 Now it’s time to prepare your Meteor app. Install MUPx tool:
 Go to the Meteor app folder and run:
 ```
-npm install -g mupx
-mupx init
+npm install -g mup
+mup init
 ```
 This will create a mup.json file in your app’s folder.
 Use your droplet’s information and the above 2 pem files to fill out the content of the mup.json file.
 In your terminal, while inside the app folder,
-run: ```mupx setup``` You will get an error: ```Installing Docker: FAILED```
+run: ```mup setup``` You will get an error: ```Installing Docker: FAILED```
 
 You gotta go back to your droplet (ssh root@xxx.xxx.xxx.xxx) and install Docker:
 ```
@@ -105,9 +117,9 @@ wget -qO- https://get.docker.com/ | sudo sh
 
 Go back to your local app folder, run again:
 ```
-mupx setup
+mup setup
 meteor add force-ssl
-mupx deploy
+mup deploy
 ```
 Enjoy!
 
@@ -118,5 +130,5 @@ In your local app folder, run again:
 ```
 meteor add meteorhacks:cluster
 export CLUSTER_WORKERS_COUNT=2
-mupx setup and mupx deploy
+mup setup and mup deploy
 ```

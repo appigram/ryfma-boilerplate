@@ -58,6 +58,17 @@
 .photo-actions {
   text-align: center;
   margin-bottom: 1em;
+  .icon {
+    &:hover {
+      background-color: $gray-light;
+    }
+  }
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cropper-point {

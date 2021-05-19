@@ -1,4 +1,0 @@
-type Query {
-  # Returns list of notifications
-  notifications: [Notification]!
-}

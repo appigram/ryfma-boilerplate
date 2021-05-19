@@ -9,10 +9,10 @@ class Stylesheet {
     return {
       container: {
         position: 'fixed',
-        width: '50%',
+        width: '30%',
         margin: '0 auto',
         right: '0px',
-        top: '-100px',
+        top: '-110px',
         left: '0px',
         textAlign: 'center',
         zIndex: defaults.zIndex,
@@ -32,11 +32,11 @@ class Stylesheet {
       },
       content: {
         cursor: 'pointer',
-        display: 'inline',
+        display: 'block',
         width: 'auto',
         borderRadius: '0 0 4px 4px',
         backgroundColor: 'white',
-        padding: '10px 30px',
+        padding: '8px 24px',
         pointerEvents: 'all'
       },
       show: {

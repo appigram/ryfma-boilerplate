@@ -1,0 +1,201 @@
+<!-- Thumbnail Right, Text Left : BEGIN -->
+<tr>
+  <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+  <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;" itemscope itemtype="http://schema.org/Article">
+    <h1 style="text-align:center;margin-bottom: 16px;">
+      {{#if reminder}}
+        Напоминаем, что скоро заканчивается прием на конкурс <strong>"{{contest.title}}"</strong>. Успей принять участие<br>
+      {{else}}
+        Новый конкурс <strong>"{{contest.title}}"</strong><br>
+      {{/if}}
+    </h1>
+    <!--[if mso]>
+    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+    <tr>
+    <td valign="top" width="660">
+    <![endif]-->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+        {{#if contest.coverImg}}
+          <!--[if mso]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+          <tr>
+          <td valign="top" width="220" style="width: 220px;">
+          <![endif]-->
+          <div style="display:block; margin: 0 -2px; min-width:320px; vertical-align:top;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td dir="ltr">
+                  <a href="https://ryfma.com/f/{{contest.slug}}?utm_source=email&amp;utm_medium=contestnew&amp;utm_campaign={{contest._id}}&amp;utm_content=image"  data-saferedirecturl="https://www.google.com/url?hl=ru&q=https://ryfma.com/f/{{contest.slug}}/{{contest._id}}?utm_source=email&amp;utm_medium=contestnew&amp;utm_campaign={{contest._id}}&amp;utm_content=image" style="display:block;vertical-align:middle;text-decoration:none;">
+                    <img itemprop="image" border="0" alt="{{contest.title}}" style="display:inline-block;border:none;outline:none;text-decoration:none;margin:0 8px 0 0;line-height: 0;border-radius: 8px; max-width: 100%;" src="{{contest.coverImg}}" class="center-on-narrow">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso]>
+          </td>
+          <td valign="top" width="440" style="width: 440px;">
+          <![endif]-->
+        {{/if}}
+        <div style="display:block; margin: 24px 0; max-width:85%; min-width:320px; vertical-align:top;" class="stack-column">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px 10px 0; text-align: left;" class="center-on-narrow">
+                <div itemprop="description">
+                  <p>{{contest.brief}}</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        {{#if partners}}
+          <div class='partners' style="min-width: 320px;background-color: #ffcf64; padding: 16px; margin: 0 -16px; border-radius: 10px;">
+            <h3 style="font-size: 16px;margin: 0;">Подарки победителям</h3>
+            <div class='partner-name'>
+              <h4 style="margin: 0; margin-left: 8px; font-size: 22px;">Издательство {{partners.name}}</h4>
+            </div>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+              <tr>
+                <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                <!--[if mso]>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660">
+                <tr>
+                <td valign="top" width="330">
+                <![endif]-->
+                <div style="display:inline-block; margin: 0 -2px; width:100%; min-width: 180px; max-width:33.33%;; vertical-align:top;" class="stack-column">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="padding: 10px 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                          <tr>
+                            <td>
+                              <img src="{{image1}}" style="border-radius: 10px; width: 100%;" class="center-on-narrow" style="width: 100%; max-width: 200px; border-radius: 10px; " alt="{{partners.name}}" />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if mso]>
+                </td>
+                <td valign="top" width="220">
+                <![endif]-->
+                <div style="display:inline-block; margin: 0 -2px; width:100%; min-width: 180px; max-width:33.33%;; vertical-align:top;" class="stack-column">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="padding: 10px 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                          <tr>
+                            <td>
+                              <img src="{{image2}}" style="border-radius: 10px; width: 100%;" class="center-on-narrow" style="width: 100%; max-width: 200px; border-radius: 10px; " alt="{{partners.name}}"/>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if mso]>
+                </td>
+                <td valign="top" width="220">
+                <![endif]-->
+                <div style="display:inline-block; margin: 0 -2px; width:100%; min-width: 180px; max-width:33.33%;; vertical-align:top;" class="stack-column">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="padding: 10px 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                          <tr>
+                            <td>
+                              <img src="{{image3}}" style="border-radius: 10px; width: 100%;" class="center-on-narrow" style="width: 100%; max-width: 200px; border-radius: 10px; " alt="{{partners.name}}"/>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+                </td>
+              </tr>
+            </table>
+            <h3 style="font-size: 16px;margin: 0;">Победители смогут выбрать любой блокнот на выбор!</h3>
+          </div>
+        {{/if}}
+        {{#if false}}
+        <div style="display:block; margin: 0 -2px; margin-top: 20px; min-width:320px; vertical-align:top;" class="stack-column">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td dir="ltr" style="font-size: 18px; line-height: 26px; color: #555555; padding: 0px 10px 20px; text-align: center; " class="center-on-narrow">
+                Приз за первое место - <strong>4 000 руб.</strong><br/> Приз за второе место - <strong>3 000 руб.</strong><br/> Приз за третье место - <strong>2 000 руб.</strong><br/><br/> Призы в оффлайн-конкурсах будут оговорены индивидуально для каждого города и будут опубликованы после подведения итогов онлайн-конкурса.
+              </td>
+            </tr>
+          </table>
+        </div>
+        {{/if}}
+
+        {{#if url}}
+          <tr>
+              <td style="padding: 0 20px 20px;">
+                  <!-- Button : BEGIN -->
+                  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                      <tr>
+                          <td class="button-td button-td-primary" style="border-radius: 50px; background: #005ceb; min-width: 260px;">
+                               <a class="button-a button-a-primary" href="{{ url }}">{{ title }}</a>
+                          </td>
+                      </tr>
+                  </table>
+                  <!-- Button : END -->
+              </td>
+          </tr>
+        {{/if}}
+
+        <div style=" margin-top: 20px; min-width:320px; vertical-align:top; text-align: center;">
+          <p style="text-align:center;font-size:18px;">
+            Текущие конкурсы, участвуй и зови друзей<br>
+          </p>
+          <br>
+          {{#each activeFests}}
+            <div style='display:table;table-layout:fixed;max-width:100%;margin-top:24px;margin-bottom:24px;text-align:left;' class='bodyContent' dir="ltr" >
+              {{#if this.coverImg}}
+                <a href="https://ryfma.com/f/{{this.slug}}?utm_source=email&amp;utm_medium=contestnew&amp;utm_campaign={{this._id}}&amp;utm_content=listimage">
+                <img width="60" height="60" border="0" alt="{{this.title}}" style="display:inline-block;border:none;outline:none;text-decoration:none;border-radius:4px;margin:0 8px 0 0;line-height: 0;" src="{{this.coverImg}}">
+                </a>
+              {{/if}}
+
+              <div style='display:table-cell;vertical-align:middle;padding:0 16px 0 0;width:520px;'>
+                <a href="https://ryfma.com/f/{{this.slug}}?utm_source=email&amp;utm_medium=contestnew&amp;utm_campaign={{this._id}}&amp;utm_content=listtitle" style='font-size: 20px;color:#222222; line-height: 1;'><strong>{{this.title}}</strong></a>
+                <br>
+                <div style='font-size: 14px;max-height: 42px;overflow: hidden;line-height: 1;' class='desc'>
+                  {{this.brief}}
+                </div>
+              </div>
+              <a href="https://ryfma.com/f/{{this.slug}}?utm_source=email&amp;utm_medium=contestnew&amp;utm_campaign={{this._id}}&amp;utm_content=listbutton"    style="display:table-cell;vertical-align:middle;float:right;background-color:#1DABFC;color:#FFFFFF;padding:6px 14px;border-radius:4px;text-decoration:none;font-size:14px;">
+                Узнать
+              </a>
+            </div>
+          {{/each}}
+        </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+  </td>
+</tr>
+<!-- Thumbnail Right, Text Left : END -->

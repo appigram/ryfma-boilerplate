@@ -1,0 +1,40 @@
+<tr>
+  <td bgcolor="#FFFFFF" align="center">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td width="41" style="font-size:1px;line-height:1px">&nbsp;</td>
+          <td style="font-family:'Proxima Nova',Calibri,Helvetica,sans-serif;font-size:18px;color:#505050;text-align:left;line-height:25.6px;font-weight:normal;text-transform:none;">
+            <p style="text-align:center;">
+              У Вас новые читатели<br>
+            </p>
+            <br>
+            {{#each follower in followers}}
+              <div style='display:table;table-layout:fixed;' class='bodyContent'>
+                <a href="https://ryfma.com/u/{{follower.username}}?utm_source=email&amp;utm_medium=followersnew&amp;utm_campaign={{follower._id}}&amp;utm_content=userimage">
+                  <img width="44" height="44" border="0" alt="{{follower.profile.name}}" style="display:inline-block;border:none;outline:none;text-decoration:none;border-radius:500px;margin:0 8px 0 0;line-height: 0;" src="{{follower.profile.image}}">
+                </a>
+                <div style='display:table-cell;vertical-align:middle;padding:0 16px 0 0;width:520px;'>
+                  <a href="https://ryfma.com/u/{{follower.username}}?utm_source=email&amp;utm_medium=followersnew&amp;utm_campaign={{follower._id}}&amp;utm_content=username"><strong>{{follower.profile.name}}</strong></a>
+                  <br>
+                  <div style='font-size:16px;max-height:26px;overflow:hidden;'>
+                    {{follower.profile.bio}}
+                  </div>
+                </div>
+                <a href="https://ryfma.com/u/{{follower.username}}?utm_source=email&amp;utm_medium=followersnew&amp;utm_campaign={{follower._id}}&amp;utm_content=userbutton" style="display:table-cell;vertical-align:middle;float:right;background-color:#3bce60;color:#FFFFFF;padding:6px 14px;border-radius:4px;text-decoration:none;font-size:14px;">
+                  Подписаться
+                </a>
+              </div>
+            {{/each}}
+          </td>
+          <td width="41" style="font-size:1px;line-height:1px">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="41" style="font-size:1px;line-height:1px">&nbsp;</td>
+          <td height="30" style="font-size:1px;line-height:1px">&nbsp;</td>
+          <td width="41" style="font-size:1px;line-height:1px">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>

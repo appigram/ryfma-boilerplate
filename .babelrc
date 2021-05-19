@@ -1,16 +1,48 @@
 {
+  "production": {
+    "plugins": [
+      "transform-remove-console",
+      "transform-compress-graphql"
+    ]
+  },
   "presets": [
-    "react",
-    "meteor"
+    "meteor",
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }],
+    ["@babel/env", {
+      "targets": {
+        "node": "current"
+      },
+      "useBuiltIns": "usage",
+      "exclude": ["transform-async-to-generator", "transform-regenerator"]
+    }]
   ],
   "plugins": [
-    ["lodash", { "id": ["lodash", "semantic-ui-react"] }],
-    "transform-runtime",
-    "transform-object-rest-spread",
-    "transform-class-properties",
-    "transform-react-remove-prop-types",
-    "transform-react-constant-elements",
-    "transform-react-inline-elements",
-    "transform-dead-code-elimination"
+    ["babel-plugin-transform-semantic-ui-react-imports", {
+      "convertMemberImports": true,
+      "importType": "commonjs",
+      "addCssImports": false,
+      "importMinifiedCssFiles": false,
+      "addLessImports": false,
+      "addDuplicateStyleImports": false
+    }],
+    ["import",
+      {
+        "libraryName": "lodash",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "lodash"
+    ],
+    ["module:fast-async", {
+      "spec": true
+    }],
+    ["transform-react-remove-prop-types", {
+      "removeImport": true
+    }],
+    "graphql-tag",
+    "@babel/plugin-transform-runtime",
+    "minify-dead-code-elimination"
   ]
 }

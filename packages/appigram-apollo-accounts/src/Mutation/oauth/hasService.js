@@ -15,10 +15,6 @@ export default function (options, service) {
     return options.loginWithLinkedIn
   }
 
-  if (service === 'twitter') {
-    return options.twitter
-  }
-
   if (service === 'vk') {
     return options.loginWithVK
   }

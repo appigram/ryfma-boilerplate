@@ -1,0 +1,53 @@
+.ui.multiple.search.dropdown.add-tags {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  .ui.label {
+    background: $gray-light;
+    border: 2px solid $gray-light;
+    box-shadow: none;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 0.9em;
+    margin: 0.6833em 0.6833em 0 0;
+    padding: 0.4833em 0.7833em;
+    margin-right: 0.5em;
+    color: rgba(0, 0, 0, 0.9);
+    &:hover {
+      border: 2px solid $gray;
+    }
+  }
+  & > input.search {
+    margin: 0.6833em 0.6833em 0 0;
+    padding: 0.3833em 0.7833em 0.3833em 0;
+    width: 5em;
+  }
+  & > .default.text {
+    margin: 0.6833em 0.6833em 0 0;
+    padding: 0.3833em 0.7833em 0.3833em 0;
+  }
+  .menu {
+    min-width: auto;
+    width: auto;
+    border: 1px solid rgba(34,36,38,.15);
+    box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
+  }
+  .item {
+    &:hover {
+      background: $main;
+      .text {
+        color: rgba(255, 255, 255, 0.7);
+        b {
+          color: rgba(255, 255, 255, 0.95);
+        }
+      }
+    }
+    .text {
+      color: $gray;
+      b {
+        color: $black;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

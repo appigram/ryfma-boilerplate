@@ -1,0 +1,255 @@
+.payout-page {
+  padding-bottom: 3rem;
+  h1 {
+    margin-top: 0.5rem;
+  }
+  .current-balance-block {
+    padding: 1em 0;
+    .money-value, .currency {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  }
+  .ui.button.get-paid {
+    max-width: 240px;
+    margin-top: 1rem;
+    font-size: 1.35rem!important;
+  }
+  .warn {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    b {
+      font-weight: bold;
+    }
+  }
+  label, .ui.input {
+    display: block;
+  }
+  .payout-confirm {
+    text-align: left;
+    border-radius: 12px;
+    border: $border;
+    padding: 2rem;
+    h2 {
+      text-align: center;
+    }
+    .payout-confirm-form>.field {
+      margin-bottom: 2rem;
+      label {
+        margin-bottom: .75rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      input {
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        padding: .75rem;
+        border-radius: 6px;
+        min-height: 3rem;
+        border: $border;
+      }
+      p {
+        font-size: 0.85rem;
+        color: $gray-dark;
+      }
+      &>.field {
+        label {
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+    }
+    .payout-summary{
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.1rem;
+      b {
+        margin: 0 0.25rem;
+        font-weight: bold;
+      }
+    }
+    .payout-actions {
+      text-align: center;
+      .ui.button {
+        font-size: 1.2rem!important;
+        &.cancel-payout {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .payout-body {
+    text-align: left;
+    margin-top: 5rem;
+    h4 {
+      margin-bottom: 0.75rem;
+    }
+    .payment-header, .last-payment {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .payment-methods {
+      margin-top: 4rem;
+    }
+    .ui.button.add-payment-method {
+      background-color: $main-lighter;
+    }
+    .ui.list:not(.horizontal) {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      & > .item {
+        margin: 0.5rem 0;
+        padding: 1rem 1.5rem;
+        position: relative;
+        border: $border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &>div {
+          flex: 1;
+        }
+
+        b {
+          font-size: 1.4rem;
+        }
+        p {
+          color: $gray;
+          font-size: 0.95rem;
+        }
+        i.icon.close {
+          float: right;
+          font-size: 1.4rem;
+        }
+        &:hover {
+          background-color: $gray-lighter;
+          cursor: pointer;
+        }
+      }
+      .icon {
+        font-size: 1.75rem;
+        padding: 0!important;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.ui.segment.user-sales {
+  width: 100%;
+  .ui.horizontal.list.list-actions {
+    font-size: 1em;
+    width: 100%;
+    .item {
+      width: 33.3%;
+      border-bottom: 2px solid transparent;
+      font-size: 1.2em;
+      padding: 1em 2em!important;
+      margin: 0;
+      &:hover {
+        border-bottom: 2px solid $main;
+      }
+      &.active {
+        border-bottom: 2px solid $main;
+        color: $main;
+      }
+    }
+  }
+  .ui.divided.items.post-list {
+    max-width: 35rem;
+    margin: 0 auto;
+    .post-list-item.sales-item {
+      .content {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        h3 {
+          margin-bottom: 0.2rem;
+        }
+        .post-info {
+          flex: 1;
+          margin-left: 0.75rem;
+        }
+        .post-link {
+          color: $main;
+        }
+        .coins {
+          font-size: 1.2rem;
+          margin-top: 0.2rem;
+          .icon {
+            color: $main;
+          }
+        }
+        .post-image {
+          max-width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.add-payout-modal {
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: $border;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  .ui.list.add-payout-methods {
+    margin-top: 2rem;
+    .item {
+      display: block!important;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 4px;
+      position: relative;
+      .item-inner {
+        display: flex;
+        align-items: center;
+        &>div {
+          flex: 1;
+        }
+      }
+      &:hover, &:focus, &.active {
+        background-color: $main-lighter;
+      }
+      p {
+        color: $gray;
+      }
+      .icon {
+        font-size: 1.5rem;
+        margin-right: .5rem!important;
+      }
+      .icon.check {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  .paymentField {
+    font-size: 1rem;
+    margin-top: 1rem;
+    label {
+      font-size: bold;
+      margin-bottom: 0.35rem;
+    }
+    .ui.input>input {
+      width: 100%;
+    }
+  }
+  .ui.button {
+    display: block;
+    font-size: 1.2rem!important;
+    font-weight: bold!important;
+    background-color: #246BFF;
+    margin: 0 auto;
+    margin-top: 1rem;
+    &:hover {
+      background-color: $main;
+    }
+    svg {
+      margin-right: 0.35rem;
+    }
+  }
+}

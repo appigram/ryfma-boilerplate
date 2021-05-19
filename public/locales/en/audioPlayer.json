@@ -1,0 +1,9 @@
+{
+  "testAuthor": "Unknown author",
+  "testSongName": "Unknown song name",
+  "editAudio": "Edit audio",
+  "removeAudio": "Remove audio",
+  "audioFiles": "Audio files",
+  "uploadFiles": "Upload one or more audio files",
+  "allowFormats": "Supported audio types: .mp3, .ogg, .m4a"
+}

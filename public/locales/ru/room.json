@@ -1,0 +1,17 @@
+{
+  "listOfDialogs": "Список диалогов",
+  "createRoom": "Создать новый чат",
+  "enterRoomName": "Введите название чата",
+  "enterLastFirstName": "Введите имя друга для поиска",
+  "searchUsers": "Поиск чатов",
+  "noRooms": "Нет чатов",
+  "noRoomsDesc": "У вас пока нет ни одного чата.",
+  "noRoomsFound": "Чаты не найдены.",
+  "noMessages": "Нет сообщений",
+  "writeFirstMessage": "Напиши первое сообщение",
+  "createDialog": "Создать чат",
+  "addNew": "Создать",
+  "chats": "Чаты",
+  "messages": "Сообщения",
+  "selectChat": "Пожалуйста, выберите чат"
+}

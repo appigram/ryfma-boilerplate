@@ -1,0 +1,15 @@
+babel-compiler@6.24.7
+babel-runtime@1.1.1
+caching-compiler@1.1.9
+ecmascript@0.9.0
+ecmascript-runtime@0.5.0
+ecmascript-runtime-client@0.5.0
+ecmascript-runtime-server@0.5.0
+local-test:orionsoft:graphql-compiler@0.0.3
+meteor@1.8.0
+modules@0.11.0
+modules-runtime@0.9.0
+orionsoft:graphql-compiler@0.0.3
+promise@0.10.0
+random@1.0.10
+underscore@1.0.10

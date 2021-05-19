@@ -1,9 +1,12 @@
 {
-  "seoTitle": "Register on MO.ST",
-  "seoDesc": "Register on MO.ST",
+  "learnMoreOn": "Learn more ",
+  "seoTitle": "Register on Ryfma",
+  "seoDesc": "Register on Ryfma",
   "header": "Sign Up",
   "subheader": "Create new account",
   "haveToRead": "I have read and accept ",
   "terms": "Terms of Use",
+  "and": " and ",
+  "privacy": "Privacy",
   "alreadyAMember": "Already a member?"
 }

@@ -1,5 +1,0 @@
-type Follower {
-  _id: ID!
-  currId: String!
-  userId: String!
-}

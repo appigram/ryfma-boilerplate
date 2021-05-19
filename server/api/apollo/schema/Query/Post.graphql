@@ -1,0 +1,25 @@
+type Query {
+  # Returns the specified post
+  getPost (postId: ID!, noCache: Boolean): Post
+
+  # Returns the list of post by type
+  posts (type: String, sortBy: String, userId: String, albumId: String, tagId: String, festId: String, duration: String, withImage: Boolean, personal: Boolean, keyword: String, noCache: Boolean, status: Int, skip: Int, limit: Int): [Post]!
+
+  # Returns the users who liked post
+  getPostLikers (postId: ID!, festId: String, skip: Int, limit: Int): [JSON]
+
+  # Returns the top of posts by week
+  topPosts: [Post]!
+
+  # Returns the list of related posts
+  relatedPosts (postId: ID!, tags: [String]): [Post]!
+
+  # Returns the next and prev posts
+  getNextPrevPosts (postId: ID!): [Post]!
+
+  # Returns the list of post by type
+  audios (type: String, sortBy: String, userId: String, albumId: String, tagId: String, festId: String, duration: String, withImage: Boolean, personal: Boolean, keyword: String, isAudio: Boolean, status: Int, skip: Int, limit: Int): [Post]!
+
+  # Returns the list of post by type
+  videos (type: String, sortBy: String, userId: String, albumId: String, tagId: String, festId: String, duration: String, withImage: Boolean, personal: Boolean, keyword: String, isVideo: Boolean, status: Int, skip: Int, limit: Int): [Post]!
+}

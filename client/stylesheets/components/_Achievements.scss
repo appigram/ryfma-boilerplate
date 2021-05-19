@@ -1,0 +1,208 @@
+.achievements-page {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto;
+  .user-avatar-wrapper {
+    position: relative;
+    width: 11.6rem;
+    height: 11.6rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: 500px;
+    padding: 4px;
+    z-index: 10;
+    .star-badge.big {
+      left: 5rem;
+    }
+  }
+  .sub.header {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin: 16px auto;
+  }
+  .ui.grid.achievements {
+    .ui.card {
+      margin-bottom: 2em;
+      min-height: 26.5rem!important;
+      transition: border-color 400ms linear;
+      &:not(.green) {
+        &:hover, &:active, &:focus {
+          background-color: transparent!important;
+          border-color: $main!important;
+          border-width: 2px!important;
+          & > .content {
+            border-bottom-left-radius: 8px!important;
+            border-bottom-right-radius: 8px!important;
+            .header a {
+              color: $main!important;
+            }
+          }
+          & > .extra.content {
+            background-color: $main;
+            color: $white;
+          }
+        }
+      }
+      &>.content .description {
+        color: $gray-dark;
+        padding: .5rem 0;
+      }
+      &.secret-cart {
+        &:hover, &:active, &:focus {
+          background-color: transparent!important;
+          border-color: $main!important;
+          border-width: 1px!important;
+          & > .content {
+            border-bottom-left-radius: 12px!important;
+            border-bottom-right-radius: 12px!important;
+          }
+          & > .extra.content {
+            background-color: transparent;
+          }
+        }
+      }
+      &.green {
+        .extra {
+          background-color: transparent;
+          font-size: 2.5em!important;
+          padding: .75rem 0 0px!important;
+        }
+      }
+      &.secret-cart {
+        .extra {
+          background-color: transparent;
+          font-size: 3em!important;
+          padding: 0 0 1rem!important;
+        }
+      }
+      .badge {
+        margin: 1em auto 0;
+        img {
+          border-radius: .95rem;
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+      .badge-level {
+        font-size: 1.3rem;
+        width: 100%;
+        margin-bottom: .8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i.icon {
+          margin: 0 .2rem;
+          font-size: 1rem;
+        }
+      }
+      .secret-badge {
+        border: 2px dashed $gray!important;
+        border-radius: .95rem!important;
+        background-color: transparent;
+        padding: 1.8rem .9rem;
+        opacity: 1;
+        i.icon {
+          font-size: 4rem;
+          color: $gray;
+          margin-top: 0.3em;
+        }
+      }
+      .extra {
+        font-size: 0.8em!important;
+        background-color: $gray-lighter;
+        color: $gray-dark;
+        text-align: center;
+        & > div {
+          display: inline-block;
+          width: 50%;
+        }
+        b {
+          display: block;
+          font-size: 1.5em;
+          margin-top: 0.3em;
+        }
+      }
+    }
+  }
+}
+
+.badge {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  opacity: 0.2;
+  i.icon {
+    margin: 0;
+  }
+  &.unlocked {
+    opacity: 1;
+  }
+  /* .badge-level {
+    font-size: 1.3rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0.8rem;
+    left: -0.8rem;
+    i.icon {
+      position: absolute;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    &.level-two {
+      .one {
+        left: 2rem;
+        bottom: -20px;
+      }
+      .two {
+        right: 0.5rem;
+        bottom: -20px;
+      }
+    }
+    &.level-three {
+      .one {
+        left: 1.3rem;
+        bottom: -10px;
+      }
+      .three {
+        right: -0.3rem;
+        bottom: -10px;
+      }
+    }
+    &.level-four {
+      .one {
+        left: 12px;
+        bottom: 0.1rem;
+      }
+      .two {
+        left: 2.6rem;
+        bottom: -1.2rem;
+      }
+      .three {
+        right: 1rem;
+        bottom: -1.2rem;
+      }
+      .four {
+        right: -12px;
+        bottom: 0.1rem;
+      }
+    }
+    &.level-five {
+      .one{
+        left: 0.3rem;
+        bottom: 1.3rem;
+      }
+      .two {
+        left: 1.5rem;
+        bottom: -10px;
+      }
+      .four {
+        right: -0.3rem;
+        bottom: -10px;
+      }
+      .five {
+        right: -1.5rem;
+        bottom: 1.3rem;
+      }
+    }
+  } */
+}

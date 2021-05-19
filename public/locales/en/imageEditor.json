@@ -1,0 +1,9 @@
+{
+  "deleteImageHeader": "Delete Image",
+  "deleteImageText": "Are you sure you want to delete image?",
+  "editImageHeader": "Edit a Photo",
+  "applyChanges": "Apply changes",
+  "dropFilesHere": "Try dropping some files here,",
+  "clickToSelect": "or click to select files to upload.",
+  "setCoverImg": "Set cover"
+}

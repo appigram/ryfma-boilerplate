@@ -1,0 +1,1505 @@
+.divider {
+  display: inline-block;
+  margin: 0.25em;
+}
+.showMoreLink {
+  float: right;
+}
+.backToLink {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: $gray;
+  margin: 1em 0 1em -0.35em;
+  font-size: 1.1em!important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.fest-actions {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+
+.ui.popup.jury-ratings {
+  ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+
+    }
+  }
+}
+
+.ui.form .fields.delete-contest-actions {
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 5em;
+  .ui.green.button {
+    font-size: 1.3em!important;
+  }
+  .delete-contest-button {
+    background: transparent;
+    color: $danger;
+    margin-top: 0.35rem;
+  }
+}
+
+.showMoreLink {
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.item.fest-page {
+  padding-top: 1em;
+  #rad-sticky-banner {
+    padding-left: 2em;
+  }
+  .winners-filters {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .ui.card.sidebar-card {
+    width: 100%;
+    padding: 0em 2em;
+    background-color: transparent;
+    &.subscribe-to-updates {
+      .body {
+        .subscribe-button {
+          font-size: 1.2rem!important;
+        }
+      }
+      .subscribe-menu {
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            width: 20%;
+            min-width: 3rem;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 0.75rem 0.9rem;
+            border-bottom: 1px solid $gray-light;
+            &.active {
+              background-color: $main;
+              color: $white;
+              border-bottom: 1px solid $main;
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .subscribe-form {
+          max-width: 18.5rem;
+          padding: 0.9rem;
+          label {
+            white-space: normal;
+          }
+        }
+      }
+    }
+    &.paticipants, &.juries {
+      .body.content {
+        .item.card-info {
+          margin-left: 0;
+          margin-right: 0.42rem;
+          .user-avatar {
+            display: inline-block;
+            width: 3rem!important;
+            height: 3rem!important;
+            img {
+              width: 3rem!important;
+              height: 3rem!important;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .user-info-link {
+        display: block;
+        margin: 1rem 0;
+        color: $main;
+      }
+    }
+    .content {
+      padding-left: 0!important;
+    }
+    &.acceptContest {
+      padding: 2.85em 2em;
+      text-align: center;
+      width: 100%;
+      background-color: $gray-lighter;
+      border-radius: $border-radius-big;
+      & > .header {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.2em;
+        i.icon {
+          color: $success;
+          font-size: 3em;
+          margin-top: 0.2em;
+          &.balance, &.hourglass {
+            color: $main;
+          }
+        }
+        .contest-finished {
+          margin-left: 0.5em;
+          display: block;
+          text-align: left;
+          b {
+            font-size: 1.5em;
+          }
+          div {
+            color: $gray;
+          }
+        }
+      }
+      .content {
+        padding: 0!important;
+        &>div {
+          text-align: left;
+          white-space: break-spaces;
+          a {
+            color: $main;
+          }
+        }
+      }
+      .faq-link {
+        color: $black;
+        font-size: 1.1em;
+      }
+      .results-preview-link {
+        display: block;
+        color: $danger;
+        font-size: 1.1em;
+        margin-top: 1em;
+      }
+      .ui.button {
+        display: block;
+        width: 100%!important;
+        padding: .75em 0 0.9em 0!important;
+        margin-top: 1.5em;
+        font-size: 1.3em!important;
+      }
+    }
+    .social-links {
+      .item {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .reset-filter {
+    cursor: pointer;
+  }
+  .map-zoom {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    button {
+      display: block;
+      border: $border;
+      border-radius: $border-radius-big;
+      padding: 0.2em 0.4em;
+      background-color: $white;
+      &:first-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom: none;
+      }
+      &:nth-child(2) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+      i.icon {
+        margin: 0
+      }
+    }
+  }
+  .map {
+    min-height: 300px;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .fest-profile-menu {
+    border: none;
+    text-align: center;
+    &.ui.table:not(.unstackable) tr {
+      box-shadow: none!important;
+    }
+    h3 {
+      display: inline-block;
+      margin: 0 3em;
+      min-width: 5rem;
+      text-align: center;
+      &.active {
+        a {
+          color: $main!important;
+          .sub.header {
+            color: $main!important;
+          }
+        }
+      }
+      .sub.header {
+        font-size: 1.5rem;
+        line-height: 2.5em;
+      }
+    }
+    a {
+      display: inline-block;
+      font-size: 3em;
+      &:hover, &:active, &:focus {
+        color: $main!important;
+        .sub.header {
+          color: $main!important;
+        }
+      }
+    }
+  }
+  .fest-button {
+    font-size: 1.8em!important;
+    background-color: $danger;
+  }
+  .fest-basic-stat {
+    text-align: center;
+    margin-top: 0em;
+    .ui.table {
+      margin-bottom: 0;
+    }
+  }
+  .faq-link {
+    display: block;
+    margin-top: 1em;
+    font-size: 1.4em;
+  }
+  .fest-profile-stat {
+    i.icon {
+      margin: 0 8px;
+    }
+
+  }
+  .fest-juries, .fest-page-content {
+    margin-top: 2em;
+  }
+  .fest-juries {
+    .ui.list {
+      .item {
+        text-align: center;
+        vertical-align: top;
+        margin: 0.25em 0.1em!important;
+        font-size: 0.9rem;
+        .star-badge {
+          bottom: -0.8em;
+          left: 50%;
+          margin-left: -0.8em;
+        }
+        .user-avatar-wrapper {
+          position: relative;
+          width: 5.5rem;
+          height: 5.5rem;
+          margin: 0 auto;
+          margin-bottom: 0.7rem;
+          border-radius: 500px;
+          z-index: 10;
+          &.user-status-online {
+            &.user-status-online {
+              border: 2px solid $success;
+            }
+            &.user-status-offline {
+              border: 2px solid $gray-light;
+            }
+            &.user-status-idle {
+              border: 2px solid $warning;
+            }
+          }
+        }
+        .ui.avatar.image {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          overflow: hidden;
+          img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            left: 50%;
+            top: 25%;
+            transform: translateY(-25%) translateX(-50%);
+          }
+        }
+        .card-info-content {
+          font-weight: bold;
+          word-break: break-word;
+          font-size: 1.3em;
+          .header {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+  .fest-partners {
+    margin-top: 3em;
+    margin-bottom: 2rem;
+    .ui.horizontal.list {
+      & > .item {
+        margin: .25em 0.75rem!important;
+        text-align: center;
+        max-width: 7rem;
+        max-height: 9rem;
+        .user-avatar-inner {
+          margin: 0 auto;
+          margin-bottom: 0.35rem;
+          width: 5rem;
+          height: 5rem;
+          .ui.tiny.image {
+            font-size: 1.5rem;
+          }
+        }
+        .user-avatar-wrapper {
+          height: 6.5rem;
+          width: 6.5rem;
+          img {
+            filter: gray; /* IE6-9 */
+            -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+            &:hover {
+              -webkit-filter: grayscale(0);
+              filter: none;
+            }
+          }
+        }
+        .card-info-content {
+          height: 3.5rem;
+          overflow: hidden;
+          .header a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .ui.link.list.post-filters {
+    &>.item {
+      position: relative;
+      .label {
+        position: absolute;
+        top: .65rem;
+        right: -1rem;
+        border-radius: 500rem;
+        padding: .25rem 0.4rem;
+      }
+    }
+  }
+  .fest-page-content {
+    .sidebar {
+      display: block!important;
+    }
+    .contest-body, .ui.items.post-list {
+      max-width: 54rem;
+      margin: 1rem 0;
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      i.icon {
+        margin-left: 0.5rem;
+      }
+      i.grey.icon {
+        color: $gray-light!important;
+      }
+    }
+    .contest-body {
+      .fest-desc {
+        .slide-down {
+          position: relative;
+          p {
+            display: block;
+          }
+          a {
+            color: $main;
+            margin: 0 0.5rem;
+          }
+        }
+        .slide-fade {
+          position: absolute;
+          height: 104px;
+          width: 100%;
+          bottom: 0;
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+        }
+
+        .slide-down-button {
+          font-size: 1.2rem;
+          padding-left: 0;
+          display: inline-block;
+          background-color: transparent;
+          color: $black;
+        }
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 0.2em;
+      }
+      .away-link, .mention-link {
+        color: $main;
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+    .showExtra {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .partners {
+      background-color: $warning-light;
+      padding: 1rem;
+      margin: 0 -1rem;
+      border-radius: 10px;
+      .partner-name {
+        svg, img {
+          max-width: 2rem;
+          max-height: 2rem;
+        }
+        h4 {
+          margin: 0;
+          margin-left: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+      .partner-name, .partner-images {
+        display: flex;
+        align-items: center;
+      }
+      .parnter-brief {
+      }
+      .partner-images {
+        justify-content: space-between;
+        margin: 0 -1rem;
+        .partner-image {
+          padding: 1rem;
+          img {
+            border-radius: 10px;
+            width: 100%;
+          }
+        }
+      }
+      .partner-more {
+        display: block;
+        margin: 1rem auto;
+        font-size: 1.2rem!important;
+        background-color: $main;
+        color: $white;
+        max-width: 50%;
+      }
+    }
+    .ui.horizontal.list.share-menu.big {
+      text-align: left;
+    }
+    .ui.image {
+      width: 100%;
+      .contest-banner {
+        border-radius: $border-radius-big;
+        margin-bottom: 2em;
+        width: 100%;
+      }
+    }
+    .ui.header {
+      max-width: 54rem;
+      .comments-header {
+        text-align: left;
+      }
+    }
+    .only-contest {
+      color: $gray;
+      margin: .5rem 0rem 0;
+      font-size: 0.9rem;
+    }
+    .ui.comments {
+      width: 100%;
+      max-width: 54rem;
+      margin-bottom: 1rem;
+      .submitCommentForm .comment>.avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0;
+        margin-top: 0.35rem;
+      }
+    }
+  }
+  /* Fest pages */
+  .fest-pages {
+    text-align: center;
+  }
+  .fest-cities {
+    margin: 0 auto;
+    .add-partner {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.75em;
+    }
+    .ui.horizontal.list.cities > .item {
+      min-height: 100px;
+      width: 33%;
+      min-width: 14rem;
+      padding: 2em!important;
+      margin-left: 0em!important;
+      vertical-align: top;
+      &.active {
+        background-color: #e6beff;
+        border-radius: 6px;
+      }
+      .city-content {
+        h3 {
+          margin-bottom: 0.5em;
+        }
+        .ui.items {
+          margin: 0.6em 0;
+          & > .item {
+            text-align: center;
+            & > .content {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ui.horizontal.list.partners {
+  font-size: 1em!important;
+  padding: 0.5em 0em;
+  border: $border;
+  border-radius: $border-radius-big;
+  width: 100%;
+  margin-top: 1em;
+  background-color: #fafafa;
+  .header {
+    text-align: center;
+  }
+  & > .item {
+    margin: 0.5em;
+    .ui.avatar.image {
+      margin-right: 0;
+      width: 4rem;
+      height: 4rem;
+    }
+    .remove-icon {
+      position: absolute;
+      right: -0.5rem;
+      top: -0.5rem;
+      background-color: $danger-light;
+      padding: 0 5px 4px;
+      border-radius: 500rem;
+      border: 1px solid $white;
+      cursor: pointer;
+      .icon {
+        margin: 0;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+.ui.container.fest-comments {
+  padding-top: 2em;
+  width: 680px;
+  .city-choose {
+    cursor: pointer;
+  }
+  .user-posts {
+    padding: 0;
+    .ui.segment.posts-list-wrapper {
+      padding: 0;
+      margin-top: 2em;
+    }
+    .item.post-list-item {
+      margin-bottom: 3rem;
+      .content .description {
+        min-height: auto;
+      }
+    }
+    .post-list-item .content .post-title {
+      .avatar {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.75em!important;
+      }
+      .post-title-info {
+        b {
+          color: $gray;
+          margin-left: 1em;
+          font-size: 0.8em;
+        }
+        a {
+          color: $main;
+        }
+      }
+    }
+    .description {
+      margin-top: 0;
+      .post-body {
+        margin-top: 0.5em;
+        margin-left: 4.2rem;
+      }
+    }
+  }
+}
+
+.contest-posts-wrapper {
+  padding: 0;
+  padding-top: 0.5rem;
+  .ui.form {
+    .extra-filters {
+      .age-field {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .user-posts {
+    padding: 0!important;
+    .jury-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .jury-extra-actions {
+        .showExtraOptions {
+          background-color: transparent;
+          padding: 0.35rem 0.75rem!important;
+          border-radius: 4px!important;
+          &:hover, &.active {
+            background-color: $gray-lighter;
+            color: $main;
+          }
+        }
+      }
+    }
+    .ui.segment.posts-list-wrapper {
+      padding: 0;
+    }
+    .ui.horizontal.list {
+      &.comments-filters {
+        & >.item {
+          font-size: 1rem;
+          margin-bottom: 0;
+          &:first-child {
+            padding-left: 0!important;
+          }
+        }
+      }
+      &>.item {
+        width: auto!important;
+        font-size: 1.3rem;
+        color: $black;
+        &:first-child {
+          padding-left: 1.2rem!important;
+        }
+      }
+    }
+    .empty-block {
+      margin-bottom: 2rem;
+    }
+    .level-done {
+      display: block;
+      margin: 0 auto;
+      margin-top: 0!important;
+      font-size: 1.1rem!important;
+      float: left;
+    }
+    .fest-sort-panel {
+      .ui.link.list.post-filters.jury-actions>.item {
+        width: auto;
+        font-size: 0.95rem;
+        padding: .65em 0.8rem!important;
+        padding-left: 0.8rem!important;
+      }
+    }
+    .post-list {
+      &.jury-list {
+        .item.post-list-item {
+          margin-bottom: 2rem;
+          &.short-item {
+            margin-bottom: 0;
+            .post-info {
+              width: 100%;
+            }
+            .editor-stat {
+              margin-top: .75rem;
+            }
+          }
+          .post-title-info {
+            margin-left: 0;
+          }
+        }
+      }
+      .level-done {
+        margin-top: 5rem;
+      }
+      .item.post-list-item {
+        margin-bottom: 2rem;
+        .post-title-info {
+          .post-title .user-avatar {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.5rem;
+          }
+          .age-badge {
+            margin-left: 6px;
+          }
+        }
+        .post-body {
+          &.no-flex {
+            display: block;
+          }
+          .ui.image {
+            margin-bottom: 1rem;
+            img {
+              border-radius: 12px;
+            }
+          }
+        }
+        .ui.comments {
+          .auth-required {
+            text-align: left;
+            padding: 0 0 .5rem;
+          }
+        }
+        .editor-stat {
+          display: flex;
+          align-items: center;
+          margin-top: 0.2rem;
+          &>div {
+            display: flex;
+            align-items: center;
+            margin-left: 0.75rem;
+            color: $gray-dark;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+          svg {
+            color: $gray-dark;
+            font-size: 1rem;
+            margin-right: 0.2rem;
+          }
+        }
+      }
+    }
+    .star-badge.small {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    .post-body {
+      margin-bottom: 1rem!important;
+    }
+    .extra-actions-dropdown {
+      .menu .item .text {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 0.25rem;
+        }
+      }
+    }
+    .extra {
+      margin-top: 1rem;
+      text-align: right;
+      height: 3rem;
+      button {
+        margin-right: 2rem;
+      }
+    }
+    .audio-list {
+      margin-bottom: 1rem;
+    }
+    .showExtra {
+      font-size: 1.3rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .jury-title {
+      .post-title-info {
+        margin-left: 0;
+      }
+    }
+    .description .post-body p {
+      font-size: 1.35rem!important;
+    }
+    .post-stat-share {
+      justify-content: flex-start;
+      .ui.basic.label {
+        border: none!important;
+      }
+      .post-like-label {
+        height: 2.5rem;
+        width: 2.5rem;
+        padding: 0.5rem .4em 0.3rem!important;
+      }
+      .like-block {
+        margin-right: 1rem;
+      }
+      .likers-count {
+        margin-left: 0;
+        font-weight: normal;
+      }
+      .post-comment-label {
+        cursor: pointer;
+        .post-comment {
+          margin-right: 0.75rem;
+        }
+        span {
+          font-size: 1.2rem;
+          vertical-align: middle;
+        }
+      }
+    }
+    #comments {
+      .comment {
+        font-size: 0.7em;
+        margin-top: 0;
+        .content {
+          font-size: 1.45em;
+          margin-left: 3em;
+        }
+      }
+      h3.ui.header {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .loadmore-button {
+    margin-top: 5em;
+  }
+  .posts-count {
+    margin-left: 0.25em;
+  }
+}
+
+.fest-faq {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding-top: 2em;
+  font-size: 1.1em;
+  h1 {
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    li {
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  }
+  a {
+    color: $main;
+    font-weight: bold;
+  }
+  p {
+    font-weight: 300;
+    text-align: left;
+  }
+  .back-button {
+    text-align: center;
+    a {
+      font-size: 1.2em!important;
+    }
+  }
+}
+
+.book-param-popup.fest-cities {
+  max-height: 200px;
+  overflow: auto;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.ui.modal.sendFestivalRequest {
+  text-align: center;
+  padding: 0;
+  p {
+    font-size: 1.3em;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  h4, label {
+    text-align: left;
+  }
+  &.noUserRequest {
+    p {
+      font-size: 1.3em;
+    }
+  }
+  .right {
+    float: right;
+    color: $main;
+  }
+  .first-post-msg {
+    margin-top: 1em;
+    a {
+      font-size: 1.6em!important;
+    }
+    &.no-user {
+      .divider {
+        border: $border;
+        margin-top: 2em;
+      }
+      a {
+        font-size: 1.4em!important;
+      }
+    }
+    .small {
+      display: block;
+      width: 75%;
+      font-size: 1em;
+      margin: 2em auto 0;
+    }
+  }
+  & > .content {
+    max-width: 75%;
+    margin: 1em auto 2em;
+    padding: 0;
+    .select-post {
+      margin-bottom: 3em;
+    }
+    .post-selected {
+      text-align: left;
+      h4 {
+        margin-bottom: 0;
+      }
+      p {
+        text-transform: capitalize;
+        font-weight: bold;
+        color: $main;
+        font-size: 1.2em;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    .city-select {
+      text-align: left;
+    }
+    .ui.labeled.input > .label {
+      width: 8em;
+    }
+    .extra-info {
+      .field {
+        margin: 0;
+      }
+      .chars-counter {
+        text-align: right;
+        margin-top: .35em;
+      }
+    }
+    .sendRequestButton {
+      margin-top: 0.5em;
+      font-size: 1.3em!important;
+    }
+  }
+}
+
+.city-content {
+  text-align: center;
+  h3 {
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  .ui.avatar.image {
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-right: 1em;
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .header {
+    text-align: left;
+    font-size: 1em!important;
+    margin-top: 0.5em;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+  .meta {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    text-align: left;
+    a {
+      display: block;
+      color: $main!important;
+    }
+    i.icon {
+      margin-right: 0.2em!important;
+      font-size: 1.2em!important;
+    }
+  }
+}
+
+.fest-ratings {
+  .ui.form {
+    margin-top: 2em;
+    margin-bottom: 0em;
+    input {
+      border: none;
+      border-bottom: $border;
+      border-radius: 0;
+      padding-left: 2px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .field.search-field {
+      margin-bottom: 1em;
+    }
+  }
+  .ui.horizontal.list.partners {
+    .header {
+      font-weight: bold;
+    }
+    .ui.avatar.image img {
+      width: 4rem;
+      height: 4rem;
+      margin: 0;
+    }
+  }
+  .ui.link.list.post-filters.level-filters {
+    display: block;
+    .item {
+      font-size: 1.1rem;
+      border-radius: 5px!important;
+      padding: .7em 1rem!important;
+      cursor: pointer;
+      text-transform: capitalize;
+      &:first-child {
+        padding: .7em 1.5rem!important;
+      }
+    }
+  }
+  .ui.table thead th {
+    &.active {
+      color: $danger!important;
+    }
+    &.hover {
+      cursor: pointer;
+    }
+    p {
+      word-wrap: break-word;
+      font-weight: bold;
+    }
+  }
+  .winner-badge {
+    max-width: 34px;
+  }
+  .not-found-row {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+  }
+  .user-info-link {
+    margin-right: 0.5em;
+  }
+  .city-info {
+    color: $gray;
+    margin-left: 0.5em;
+    font-size: 0.9em;
+  }
+  .post-info-link {
+    font-weight: bold;
+    text-transform: capitalize;
+    word-break: break-all;
+    display: block;
+    &.empty-link {
+      color: $gray;
+    }
+  }
+  .users, .juries {
+    .likers {
+      margin-left: 0.5em;
+      color: $gray;
+      cursor: default;
+    }
+    .star-badge.middle {
+      right: -4px;
+      bottom: -2px;
+    }
+  }
+}
+
+.jury-rating {
+  display: inline-block;
+  float: right;
+  min-width: 240px;
+}
+
+.jury-ratings {
+  .ratings-wrapper-page {
+    max-width: 100%;
+  }
+}
+
+.more-fest-time {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.ui.link.list.post-filters.level-filters {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  .item {
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 5px!important;
+    padding: .75rem 1rem!important;
+    &:first-child {
+      padding: .75rem 1rem!important;
+    }
+  }
+}
+
+.level-actions {
+  margin-top: 1rem;
+}
+
+.winners {
+  margin-bottom: 5em;
+  padding-top: 2em;
+  text-align: center;
+  max-width: 54rem;
+  /* background-image: url('https://cdn.ryfma.com/defaults/icons/stars.png');
+  background-repeat: repeat-x;
+  background-size: 29%;*/
+
+  &.likers {
+    h1 {
+      margin-bottom: 3em;
+    }
+  }
+  .header {
+    margin-bottom: 2rem;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+  }
+  .subheader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  }
+  .winners-wrapper.extra-margin {
+    margin-top: 5em;
+  }
+  .winners-header {
+    margin-top: 1em;
+    margin-bottom: 6em;
+    .winners-item {
+      display: block;
+      margin: 0 auto;
+      a {
+        border-color: $danger;
+      }
+      .ryfma-bonus {
+        left: 15%;
+      }
+    }
+  }
+  .winners-item {
+    position: relative;
+    display: inline-block;
+    width: 33.333%;
+    &.first-place {
+      margin-top: -3em;
+      height: 13em;
+      vertical-align: top;
+      a {
+        border-color: #ffd918;
+      }
+    }
+    &.second-place {
+      a {
+        border-color: #A8A8A8;
+      }
+    }
+    &.third-place {
+      a {
+        border-color: #965A38;
+      }
+    }
+    .winners-item-info {
+      margin-top: 1em;
+      & > * {
+        display: block;
+      }
+      a {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      .post-link {
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-top: 4px;
+      }
+    }
+    .winners-item-link {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 92px;
+      padding: 3px;
+      border-radius: 500px;
+      border-width: 3px;
+      border-style: solid;
+      img {
+        height: 80px;
+      }
+    }
+    .ryfma-bonus {
+      position: absolute;
+      bottom: -6px;
+      left: 15%;
+      min-width: 4.5rem;
+      background-color: $success;
+      color: $white;
+      padding: 0.25em 0.5em;
+      border-radius: 500px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  }
+  .select-winners {
+    width: 100%;
+    margin-top: 2em;
+    button {
+      font-size: 1.3em;
+      color: $main;
+      background-color: $white;
+      border: none;
+      cursor: pointer;
+      margin: 0 3em;
+      padding: 1em 2em;
+      border-radius: 3px;
+      &:hover {
+        background-color: $gray-lighter;
+      }
+    }
+  }
+}
+
+.edit-contest-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  textarea {
+    min-height: 12em;
+  }
+  .ui.horizontal.list.partners {
+    background: transparent;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: none;
+    .header {
+      text-align: left;
+      font-size: 1.28571429rem;
+      font-weight: 700!important;
+      margin: 0 0 1rem;
+      line-height: 1.28571429em;
+    }
+    & > .item {
+      display: flex;
+      align-items: center;
+      .remove-icon {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.25rem .45rem;
+      }
+    }
+  }
+  .add-partner {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+  }
+  .accept-date {
+    display: flex;
+    align-items: center;
+    .days-for-vote {
+      margin-top: -.75rem;
+      .ui.input {
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
+.duel-page {
+  .admin-actions {
+    text-align: right;
+    padding: 1rem 0;
+    color: $danger;
+    font-size: 1.2rem;
+    span {
+      cursor: pointer;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+  .duel-countdown-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    .countdown {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+  &.finished {
+    .vs {
+      img {
+        opacity: 0.3;
+      }
+    }
+  }
+  .vs {
+    position: relative;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    color: $gray;
+    width: 9rem;
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .duel-person {
+    text-align: center;
+    display: block;
+    .user-avatar {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: $border-radius-big;
+      .user-avatar-inner {
+        border-radius: $border-radius-big;
+        img {
+          border-radius: $border-radius-big;
+          height: 8rem;
+          width: 8rem;
+        }
+        .waiting-user {
+          font-size: 8rem;
+          margin-top: 3.4rem;
+          margin-left: -0.75rem;
+          color: $gray;
+        }
+      }
+    }
+    .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      height: 2.2rem;
+      line-height: 1.1;
+      overflow: hidden;
+    }
+  }
+  .duel-page-content {
+    ul.breadcrumbs {
+      margin-bottom: 1rem;
+    }
+    .ui.column.grid>.column {
+      padding: 0;
+    }
+  }
+  .total-likes {
+    color: $danger;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  .duel-empty-post {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    .acceptContest {
+      margin: 0 auto!important;
+      .ui.primary.button {
+        margin: 0 auto;
+        font-size: 1.3rem!important;
+      }
+    }
+  }
+  .post-page {
+    padding: 1rem 0 1rem 0;
+    .post-stat-share {
+      justify-content: flex-start;
+      margin-top: 1.5rem;
+      .ui.basic.label {
+        padding: 0;
+        &:hover, &:focus, &:active {
+          background-color: transparent!important;
+        }
+        &.post-like-label {
+          border: 0!important;
+          padding: 0!important;
+          width: auto;
+          height: auto;
+          .likers-count {
+            font-size: 1.2rem;
+          }
+        }
+        &.post-comment-label {
+          margin-left: 2rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 1.2rem;
+            margin-left: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+  .ui.comments {
+    .comment {
+      .text {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

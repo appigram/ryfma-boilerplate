@@ -1,0 +1,131 @@
+<!-- Thumbnail Right, Text Left : BEGIN -->
+<tr>
+  <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+  <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;" itemscope itemtype="http://schema.org/Article">
+    <h1 style="text-align:left; font-weight: bold; font-size: 30px; margin: 0 12px; line-height: 25px; margin-bottom: 30px;">
+      {{event.title}}
+    </h1>
+    <!--[if mso]>
+    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+    <tr>
+    <td valign="top" width="660">
+    <![endif]-->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+      <tr>
+        <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+        {{#if event.coverImg}}
+          <!--[if mso]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+          <tr>
+          <td valign="top" width="220" style="width: 220px;">
+          <![endif]-->
+          <div style="display:block; margin: 0 -2px; min-width:320px; vertical-align:top;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                  <a href="https://ryfma.com/e/{{event.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{event.slug}}&amp;utm_content=image"  data-saferedirecturl="https://www.google.com/url?hl=ru&q=https://ryfma.com/e/{{event.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{event.slug}}&amp;utm_content=image" style="display:block;vertical-align:middle;text-decoration:none;text-align:center;">
+                    <img itemprop="image" border="0" alt="{{event.title}}" style="display:inline-block;border:none;outline:none;text-decoration:none;margin:0 8px 0 0;line-height: 0;border-radius: 8px; max-height: 225px;max-width: 100%;" src="{{event.coverImg}}" class="center-on-narrow">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso]>
+          </td>
+          <td valign="top" width="440" style="width: 540px;">
+          <![endif]-->
+        {{/if}}
+        <div style="display:block; margin: 24px 0; max-width:85%; min-width:320px; vertical-align:top;" class="stack-column">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px 10px 0; text-align: left;" class="center-on-narrow">
+                <div itemprop="description">
+                  <p>{{event.brief}}</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+            <div style="padding: 0 20px 20px;">
+                <!-- Button : BEGIN -->
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                    <tr>
+                        <td class="button-td button-td-primary" style="border-radius: 50px; background: #00A7FE; min-width: 260px;">
+                             <a class="button-a button-a-primary" href="https://ryfma.com/e/{{event.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{event.slug}}&amp;utm_content=button">Узнать больше</a>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Button : END -->
+            </div>
+        </div>
+
+        <div style=" margin-top: 20px; min-width:320px; vertical-align:top; text-align: center;">
+          <p style="text-align:center;font-size:18px;">
+            Другие интересные мероприятия на Ryfma<br>
+          </p>
+          <br>
+          {{#each activeEvents}}
+            <div style='display:table;table-layout:fixed;max-width:100%;margin-top:24px;margin-bottom:24px;text-align:left;' class='bodyContent' dir="ltr" >
+              {{#if this.coverImg}}
+                <a href="https://ryfma.com/e/{{this.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{this.slug}}&amp;utm_content=listimage">
+                <img width="60" height="60" border="0" alt="{{this.title}}" style="display:inline-block;border:none;outline:none;text-decoration:none;border-radius:4px;margin:0 8px 0 0;line-height: 0;" src="{{this.coverImg}}">
+                </a>
+              {{/if}}
+
+              <div style='display:table-cell;vertical-align:middle;padding:0 16px 0 0;width:520px;'>
+                <a href="https://ryfma.com/e/{{this.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{this.slug}}&amp;utm_content=listtitle" style='font-size: 20px;color:#222222; line-height: 1;'><strong>{{this.title}}</strong></a>
+                <br>
+                <div style='font-size: 14px;max-height: 42px;overflow: hidden;line-height: 1;' class='desc'>
+                  {{this.brief}}
+                </div>
+              </div>
+              <a href="https://ryfma.com/e/{{this.slug}}?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign={{this.slug}}&amp;utm_content=listbutton"    style="display:table-cell;vertical-align:middle;float:right;background-color:#1DABFC;color:#FFFFFF;padding:6px 14px;border-radius:4px;text-decoration:none;font-size:14px;">
+                Узнать
+              </a>
+            </div>
+          {{/each}}
+        </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+      </td>
+    </tr>
+
+    <tr>
+      <td style="background-color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr>
+            <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: center; padding-bottom: 50px;">
+              <h3>Организуй свое мероприятие</h3>
+              <div className='users'>
+                <a href='https://ryfma.com/u/polina?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign=polina&amp;utm_content=recomm_user' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/uDco4MHxQYr2FhQLq/users/user_middle_1566067826858_127a7663-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt="Полина Шибеева" />
+                </a>
+                <a href='https://ryfma.com/u/stefaniya-danilova?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign=stefaniya-danilova&amp;utm_content=recomm_user' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/HM8WcheduyyPCroxS/users/user_middle_1568150751201__mg_6254-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt=" Стефания Данилова" />
+                </a>
+                <a href='https://ryfma.com/u/eugenia-onegina?utm_source=email&amp;utm_medium=eventnew&amp;utm_campaign=eugenia-onegina&amp;utm_content=recomm_user' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/BLqiQk2BNrBbxJRzb/users/user_middle_1555681099107_sq7-wpjxyy-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt="Евгения Онегина" />
+                </a>
+              </div>
+              <p style='margin-bottom: 0px;'>Многие авторы организуют свои события на Ryfma</p>
+              <p>Попробуй и ты</p>
+              <a href='https://ryfma.com/e/new-event'>Организуй свое мероприятие</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+  </td>
+</tr>
+<!-- Thumbnail Right, Text Left : END -->

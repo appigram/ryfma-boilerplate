@@ -1,0 +1,11 @@
+{
+  "writeMessage": "Write a message.",
+  "writeSmth": "Write something",
+  "msgToLong": "Message is too long",
+  "chatNotFound": "Chat not found",
+  "today": "Today",
+  "yesterday": "Yesterday",
+  "deleteAllMessages": "Delete ALL messages",
+  "deleteRoom": "Delete chat",
+  "deleteRoomText": "Are you sure you want to delete this chat?"
+}

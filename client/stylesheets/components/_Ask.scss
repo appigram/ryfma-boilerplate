@@ -1,0 +1,119 @@
+.ask-form {
+  display: flex;
+  align-items: center;
+  .user-avatar {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    display: block;
+  }
+  .ui.input {
+    flex: 1;
+    input {
+      border-color: $main-lighter;
+      border-width: 2px;
+      font-size: 1.3rem;
+      &:focus, &:active, &:hover {
+        border-color: $main;
+      }
+    }
+  }
+}
+
+.ui.link.list.post-filters.ask-filters {
+  margin: 1rem 0;
+}
+
+.item.post-list-item.ask-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .user-avatar {
+    margin-right: 3rem;
+    width: 5em;
+  }
+  .content {
+    width: 100%;
+    text-align: left;
+    .ui.header {
+      position: relative;
+      font-size: 1.25rem;
+      text-transform: capitalize;
+      .ui.floating.label {
+        position: absolute;
+        top: 0.5rem;
+        left: -0.5rem;
+        outline: none;
+      }
+      .ask-link {
+        font-weight: normal!important;
+        color: $gray;
+      }
+      &.active .ask-link {
+        font-weight: bold!important;
+        color: $gray-dark;
+      }
+    }
+    .post-title-bottom {
+      display: flex;
+      align-items: center;
+      margin-top: 0.25rem;
+      .user-link, .answers {
+        &:hover {
+          text-decoration: underline;
+          color: $gray-dark;
+        }
+      }
+      .user-link, .answers, .post-date {
+        color: $gray;
+        font-size: 0.9rem;
+      }
+      .post-date {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  .post-comments {
+    margin-left: 3rem;
+    display: flex;
+    .comment-user-link {
+      margin-left: -1rem!important;
+      .ui.image {
+        width: 3em;
+        height: 3em;
+        border: 0;
+        margin: 0!important;
+        img {
+          width: 3em;
+          height: 3em;
+          min-width: 32px;
+          border-radius: 500px;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+.post-page.ask-page.item {
+  .user-avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+  &>.content {
+    margin-bottom: 1em;
+  }
+  .description {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    .post-body p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.item.post-page-footer.ask-footer {
+  padding-top: 1em;
+}

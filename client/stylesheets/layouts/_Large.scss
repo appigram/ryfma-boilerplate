@@ -1,0 +1,93 @@
+/* for-medium-desktop-up */
+@media screen and (min-width: 1600px) {
+  html, body {
+    font-size: 18px;
+  }
+  #home {
+    .banner {
+      max-height: 45rem;
+    }
+  }
+  .masthead.segment {
+    max-height: 45rem;
+  }
+  .ui.container, .ui.grid.container {
+    width: 100%!important;
+    padding-left: 10%;
+    padding-right: 10%;
+    &.contest-posts-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .ui.grid.post-list-wrapper .ui.segment, .user-page-content .user-posts .post-list {
+    max-width: 52rem;
+  }
+  .ui.page.grid {
+    padding: 0 10%;
+  }
+  .ui.cards > .card, .ui.card {
+    width: auto;
+  }
+  .ui.card.sidebar-card > .content > .header:not(.ui), .book-list .ui.list.book-left-menu .item {
+    font-weight: 300;
+  }
+  .ui.card.sidebar-card.contest .meta .ui.button {
+    height: 2rem;
+    width: 5rem;
+    line-height: 1.6rem;
+  }
+  .ui.card.recommended.horizontal.related-posts .related-wrapper {
+    max-width: 90%;
+  }
+  .ryfmator-page, .landing-page .sub.header {
+    max-width: 52rem;
+  }
+  .ryfmator-page, .footer {
+    font-size: 1.2rem;
+  }
+  .album-page, .account-page, .post-page, .post-page-footer {
+    max-width: 52rem;
+  }
+  .landing-page {
+    font-size: 1rem;
+  }
+  .aboutus {
+    font-size: 1rem;
+    .section {
+      height: 100vh;
+    }
+  }
+  .presskit-page, .terms-page .wrapper {
+    max-width: 100%;
+  }
+  .achievements-page {
+    font-size: 1rem;
+    .ui.card {
+      min-height: 20rem !important;
+    }
+  }
+  .month {
+    padding: 1.8rem 0.8rem!important;
+  }
+  .item.fest-page {
+    .fest-juries {
+      padding-left: 7.5%;
+      padding-right: 7.5%;
+    }
+  }
+}
+
+/* for-big-desktop-up */
+/* @media screen and (min-width: 1920px) {
+  html, body {
+    font-size: 18px;
+  }
+} */
+
+/* for-extra-large-desktop-up */
+@media screen and (min-width: 2560px) {
+  html, body {
+    font-size: 1.2rem;
+  }
+}

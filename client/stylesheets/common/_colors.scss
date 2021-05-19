@@ -1,7 +1,7 @@
 //Colors
-$main:         #00a9ff;
-$main-light:   lighten($main, 10%);
-$main-lighter: lighten($main, 40%);
+$main:         #005ceb;
+$main-light:   lighten($main, 10%); // #1f77ff
+$main-lighter: lighten($main, 40%); // #b8d4ff
 $white:        rgba(255, 255, 255, 1);
 $black:        rgba(0, 0, 0, 0.87);
 
@@ -17,7 +17,7 @@ $danger-light: lighten($danger, 10%);
 $danger-lighter: lighten($danger, 40%);
 
 //Grays
-$gray-dark:    #485371;
+$gray-dark:    #515151;
 $gray:         #999999;
 $gray-light:   #e2e2e2;
 $gray-lighter: #f7f7f7;
@@ -25,37 +25,37 @@ $gray-lighter: #f7f7f7;
 // Badges
 $home: #14a8ea;
 $home-back: lighten($home, 40%);
-$home-border: 3px solid lighten($home, 25%)!important;
+$home-border: 5px solid lighten($home, 25%)!important;
 $posts: #9cc344;
 $posts-back: lighten($posts, 40%);
-$posts-border: 3px solid lighten($posts, 25%)!important;
+$posts-border: 5px solid lighten($posts, 25%)!important;
 $streak: #FD9934;
 $streak-back: lighten($streak, 35%);
-$streak-border: 3px solid lighten($streak, 25%)!important;
+$streak-border: 5px solid lighten($streak, 25%)!important;
 $post-views: #E84CAB;
 $post-views-back: lighten($post-views, 35%);
-$post-views-border: 3px solid lighten($post-views, 25%)!important;
+$post-views-border: 5px solid lighten($post-views, 25%)!important;
 $post-single-view: #6064E6;
 $post-single-view-back: lighten($post-single-view, 30%);
-$post-single-view-border: 3px solid lighten($post-single-view, 25%)!important;
+$post-single-view-border: 5px solid lighten($post-single-view, 25%)!important;
 $invite: #cc64ea;
 $invite-back: lighten($invite, 30%);
-$invite-border: 3px solid lighten($invite, 25%)!important;
+$invite-border: 5px solid lighten($invite, 25%)!important;
 $followers: #FD4B4E;
 $followers-back: lighten($followers, 30%);
-$followers-border: 3px solid lighten($followers, 25%)!important;
+$followers-border: 5px solid lighten($followers, 25%)!important;
 $following: #7d4bd4;
 $following-back: lighten($following, 40%);
-$following-border: 3px solid lighten($following, 25%)!important;
+$following-border: 5px solid lighten($following, 25%)!important;
 $books: #28B9AA;
 $books-back: lighten($books, 40%);
-$books-border: 3px solid lighten($books, 25%)!important;
+$books-border: 5px solid lighten($books, 25%)!important;
 $bookworm: #FC6949;
 $bookworm-back: lighten($bookworm, 30%);
-$bookworm-border: 3px solid lighten($bookworm, 25%)!important;
+$bookworm-border: 5px solid lighten($bookworm, 25%)!important;
 $saved-posts: #FDCD2E;
 $saved-posts-back: lighten($saved-posts, 30%);
-$saved-posts-border: 3px solid lighten($saved-posts, 25%)!important;
+$saved-posts-border: 5px solid lighten($saved-posts, 25%)!important;
 $levitan: #58BA56;
 $levitan-back: lighten($levitan, 40%);
-$levitan-border: 3px solid lighten($levitan, 25%)!important;
+$levitan-border: 5px solid lighten($levitan, 25%)!important;

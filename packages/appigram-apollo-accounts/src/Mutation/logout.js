@@ -1,7 +1,7 @@
-import {Accounts} from 'meteor/accounts-base'
+import {Accounts} from 'meteor/appigram:accounts-base'
 import getConnection from '../getConnection'
 
-export default async function (root, {token}, context) {
+export default function (root, {token}, context) {
   if (token && context.userId) {
     const hashedToken = Accounts._hashLoginToken(token)
     Accounts.destroyToken(context.userId, hashedToken)

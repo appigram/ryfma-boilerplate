@@ -1,8 +1,8 @@
 import callMethod from '../callMethod'
 import hashPassword from './hashPassword'
-import {Meteor} from 'meteor/meteor'
+import { Meteor } from 'meteor/meteor'
 
-export default async function (root, options, context) {
+export default function (root, options, context) {
   Meteor._nodeCodeMustBeInFiber()
   if (!options.password && !options.plainPassword) {
     throw new Error('Password is required')

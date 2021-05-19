@@ -1,0 +1,798 @@
+.ui.small.modal.checkout-modal {
+  max-width: 380px;
+  max-height: 450px;
+  position: static !important;
+  margin: 6rem auto !important;
+
+  .checkout-loading {
+    text-align: center;
+  }
+  .checkout-header {
+    text-align: center;
+    padding-top: 12px;
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    .ui.avatar.image {
+      position: absolute;
+      left: 50%;
+      top: -32px;
+      margin-left: -2.5rem;
+      border: 3px solid #ffffff;
+    }
+  }
+  .subheader {
+    font-size: 1.5rem;
+  }
+  .add-payment-modal {
+    margin-bottom: 0;
+    p.hint {
+      font-size: 0.65rem;
+      margin: 0;
+      color: $gray;
+      a {
+        color: $main;
+      }
+    }
+  }
+}
+
+.ui.modal.small-auth-modal {
+  max-width: 380px;
+  max-height: 450px;
+  .auth-page .content .inner-content {
+    min-height: 450px;
+  }
+}
+
+.ui.modal.checkout-modal {
+  p {
+    text-align: center;
+  }
+  .add-payment-modal {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1rem;
+    .ui.form {
+      padding: 0;
+    }
+    .ui.button {
+      width: 100%;
+    }
+    .payment-bottom {
+      max-width: 100%;
+      padding: .5rem 0 0;
+      text-align: left;
+      img {
+        width: 10rem;
+        height: 2rem;
+      }
+    }
+  }
+  &.choose-payments {
+    max-width: 590px;
+    margin: 2rem auto 5rem!important;
+  }
+  .back-button {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $main;
+    }
+  }
+  .show-more-methods {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    a {
+      color: $gray;
+      user-select: none;
+      border-bottom: 1px dotted $gray;
+      &:hover, &:focus {
+        color: $main;
+        border-color: $main;
+        cursor: pointer;
+      }
+    }
+  }
+  .checkout-method-selected {
+    text-align: center;
+    label, .ui.input {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .spinner.inner-scope {
+      position: relative;
+      min-height: 5rem;
+      .spinner-text {
+        display: none;
+      }
+    }
+    .checkout-bank_card {
+      .ui.input {
+        margin-bottom: 0;
+      }
+      .ui.form .ui.input.card-number input {
+        width: 100%;
+      }
+    }
+    .checkout-mobile-balance {
+      .ui.input {
+        width: 90%;
+        margin: 0 auto;
+        input {
+          width: 100%;
+          border-width: 2px;
+          border-radius: 4px;
+          font-size: 1.3rem;
+        }
+      }
+      .ui.button {
+        margin-top: 1rem;
+        font-size: 1.2rem!important;
+      }
+    }
+  }
+  .checkout-payment-methods {
+    .checkout-one-click {
+      text-align: center;
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+          text-align: left;
+        }
+        i.icon {
+          font-size: 1.75rem;
+          margin-right: 0.5rem;
+        }
+        b {
+          font-size: 1.2rem;
+        }
+        p {
+          color: $gray;
+        }
+      }
+      .ui.button {
+        margin-top: 1rem;
+        font-weight: bold!important;
+        font-size: 1.1rem!important;
+      }
+    }
+    .checkout-other-methods {
+      margin-top: 2rem;
+      & > h4 {
+        text-align: center;
+      }
+      .payment-item {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        padding: 1rem;
+        padding-bottom: 0;
+        &:hover, &:focus {
+          background-color: $main-lighter;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        &.inactive {
+          &:hover, &:focus {
+            background-color: $gray-light;
+            cursor: default;
+          }
+          img {
+            filter: grayscale(100%);
+          }
+        }
+        &.coins-payment {
+          width: 100%;
+        }
+        .logos {
+          display: block;
+          width: 100%;
+          height: 50px;
+          .logo-wrapper {
+            display: inline-block;
+            width: 30px;
+            margin: 0 auto;
+            img {
+              border-radius: 500rem;
+              margin-left: -7px;
+              border: 3px solid $white;
+              width: 44px;
+            }
+          }
+        }
+        h4 {
+          margin: 0;
+          height: 3rem;
+          overflow: hidden;
+        }
+      }
+    }
+    .payment-warning {
+      margin-top: 1rem;
+      color: $gray-dark;
+      text-align: center;
+      a {
+        color: $main;
+      }
+    }
+  }
+}
+
+.payment-form {
+  text-align: center;
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 1.6em;
+  }
+  .payment-form-type {
+    display: inline-block;
+    width: 32%;
+    padding: 8px 0 4px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    &.yandex {
+      margin: 0 0.3rem;
+    }
+    &.checked, &:hover, &:active, &:focus {
+      background-color: #fbe9a7;
+      cursor: pointer;
+    }
+    .payment-control {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .payment-text {
+      position: relative;
+      z-index: 1;
+      padding: 0 1em;
+      pointer-events: none;
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #submitPayment {
+    background-color: $success;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    width: 100%;
+    min-width: 200px;
+    padding: 0.8rem 0;
+    &:hover, &:active, &:focus {
+      background-color: $success-light;
+      cursor: pointer;
+    }
+  }
+  .payment-warning {
+    display: block;
+    color: $gray;
+    font-size: 0.7em;
+    font-weight: 300;
+    width: 95%;
+    margin: 12px auto 0;
+  }
+}
+
+.upgrade-page {
+  padding-top: 3em;
+  max-width: 1260px;
+  overflow: hidden;
+  z-index: 0;
+  .back {
+    background-image: linear-gradient(45deg, #390D6D, #7619C1);
+    height: 42rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .ui.segment {
+    background-color: transparent!important;
+  }
+  .home {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .content {
+      text-align: left;
+      color: $white;
+      h1 {
+        color: $white;
+        font-size: 2rem;
+        font-weight: bold;
+        b {
+          font-size: 4rem;
+          font-weight: 900;
+          line-height: 1;
+        }
+      }
+      p {
+        max-width: 35rem;
+        font-size: 1.5rem;;
+        line-height: 140%;
+        margin-top: 2rem;
+      }
+    }
+    .banner {
+      height: 100%;
+      width: 45%;
+      .image-wrapper {
+        right: 0;
+        top: 0;
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          right: -20%;
+          max-width: 35rem;
+        }
+      }
+    }
+  }
+  .upgrade-buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    .ui.button {
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background-color: $warning;
+      font-size: 1.25rem!important;
+      font-weight: bold!important;
+      color: $black;
+      margin-left: 1rem;
+      padding: 1rem 2rem!important;
+      .discount {
+        background-color: $white;
+        color: $main-light;
+        border-radius: 1.35rem;
+        padding: 0 0.5rem;
+        margin-left: 0.75rem;
+        font-size: 0.75rem;
+        line-height: 1.3rem;
+      }
+      &.give-pro {
+        background-color: transparent;
+        opacity: 1;
+        padding: 0.75rem 0.85rem!important;
+        border-radius: 6px!important;
+        svg {
+          color: $white;
+        }
+        &:hover {
+          background-color: #f7f7f75c;
+        }
+      }
+      &.pro-yearly {
+        background-color: $danger;
+        color: $white;
+        margin-left: 0;
+        padding-right: 1rem!important;
+      }
+    }
+  }
+  h2 {
+    font-weight: 900!important;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .premium-features-section {
+    margin: 10rem 0 1rem;
+    p {
+      font-size: 1.5rem;
+    }
+    .more-features {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+    .premium-features {
+      width: 100%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      gap: 20px;
+      padding: 0 24px;
+      margin-top: 5rem;
+      .premium-feature {
+        grid-column: span 4;
+        border-radius: 8px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $white;
+        text-align: center;
+        .header {
+          font-size: 24px;
+          line-height: 140%;
+        }
+        .text {
+          margin-top: 12px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        img {
+          max-width: 55%;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+    .orange-grad {
+      background: linear-gradient(321.73deg,#ffcd4b -1.09%,#ee6315 100.65%);
+    }
+    .insta-grad {
+      background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+    }
+    .purple-grad {
+      background: linear-gradient(141.85deg,#7e7bff,#ff73fa);
+    }
+    .dark-blue-grad {
+      background: linear-gradient(138.46deg,#3e70ff 1.48%,#9a98ff 98.75%);
+    }
+    .blue-grad {
+      background: linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%);
+    }
+    .green-grad {
+      background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%);
+    }
+  }
+
+  .premium-users {
+    position: relative;
+    z-index: 3;
+    padding: 0 5%;
+    margin-top: 7rem;
+    .more-users {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .ui.horizontal.list {
+      width: 100%;
+      &>.item {
+        max-width: 4rem;
+        width: auto;
+        margin: 0;
+        padding: 0 0.35rem;
+        margin-bottom: 1rem;
+      }
+      .user-avatar {
+        margin: 0 auto;
+        width: 3rem;
+        display: block;
+        .user-avatar-inner {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  .cancel-subscription {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    opacity: .8;
+  }
+
+  .upgrade {
+    position: relative;
+    z-index: 3;
+    padding: 0 5%;
+    .upgrade-buttons {
+      justify-content: center;
+      .ui.button.give-pro {
+        svg {
+          color: $gray-dark;
+        }
+        &:hover {
+          background-color: $main-lighter;
+        }
+      }
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      line-height: 1.2;
+      max-width: 30rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+    .upgrade-features {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+      &.faq-items {
+        .ui.items {
+          align-items: flex-start;
+        }
+      }
+      .ui.items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5em 0;
+        & > .item {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          padding-right: 3rem;
+          .content {
+            text-align: left;
+            margin-left: 3rem;
+            font-size: 1.1em;
+            .header {
+              font-weight: bold;
+            }
+            .description {
+              color: $black;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+    .faq-link {
+      color: #3723A5;
+      font-weight: bold;
+    }
+  }
+
+  .upgrade-block {
+    margin: 7rem 0 10rem;
+    position: relative;
+    z-index: 3;
+    .gray-back {
+      position: absolute;
+      bottom: -8rem;
+      left: -1600px;
+      display: block;
+      width: 3200px;
+      height: 25rem;
+      background-color: #ECF0FF;
+      transform: rotate(-5deg);
+      z-index: 1;
+    }
+    h2, p, .upgrade-price, .ui.button {
+      z-index: 3;
+      position: relative;
+    }
+    .subtitle {
+      font-size: 1.5em;
+    }
+    .upgrade-price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 2.5rem 0;
+      line-height: 0;
+      color: $black;
+      .upgrade-price-text {
+        line-height: 0.75;
+        font-size: 3rem;
+        margin: 1rem auto 2rem;
+      }
+      .save-badge {
+        letter-spacing: 0;
+        font-size: 1.5rem;
+      }
+      b {
+        font-weight: bold;
+        font-size: 7rem;
+        letter-spacing: 0.5rem;
+      }
+      .upgrade-toggle {
+        font-size: 1rem;
+        color: $black;
+        margin-top: 1rem;
+      }
+    }
+    .ui.button {
+      font-size: 1.35rem!important;
+      &.give-pro {
+        color: $black;
+      }
+    }
+    .cancel-subscription {
+      margin-bottom: 2rem;
+      position: relative;
+      margin: 1rem auto;
+      z-index: 3;
+    }
+    &.bottom {
+      margin-top: 8rem;
+    }
+    .rocket-man {
+      position: absolute;
+      bottom: -12rem;
+      left: 0%;
+      width: 17rem;
+      transform: rotate(15deg);
+    }
+  }
+  .terms {
+    font-size: 0.75rem;
+    color: $gray-dark;
+    margin-bottom: 5rem;
+    padding: 0 10%;
+    p {
+      margin: 0;
+    }
+    a {
+      color: #E164FC;
+    }
+  }
+
+  &.success-result {
+    text-align: center;
+    height: 100vh!important;
+    padding-top: 0;
+    i.icon {
+      font-size: 7em;
+      line-height: 1;
+      color: $success;
+    }
+    p {
+      margin-bottom: 4em;
+    }
+    .payment-success  {
+      background-color: $success;
+      color: $white;
+      font-size: 1.2em!important;
+    }
+    .outer {
+      display: table;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 54rem;
+    }
+  }
+}
+
+.give-pro.subtotal {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  .selected-users {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      .multi-divider {
+        margin: 0 0.25rem;
+      }
+    }
+  }
+  &>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .subTotal {
+    border-top: $border;
+    padding-bottom: 0;
+  }
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.blockquote-bubble {
+  max-width: 32rem;
+  padding: 1rem;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  color: #444;
+  quotes: "“" "”";
+  text-align: left;
+  cite {
+    display: block;
+    font-style: normal;
+    letter-spacing: 0;
+    margin-top: 20px;
+  }
+  p {
+    position: relative;
+    line-height: 1.4;
+    &:before {
+      content: '“';
+      position: absolute;
+      font-size: 3em;
+      color: #ea4c89;
+      font-weight: 600;
+      left: -0.5em;
+      top: -0.25em;
+      line-height: 1
+    }
+  }
+  &.blockquote-pro {
+    .blockquote-content {
+      background: rgba(237,245,255,1);
+    }
+  }
+  .blockquote-content {
+    border-radius: 0.5rem;
+    background-color: #F3F4F4;
+    padding: 2em;
+    margin: 0 0 1rem 0;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+    position: relative;
+    z-index: 3;
+    &:before {
+      color: rgba(0,0,0,0.15);
+      font-size: 3em;
+      left: 0.25em;
+      top: 0.25em;
+    }
+    &:after {
+      content: '';
+      background-color: inherit;
+      display: block;
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+      bottom: -1rem;
+      left: 3rem;
+      pointer-events: none;
+      visibility: visible;
+      transform: rotate(145deg);
+      background: rgba(237,245,255,1);
+      z-index: 2;
+      margin: 0 0 0 -.25em;
+      border-top-right-radius: 1rem;
+    }
+  }
+  .blockquote-cite {
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    &>* {
+      padding-left: 0.25em;
+      padding-right: 0.25em;
+    }
+    .avatar, .photo {
+      width: 4em;
+      height: 4em;
+      border-radius: 500rem;
+    }
+  }
+}

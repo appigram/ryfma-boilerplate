@@ -1,0 +1,279 @@
+.page-background.rifmach-background {
+  margin-top: 2rem;
+
+  .rad-wrapper {
+    min-height: 10rem;
+  }
+
+  .banner {
+    .image-wrapper {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+
+    strong {
+      color: $main-light;
+    }
+  }
+}
+
+.add-to-bookmark-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .add-to-bookmark {
+    color: $main !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .ui.horizontal.list.share-menu.big {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+.ryfmator-page {
+  max-width: 52rem;
+  margin: 0 auto;
+  min-height: 480px;
+  min-height: calc(100vh - 212px);
+  position: relative;
+  padding-top: 2em;
+
+  .search-field {
+    padding-bottom: 16px !important;
+    text-align: center;
+    padding-top: 2em;
+
+    .ui.input {
+      input {
+        font-size: 1.35rem;
+        border-width: 2px;
+        border-color: $main-lighter;
+        border-radius: 12px;
+        border-width: 2px;
+        padding: 1.2rem;
+        padding-right: 4rem !important;
+        width: 100%;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-color: $main;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        i.icon {
+          color: $main;
+        }
+      }
+
+      i.icon {
+        font-size: 1.4rem !important;
+        right: 4px;
+        cursor: pointer;
+        pointer-events: all;
+      }
+    }
+  }
+
+  .spinner.inner-scope {
+    min-height: 8rem;
+
+    .spinner-wrapper {
+      min-width: 8rem;
+
+      svg {
+        color: $main;
+      }
+
+      .spinner-text {
+        width: 100%;
+        color: $main;
+      }
+    }
+  }
+
+  .error {
+    margin-bottom: 1rem;
+
+    p {
+      margin-bottom: 0;
+
+      a {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        i {
+          color: $main;
+        }
+      }
+    }
+  }
+
+  .search-results {
+    text-align: left;
+    padding-bottom: 2em;
+    position: relative;
+    max-width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+
+    &.admin {
+      ul {
+        max-height: 100%;
+        text-align: center;
+
+        li {
+          font-size: 1.5em;
+          line-height: 1;
+          padding: 0.3em 0;
+
+          i.icon {
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &:focus {
+              background-color: $gray-light;
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+    }
+
+    b {
+      font-size: 1.3em;
+      padding: 0.3em;
+      color: $main-light;
+
+      &.search-word {
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $main;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .rhyme-results {
+      text-align: left;
+
+      .rhyme-column {
+        display: inline-block;
+        padding: 1rem;
+        margin: 0;
+        max-width: 25%;
+
+        ul {
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .rhyme-item {
+        font-size: 1.4rem;
+        line-height: 2em;
+        max-height: 2.5rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $main;
+        }
+
+        svg {
+          color: $gray-dark;
+          margin-left: 0.35rem;
+        }
+      }
+    }
+
+    .rhymes-not-found {
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+  }
+
+  .search-suggestions {
+    margin-top: 3em;
+    text-align: left;
+    position: relative;
+
+    .rhyme-column {
+      display: inline-block;
+      padding: 1rem;
+      max-width: 25%;
+    }
+
+    a {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 2em;
+      color: $main;
+      margin-right: 2em;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .ryfmach-help {
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.ui.modal.wordModal {
+  .content {
+    font-size: 0.95em;
+
+    h2 {
+      font-size: 1.4em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+    }
+
+    .no-content {
+      font-size: 1.8em;
+    }
+  }
+
+  .actions {
+    text-align: center;
+
+    button {
+      font-size: 1.2em !important;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+export MAIL_URL=
+export METEOR_OFFLINE_CATALOG=1
+export DISABLE_WEBSOCKETS=1
+export REDIS_URL=redis://127.0.0.1:6379
+QUALIA_PROFILE_FOLDER=./profiles meteor --settings settings-development.json

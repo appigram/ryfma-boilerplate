@@ -1,0 +1,225 @@
+#RyfmaPlayer {
+  .rp-player {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $gray-light;
+  }
+  &.jp-state-playing {
+    .jp-play {
+      .icon.pause {
+        margin-left: -0.1rem;
+        margin-top: -0.2rem;
+      }
+    }
+  }
+}
+.rp-controls {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  width: 100%;
+  background-color: $white;
+  outline: none;
+  border: none;
+  i.icon {
+    margin: 0;
+    vertical-align: 0;
+  }
+  .jp-play {
+    border-radius: 500px;
+    border: none;
+    outline: none;
+    padding: 0.8rem 0.9rem;
+    margin-right: 0.8rem;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    font-size: 1.3rem;
+    background-color: $main;
+    color: $white;
+    &:hover, &:active, &:focus {
+      background-color: $main-light;
+    }
+  }
+  .jp-previous, .jp-next {
+    border: none;
+    outline: none;
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    color: $gray;
+    background: none;
+    padding: 0.3rem;
+    &:hover, &:active, &:focus {
+      color: $main;
+      background: $gray-lighter;
+    }
+  }
+  .jp-remove {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    z-index: 100;
+    overflow: hidden;
+    height: 1.75rem;
+    &:hover, &:active, &:focus {
+      color: $main;
+      background: $gray-lighter;
+    }
+  }
+  .rp-track {
+    width: 100%;
+    padding: 0 1rem;
+    .rp-track-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+      .jp-title.bold {
+        font-weight: bold;
+      }
+      .jp-current-time, .jp-duration {
+        display: inline-block;
+        padding: 0 0.3rem;
+      }
+    }
+    .rp-progress {
+      width: 100%;
+      height: 0.5rem;
+      min-width: 180px;
+      position: relative;
+      border-radius: 50px;
+      background-color: $gray-light;
+      .jp-seek-bar {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        .jp-play-bar {
+          background-color: $main;
+          height: 100%;
+          position: absolute;
+          border-radius: 50px;
+        }
+        .jp-buffer-bar {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          display: block;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+  .rp-volume-wrapper {
+    position: relative;
+    .rp-volume-percent {
+      width: 100%;
+      text-align: right;
+      margin-bottom: 0.7rem;
+    }
+    .jp-volume-bar {
+      background-color: $gray-light;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 8rem;
+      height: 0.5rem;
+      overflow: hidden;
+      .jp-volume-bar-value {
+        background-color: $main;
+        border-radius: inherit;
+        height: 100%;
+      }
+    }
+  }
+}
+.jp-playlist {
+  margin-top: 1rem;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  li {
+    overflow: visible;
+    cursor: pointer;
+    position: relative;
+  }
+  .jp-media-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.25rem 1rem 1rem;
+    border-radius: 4px;
+    width: 100%;
+    background-color: $white;
+    outline: none;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $gray-lighter;
+      cursor: pointer;
+    }
+    .rp-track {
+      padding: 0;
+      .rp-track-info {
+        margin-bottom: 0;
+        .jp-title, .rp-audio-name {
+          width: 100%;
+        }
+        .rp-audio-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &.active {
+            color: $main;
+          }
+        }
+        .audioData {
+          font-weight: normal;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+//<!-- JPlayer -->
+.jp-jplayer {
+  user-select: none;
+}
+.jp-hidden {
+  display: none;
+}
+.jp-state-no-volume-support {
+  .jp-mute, .jp-volume-bar, .jp-volume-bar-value {
+    display: none;
+  }
+}
+.jp-no-browser-support {
+  display: block;
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+  }
+}
+
+.jp-audio *:focus,
+.jp-audio-stream *:focus {
+	/* Disable the browser focus highlighting. */
+	outline:none;
+}
+
+.jp-audio button::-moz-focus-inner,
+.jp-audio-stream button::-moz-focus-inner {
+	/* Disable the browser CSS3 focus highlighting. */
+	border: 0;
+}
+
+@media (max-width: 630px) {
+  .jp-jplayer .jp-state-full-screen .jp-poster {
+    height: auto;
+  }
+}

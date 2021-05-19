@@ -1,0 +1,2768 @@
+/* Common landing page styles */
+.home-landing-page {
+  overflow: hidden;
+
+  .back {
+    position: absolute;
+    z-index: 0;
+    width: 1000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  .back-1 {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/home/home_spot_1.png);
+    left: -600px;
+    top: -220px;
+  }
+
+  .back-2 {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/home/home_spot_2.png);
+    right: -270px;
+    top: 60px;
+  }
+
+  #home {
+    .masthead .information .ui.button {
+      display: inline-block;
+      margin: 1.2rem 0.35rem 0 !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+      border-radius: 500rem !important;
+    }
+
+    .banner .image-wrapper img {
+      right: 15%;
+      top: -3rem;
+      max-width: 75%;
+    }
+  }
+
+  .home {
+    position: relative;
+    padding: 8rem 0;
+    z-index: 0;
+    overflow: hidden;
+
+    .section-container {
+      max-width: 80rem;
+      margin: 0 auto;
+      text-align: center;
+
+      h2 {
+        text-align: left;
+        font-size: 3.2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .ui.grid {
+        margin-top: 2rem;
+
+        .column {
+          .ui.header {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+
+    &.home-one {
+      background-color: #001664;
+
+      .section-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+
+        &>div:first-child {
+          width: 100%;
+        }
+
+        .image {
+          width: 100%;
+        }
+
+        .text-content {
+          text-align: left;
+          font-size: 1.5rem;
+          padding-left: 6rem;
+
+          h2 {
+            font-size: 3rem;
+          }
+
+          .ui.button {
+            font-size: 1.3rem !important;
+          }
+        }
+      }
+    }
+
+    &.home-two,
+    &.home-four {
+      h2 {
+        text-align: right;
+      }
+    }
+
+    &.home-four {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .ui.grid>.row>.column:nth-child(2)>img {
+        max-width: 85%;
+      }
+    }
+
+    &.home-five {
+      background-color: #EEF3FF;
+      font-size: 1.35rem;
+
+      .section-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+
+        &>div {
+          width: 60%;
+
+          &.text-content {
+            width: 40%;
+          }
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin: 0;
+        }
+
+        .price {
+          margin: 1rem 0;
+          font-weight: bold;
+
+          b {
+            font-size: 2.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            font-size: 1.3rem;
+            padding: .7rem 0;
+
+            i.icon.check {
+              color: #FF4C63;
+            }
+          }
+        }
+
+        .ui.form {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          max-width: 27rem;
+
+          .field {
+            .ui.input {
+              input {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.home-footer {
+      h2 {
+        max-width: 640px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .ui.button {
+        font-size: 1.35rem !important;
+        margin: 0 1rem;
+        background-color: $danger;
+
+        &:hover {
+          background-color: $danger-light;
+        }
+      }
+    }
+  }
+
+  .premium-users {
+    position: relative;
+    z-index: 3;
+    margin-top: 2rem;
+    overflow: hidden;
+
+    h2 {
+      text-align: left;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .ui.horizontal.list {
+      width: 100%;
+
+      &>.item {
+        min-width: 10rem;
+        width: auto;
+        margin: 0;
+        padding: 0 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .user-avatar {
+        margin: 0 auto;
+        width: 7rem;
+        display: block;
+
+        .user-avatar-inner {
+          width: 7rem;
+          height: 7rem;
+        }
+      }
+
+      .star-badge.big {
+        width: 1.8rem;
+        height: 1.8rem;
+        bottom: -0.75rem;
+        margin-left: -0.9rem;
+
+        i.icon {
+          font-size: 0.85rem;
+        }
+      }
+
+      .header {
+        margin-top: 1.5rem;
+        max-height: 1.1rem;
+        overflow: hidden;
+
+        a {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+
+      .stats {
+        font-size: 0.8rem;
+        color: $gray-dark;
+        margin-top: 0.45rem;
+      }
+    }
+  }
+}
+
+.landing-page {
+  text-align: center;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  .landing-item {
+    margin: 5rem 0;
+    overflow: auto;
+  }
+
+  h1.ui.header {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .sub.header {
+    max-width: 590px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin: 16px auto;
+  }
+
+  .features {
+
+    i.icon,
+    i.icons {
+      font-size: 2.6em;
+      margin-right: 1.5rem;
+      color: #bebebe;
+    }
+
+    .ui.items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &>.item {
+        text-align: left;
+        margin: 0 0 3rem 0;
+        max-width: 30%;
+      }
+    }
+
+    .ui.items>.item {
+      &>.content {
+        &>.description {
+          color: #bebebe;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+/* Press Kit page */
+.presskit-page {
+  max-width: 640px;
+  padding: 1em 0 3em;
+
+  img {
+    border-radius: 999em;
+    max-width: 150px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+
+  h4 {
+    margin: 0;
+    color: $gray;
+    font-weight: 300;
+  }
+
+  .short-desc {
+    padding: 8em 1em 5em;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 300;
+  }
+
+  p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+
+  .stats {
+    margin: 3em 0;
+
+    .ui.statistic {
+      &>.label {
+        color: $gray;
+        text-transform: none;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 1.3em;
+      min-height: 12px;
+      color: $gray;
+      font-weight: 300;
+      margin: 4px 0;
+
+      a {
+        color: $main;
+      }
+    }
+  }
+}
+
+/* About Us page */
+.aboutus {
+  margin-bottom: -3.2em;
+
+  .section {
+    height: 720px;
+    width: 100%;
+    position: relative;
+    padding: 8%;
+
+    .content {
+      max-width: 45%;
+
+      h1 {
+        font-size: 2.8em;
+      }
+
+      p {
+        font-size: 1.3em;
+        margin: 1.3em 0;
+      }
+
+      .ui.button {
+        font-size: 1.3rem !important;
+        margin-right: 1rem;
+      }
+    }
+
+    &.welcome-section {
+      height: 100vh;
+      background-color: #F7F7F7;
+      background-image: url('https://cdn.ryfma.com/defaults/landings/about/welcome.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &.promote-section {
+      background-image: url('https://cdn.ryfma.com/defaults/landings/about/promote.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &.meeting-section {
+      background-color: #F5FAFF;
+      background-image: url('https://cdn.ryfma.com/defaults/landings/about/meeting.jpg');
+      background-position: 0 100%;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+
+      .content {
+        float: right;
+      }
+    }
+
+    &.reading-section {
+      background-image: url('https://cdn.ryfma.com/defaults/landings/about/reading.jpg');
+      background-position: 100% 0;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+/* FAQ page */
+.faq-page {
+  margin-top: 0;
+  font-size: 1.2em;
+
+  .ui.header {
+    font-size: 1.7em;
+  }
+
+  .faq-header {
+    background-color: $main;
+    color: $white;
+    padding: 6em 5em;
+    text-align: center;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .landing-page {
+    text-align: left;
+    width: 600px;
+  }
+
+  .faq-section {
+    margin-top: 3rem;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .ui.accordion {
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+
+    .title {
+      color: $black;
+      font-weight: 300;
+      font-size: 1.2em;
+      padding: 0.8em 1em;
+      border: none;
+      border-radius: 3px;
+      border: $border !important;
+      margin-top: 0.5em;
+
+      &:hover {
+        background-color: $gray-lighter;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: $success !important;
+        border-bottom: none !important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        i.icon {
+          color: $success !important;
+        }
+      }
+
+      i.icon {
+        color: $gray !important;
+        font-size: 1.4em;
+        margin-top: -4px;
+        margin-left: -6px;
+      }
+    }
+
+    .content {
+      padding: 1em 1.5em 2em 1.5em;
+
+      &.active {
+        border: $border;
+      }
+    }
+  }
+
+  .faq-footer {
+    border-top: $border;
+    padding: 3em 4em 1em;
+    text-align: center;
+    margin-top: 3em;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      color: $main;
+    }
+  }
+}
+
+/* Terms of Use */
+.terms-page {
+  text-align: left;
+
+  h1 {
+    font-size: 4rem;
+    margin: 1em 0 1.5em;
+    text-align: center;
+  }
+
+  .wrapper {
+    max-width: 818px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    color: $main;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  ol {
+    counter-reset: section;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none;
+
+    .title {
+      display: inline-block;
+      font-size: 20px;
+      font-size: 1.4rem;
+      line-height: 24px;
+      color: $black;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    &>li:before {
+      counter-increment: section;
+      content: counter(section) ". ";
+      font-weight: bold;
+      font-size: 20px;
+      font-size: 1.4rem;
+      line-height: 24px;
+      color: $black;
+      margin-left: -20px;
+    }
+
+    ol {
+      counter-reset: subsection;
+
+      li:before {
+        margin-right: 7px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 0;
+        counter-increment: subsection;
+        content: counter(section) "."counter(subsection) ". ";
+      }
+
+      ol {
+        counter-reset: subsubsection;
+        margin-top: 15px;
+
+        li:before {
+          margin-left: 0;
+          counter-increment: subsubsection;
+          content: counter(section) "."counter(subsection) "."counter(subsubsection) ". "
+        }
+      }
+    }
+  }
+}
+
+.privacy-page {
+  text-align: left;
+  font-size: 1.1em;
+  color: $gray-dark;
+
+  h1 {
+    font-size: 4rem;
+    margin: 1em 0 1.5em;
+    text-align: center;
+  }
+
+  .wrapper {
+    max-width: 818px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subheader {
+    font-size: 1.4em;
+    color: $gray;
+  }
+
+  a {
+    color: $main;
+  }
+
+  h3 {
+    font-size: 1.35em;
+  }
+
+  ul li {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: $gray-dark;
+    word-break: break-word;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+
+    thead {
+      border-bottom: $border;
+
+      th {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 5px;
+      }
+    }
+
+    .service-list-item {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-bottom: $border;
+
+      td {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .browsers {
+    padding-left: 3rem;
+  }
+}
+
+.book-cover-design {
+  margin-bottom: -44px;
+
+  #home {
+    .book-cover-banner {
+      .banner-grad {
+        right: -100%;
+        background: #d39ce8;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #d39ce8 10%, #a73489 90%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #d39ce8 10%, #a73489 90%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #d39ce8 10%, #a73489 90%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d39ce8', endColorstr='#a73489', GradientType=0);
+        /* IE6-9 */
+      }
+    }
+
+    .banner .image-wrapper {
+      top: 15%;
+      left: 5%;
+    }
+  }
+
+  .ui.button {
+    background-color: #FC1264 !important;
+    max-width: 12em !important;
+    margin: 40px 0 20px;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    display: block;
+    width: auto;
+    color: white;
+    font-size: 1.4em !important;
+    font-weight: bold !important;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 8em 0;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 4em;
+      font-size: 3em !important;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3,
+    h4 {
+      font-size: 2em;
+      color: $black;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: $black;
+    }
+
+    .ui.grid>.row>.column {
+      padding: 0 4em;
+
+      p {
+        padding: 0 1em;
+      }
+    }
+  }
+
+  .section-two {
+    h3 {
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 0;
+      color: $black;
+    }
+
+    .ui.button {
+      margin: 0 auto;
+    }
+
+    .cover-gallery {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 6em 0;
+
+      .desc {
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-top: 1.5em;
+      }
+
+      img {
+        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      .old-cover {
+        flex: 0 0 20%;
+
+        img {
+          max-width: 74%;
+        }
+      }
+
+      .new-cover {
+        flex: 0 0 70%;
+
+        .new-cover-list {
+          &>div {
+            display: inline-block;
+            width: 25%;
+            padding: 0 2%;
+          }
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .section-three {
+    padding-bottom: 3em;
+
+    img {
+      max-width: 55% !important;
+    }
+  }
+
+  .section-four {
+    background-color: #AF7AC1;
+    text-align: center;
+
+    p {
+      font-size: 3em;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      color: $white;
+    }
+  }
+}
+
+.orderBookCoverModal {
+  .ui.button {
+    background-color: #FC1264 !important;
+    max-width: 400px !important;
+    margin: 20px auto;
+    display: block;
+    width: auto;
+    color: white;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .ui.input.error {
+    input {
+      border-color: #FC1264;
+    }
+
+    i.icon {
+      color: #FC1264;
+    }
+  }
+
+  .error {
+    font-size: 0.9em;
+    margin: 0.25em 0;
+  }
+}
+
+.sponsors-page {
+  overflow: hidden;
+
+  .back {
+    position: absolute;
+    z-index: 0;
+    width: 1000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  .back-1 {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/sponsors/Back1.png);
+    left: -600px;
+    top: -220px;
+  }
+
+  .back-2 {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/sponsors/Back1.png);
+    right: -270px;
+    top: 60px;
+  }
+
+  #home {
+    .beta {
+      letter-spacing: 1px;
+      color: $gray-dark;
+
+      .badge {
+        font-size: 0.9rem;
+        border: 1px solid $danger;
+        border-radius: 0.3rem;
+        margin-left: 0.5rem;
+        color: $danger;
+        padding: 0.25rem 0.5rem;
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: $main;
+    }
+
+    .masthead.segment {
+      min-height: 541px;
+      min-height: calc(100% - 205px);
+    }
+
+    .information {
+      padding-left: 10%;
+    }
+
+    .banner .image-wrapper {
+      top: 10%;
+      left: 0%;
+
+      img {
+        position: relative;
+      }
+    }
+  }
+
+  .ui.button {
+    background-color: #FC1264 !important;
+    max-width: 20rem !important;
+    margin: 40px 0 20px;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    display: block;
+    width: auto;
+    color: white;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    min-width: 12rem;
+  }
+
+  .content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 8em 0;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 4em;
+      font-size: 3em !important;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3,
+    h4 {
+      font-size: 2em;
+      color: $black;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: $black;
+    }
+
+    .ui.grid>.row>.column {
+      padding: 0 4em;
+
+      p {
+        padding: 0 1em;
+      }
+    }
+  }
+
+  .sponsor-one {
+    background-color: #F4F9FC;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  .sponsor-two {
+    .review {
+      padding: 0 1rem !important;
+
+      .review-inner {
+        background-color: #F4F9FC;
+        border: 0.3rem;
+        padding: 3rem 2rem;
+        text-align: left;
+      }
+
+      p {
+        padding: 0 !important;
+        font-size: 1.1rem;
+        margin-bottom: 4rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin-top: 0;
+      }
+
+      .user-item {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 1rem;
+          border-radius: 500rem;
+          width: 4rem;
+        }
+      }
+    }
+  }
+
+  .sponsor-three {
+    position: relative;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .sponsor-four {
+    text-align: center;
+
+    h2 {
+      font-size: 3rem;
+      max-width: 50%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    .ui.button {
+      margin: 0 auto;
+    }
+  }
+
+  .home {
+    position: relative;
+    padding: 8rem 0;
+    z-index: 0;
+    overflow: hidden;
+
+    .section-container {
+      max-width: 80rem;
+      margin: 0 auto;
+      text-align: center;
+
+      h2 {
+        text-align: left;
+        font-size: 3.2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .ui.grid {
+        margin-top: 2rem;
+
+        .column {
+          .ui.header {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+
+    &.home-two,
+    &.home-four {
+      h2 {
+        text-align: right;
+      }
+    }
+
+    &.home-four {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .ui.grid>.row>.column:nth-child(2)>img {
+        max-width: 85%;
+      }
+    }
+
+    &.home-five {
+      background-color: #EEF3FF;
+      font-size: 1.35rem;
+
+      .section-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+
+        &>div {
+          width: 60%;
+
+          &.text-content {
+            width: 40%;
+          }
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin: 0;
+        }
+
+        .price {
+          margin: 1rem 0;
+          font-weight: bold;
+
+          b {
+            font-size: 2.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            font-size: 1.3rem;
+            padding: .7rem 0;
+
+            i.icon.check {
+              color: #FF4C63;
+            }
+          }
+        }
+
+        .ui.form {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          max-width: 27rem;
+
+          .field {
+            .ui.input {
+              input {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.instaPoems2018 {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  min-width: 320px;
+  text-align: left;
+  overflow: hidden;
+  background-color: #EE2463;
+  color: #fff;
+
+  h3,
+  h1 {
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, .06);
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    position: relative;
+    max-width: 830px;
+    font-size: 83px;
+    line-height: 77px;
+    margin-left: 10px;
+    letter-spacing: -0.6px;
+  }
+
+  p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 16px 0;
+    position: relative;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .head {
+    padding: 106px 80px 80px;
+    margin-bottom: 150px;
+    max-width: 1432px;
+    margin: 0 auto;
+
+    .information {
+      position: relative;
+    }
+  }
+
+  button,
+  .ui.button {
+    padding: 12px 32px !important;
+    display: inline-block;
+    border-radius: 35px;
+    box-shadow: 0 7px 11px -4px rgba(0, 0, 0, .25);
+    background-color: #fff !important;
+    color: #fff;
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45rem;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #7861ff !important;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: none;
+    font-size: 1.3rem !important;
+  }
+
+  .gray-back {
+    position: absolute;
+    bottom: 1rem;
+    left: -1600px;
+    display: block;
+    width: 3200px;
+    height: 40rem;
+    background-color: #ecf0ff;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    z-index: 1;
+  }
+
+  .section {
+    position: relative;
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, -o-transform 1s ease-in-out;
+    will-change: transform;
+    overflow: hidden;
+    padding: 120px 80px 130px;
+
+    .section-container {
+      max-width: 1276px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .section-poems {
+    background-color: #fff;
+
+    h3,
+    p {
+      color: #141414;
+    }
+
+    .thumbs {
+      position: absolute;
+      right: 525px;
+      top: 624px;
+    }
+
+    .ui.horizontal.list {
+      width: 100%;
+      margin-top: 7rem;
+      text-align: center;
+
+      .user-avatar {
+        margin: 0 auto;
+        width: 7rem;
+        display: block;
+
+        .user-avatar-inner {
+          width: 7rem;
+          height: 7rem;
+        }
+      }
+
+      .header {
+        margin-top: 1.5rem;
+        max-height: 1.1rem;
+        overflow: hidden;
+      }
+    }
+
+    .read-more-wrapper {
+      position: relative;
+      margin-top: 3rem;
+      text-align: center;
+      z-index: 3;
+
+      .read-more {}
+    }
+  }
+
+  .section-register {
+    background: #FCBD72;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #FCBD72 0%, #F58743 100%, #2989d8 100%, #1e5799 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #FCBD72 0%, #F58743 100%, #2989d8 100%, #1e5799 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, #FCBD72 0%, #F58743 100%, #2989d8 100%, #1e5799 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCBD72', endColorstr='#F58743', GradientType=0);
+    /* IE6-9 */
+  }
+
+  .section-book {
+    background-color: #fff;
+    text-align: center;
+
+    .book-preview-item {
+      width: 390px;
+      height: 550px;
+      display: block;
+      margin: 0 auto;
+
+      .book-preview-book,
+      .book-preview-back,
+      .book-preview-left,
+      .book-preview-right {
+        height: 100%;
+      }
+
+      .book-preview-back {
+        width: 100%;
+      }
+
+      .book-preview-front {
+        width: 100%;
+        height: 100%;
+
+        &>div {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    h2 {
+      color: #141414;
+    }
+
+    .ui.button.download {
+      background-color: #EE2463 !important;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      font-size: 1.3rem !important;
+      font-weight: bold !important;
+    }
+
+    .share-menu {
+      .item {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .back-img {
+    position: absolute;
+    bottom: -150px;
+    right: 80px;
+    width: 480px;
+    height: 480px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .head-background {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/instapoems2018/Luna_1.png);
+  }
+
+  .register-background {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/instapoems2018/Paren_1.png);
+    right: 50px;
+    width: 400px;
+    height: 400px;
+    bottom: -50px;
+  }
+}
+
+/* Explore page */
+.explore-page {
+  position: relative;
+  overflow-x: hidden;
+
+  .back {
+    position: absolute;
+    z-index: 0;
+    width: 35rem;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url("https://cdn.ryfma.com/defaults/banners/back-contest.png");
+    opacity: 0.75;
+
+    &.back-1 {
+      left: -20rem;
+      top: 0;
+    }
+
+    &.back-2 {
+      right: -13rem;
+      top: -10rem;
+    }
+  }
+
+  .top-posts {
+    .slick-slider {
+
+      .slick-prev,
+      .slick-next {
+        top: 3rem;
+      }
+
+      .top-item {
+        padding: 0 0.75rem;
+        margin-bottom: 2rem;
+
+        h3 {
+          margin-top: .5rem;
+          margin-bottom: .25rem;
+          height: 3.2rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .ui.image {
+          display: block;
+          position: relative;
+          height: 7rem;
+          overflow: hidden;
+          border-radius: 12px;
+
+          img {
+            display: block;
+            border-radius: 1rem;
+            position: absolute;
+            height: auto;
+            left: 22%;
+            top: 0;
+            transform: translateY(-22%) translateX(-22%);
+            /* height: 100%; */
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .more-link {
+    font-weight: bold;
+  }
+
+  .explore-page-inner {
+    position: relative;
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    .item.post-list-item .content .post-title .post-title-info .post-title-bottom {
+      margin-top: 0;
+    }
+
+    .head {
+      position: relative;
+    }
+
+    .pick {
+      &>.header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        padding: 1rem 0.75rem 0;
+        margin-bottom: 0.75rem;
+        margin-top: 2rem;
+      }
+
+      &.no-margin {
+        margin-bottom: 0.5rem;
+
+        &>.header {
+          margin-top: 0.5rem;
+        }
+      }
+
+      .post-list-wrapper {
+        padding-top: 0;
+
+        .eleven.wide.column {
+          padding: 0
+        }
+      }
+    }
+
+    .card-info {
+      overflow: hidden;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        h3 {
+          margin-bottom: 0.35rem;
+          height: 1.65rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .audio-name {
+          width: 70%;
+          max-width: 70%;
+        }
+      }
+
+      img {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        max-width: 30%;
+        border-radius: 1.2rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .top-explore {
+      padding: 2rem 0;
+      background-color: #f4f9fc;
+
+      .slick-initialized {
+        .slick-slide {
+          margin: 0 1rem;
+
+          .top-item {
+            .ui.image {
+              img {
+                border-radius: 0.55rem;
+                height: 15rem;
+                max-width: 85%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-stories {
+      .slick-slide .top-item {
+        padding: 0 0.5rem;
+      }
+    }
+
+    .top-classic {
+      .card-info {
+        a {
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin-top: 0.5rem;
+        }
+
+        a.user-avatar {
+          width: 5rem;
+          height: 5rem;
+          margin: 0 auto;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .top-books {
+      .slick-slider {
+        min-height: 235px;
+      }
+
+      .slick-slide li {
+        list-style: none;
+
+        .book-item {
+          padding-right: 0.7rem;
+        }
+      }
+    }
+
+    .top-categories {
+      .card-info {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .top-videos {
+      .top-item.video-item {
+        padding: 0 0.5rem;
+
+        h3 {
+          margin-top: 0.5rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+
+    .top-user-posts {
+      &.isLogged {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.top-item.placeholder {
+  width: 32%;
+  margin-right: 0.5%;
+
+  .top-item-image {
+    height: 8rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: $gray-light;
+  }
+
+  .top-item-image-text {
+    height: 1.5rem;
+    width: 5rem;
+    margin-top: 0.5rem;
+    background-color: $gray-light;
+    border-radius: 0.25rem;
+  }
+}
+
+.audio-item.placeholder {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+
+  .audio-item-image {
+    border-radius: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: $gray-light;
+  }
+
+  .audio-item-name {
+    margin-left: 1rem;
+
+    .audio-item-name-text {
+      height: 1.75rem;
+      width: 10rem;
+      background-color: $gray-light;
+      border-radius: 0.25rem;
+    }
+
+    .audio-item-name-subtext {
+      height: 1.25rem;
+      width: 4rem;
+      margin-top: 0.5rem;
+      background-color: $gray-light;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .instaPoems2018 .gray-back {
+    left: -75rem;
+    width: 200rem;
+    bottom: 8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .instaPoems2018 {
+    .head {
+      padding: 23px 24px 0;
+      margin-bottom: 6rem;
+    }
+
+    h1,
+    h3 {
+      max-width: 262px;
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: 0.4px;
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: -12px;
+    }
+
+    p {
+      max-width: 300px;
+      font-size: 17px;
+      line-height: 25px;
+      margin: 18px 0;
+    }
+
+    .back-img {
+      width: 260px;
+      top: -1rem;
+      bottom: auto;
+      right: -1.5rem;
+    }
+
+    .section {
+      padding: 48px 24px 56px;
+    }
+
+    .section-poems .ui.horizontal.list {
+      margin-top: 2rem;
+
+      .item {
+        margin: 1rem;
+      }
+    }
+
+    .register-background {
+      display: none;
+    }
+
+    .section-book .book-preview-item {
+      width: 350px;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .home-landing-page {
+    #home {
+      padding-bottom: 1rem;
+
+      .masthead.segment {
+        min-height: 43rem;
+      }
+
+      .information {
+        margin-top: 0rem;
+      }
+
+      .banner {
+        position: relative;
+        width: 65%;
+        height: 18rem;
+        margin: 0 auto;
+
+        .image-wrapper {
+          top: auto;
+          position: relative;
+          max-width: 100%;
+
+          img {
+            right: 0;
+            top: 0;
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .home {
+      padding: 1rem 10px 3rem;
+
+      &.home-one .section-container {
+        display: block;
+
+        .text-content {
+          padding-left: 0;
+        }
+      }
+
+      .section-container {
+        display: block;
+
+        h2 {
+          text-align: left !important;
+          font-size: 2.5rem !important;
+          line-height: 1;
+        }
+
+        .text-content {}
+      }
+
+      .ui.grid>[class*="three column"].row>.column {
+        width: 100% !important;
+        padding-bottom: 3rem;
+
+        &>img {
+          max-width: 85%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        &:nth-child(2) {
+          &>img {
+            max-width: 65%;
+          }
+        }
+      }
+
+      &.home-five {
+        .section-container {
+          display: block;
+
+          &>div {
+            width: 100% !important;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      &.home-footer {
+        .ui.button {
+          margin: 0.5rem 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .premium-users {
+      .ui.horizontal.list {
+        .header {
+          margin-top: 1.5rem;
+          height: 4rem;
+          max-height: 2.5rem;
+          overflow: hidden;
+        }
+
+        &>.item {
+          width: 7rem;
+          min-width: 7rem;
+        }
+
+        .user-avatar {
+          width: 5rem;
+
+          .user-avatar-inner {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+
+        .star-badge.big {
+          width: 1.6rem;
+          height: 1.6rem;
+          bottom: -0.5rem;
+          margin-left: -0.5rem;
+
+          i.icon {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* VDP 2019 */
+.vdp2019 {
+  margin-top: 2rem;
+
+  .item.fest-page {
+    position: relative;
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 2rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      overflow: hidden;
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+
+    .back {
+      position: absolute;
+      z-index: 0;
+      width: 540px;
+      height: 540px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    .back-1 {
+      background-image: url(https://cdn.ryfma.com/defaults/landings/vdp2019/back_1.png);
+      left: -270px;
+      top: 60px;
+    }
+
+    .back-2 {
+      background-image: url(https://cdn.ryfma.com/defaults/landings/vdp2019/back_2.png);
+      right: 0;
+      top: -10rem;
+    }
+
+    .back-3 {
+      background-image: url(https://cdn.ryfma.com/defaults/landings/vdp2019/back_1.png);
+      transform: rotate(170deg);
+      width: 850px;
+      height: 850px;
+      right: -300px;
+      top: -350px;
+    }
+
+    .welcome-section {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+
+      .ui.image {
+        margin-top: 1rem;
+        max-width: 50%;
+      }
+
+      .ui.card.sidebar-card.acceptContest {
+        margin-top: 2rem;
+      }
+    }
+
+    .winners {
+      margin: 0 auto;
+
+      .ui.horizontal.list>.item {
+        width: 33%;
+        max-width: 12rem !important;
+
+        &:first-child {
+          padding-left: 1.2rem !important;
+        }
+      }
+
+      .winners-wrapper {
+        margin-top: 6rem;
+
+        .winners-item.first-place {
+          margin-top: -5em;
+        }
+      }
+    }
+
+    .ui.card.sidebar-card.acceptContest {
+      text-align: center !important;
+      background-color: transparent;
+      padding: 0;
+      margin: 5rem 0;
+
+      .header {
+        display: block;
+        color: #3719A8;
+        font-size: 2.75rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .ui.button.sendRequest {
+        position: relative;
+        max-width: 20rem;
+        margin: 0 auto;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+
+        &:hover,
+        &:visited,
+        &:active {
+          transition: all 300ms ease;
+          color: $white;
+          text-decoration: none;
+          outline: none;
+        }
+
+        &:hover:after {
+          width: 120%;
+          background-color: rgba(255, 255, 255, 0);
+          transition: all .6s ease-out;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.4);
+          transition: none;
+        }
+
+        &.primary {
+          background: #B84BFF;
+          /* Old browsers */
+          background: -moz-linear-gradient(right, #B84BFF 0%, #7132FF 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(right, #B84BFF 0%, #7132FF 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, #B84BFF 0%, #7132FF 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B84BFF', endColorstr='#7132FF', GradientType=0);
+          /* IE6-9 */
+        }
+      }
+    }
+
+    .ui.horizontal.list {
+      &>.item {
+        margin: 0.5rem 0.25rem !important;
+        width: 9%;
+        max-width: 10rem !important;
+
+        &:first-child {
+          margin-left: 0.5rem !important;
+          padding-left: 0 !important;
+        }
+      }
+
+      .user-avatar {
+        margin: 0 auto;
+        width: 6.5rem;
+        display: block;
+
+        .user-avatar-inner {
+          width: 6.5rem;
+          height: 6.5rem;
+        }
+
+        .star-badge.big {
+          width: 1.8rem;
+          height: 1.8rem;
+          bottom: -0.9rem;
+          left: 52%;
+
+          i.icon {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .header {
+        margin-top: 1rem;
+        height: 2.5rem;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+
+    .fest-partners {
+      margin-bottom: 0;
+
+      .ui.horizontal.list {
+        &>.item {
+          margin: .25rem !important;
+
+          .header {
+            height: 4rem;
+          }
+
+          .user-avatar {
+            .user-avatar-inner {
+              width: 6.5rem;
+              height: 6.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .fest-juries {
+      padding: 0 !important;
+    }
+
+    .fest-info {
+      margin: 4rem auto;
+      padding: 5rem 1rem;
+      text-align: center;
+      background-color: #EEF3FB;
+
+      .fest-info-content {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      h3 {
+        font-size: 3rem !important;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 1rem;
+      }
+
+      .fest-links {
+        margin: 3rem 0;
+
+        a {
+          color: #6623FE !important;
+          display: inline-block;
+          margin: 1rem 2rem;
+          font-size: 1.5rem;
+          font-weight: 300;
+        }
+      }
+
+      .fest-timeline {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+
+        .dots {
+          border-bottom: dotted 3px #A7A7A6;
+          width: 5rem;
+          position: relative;
+          display: inline-block;
+          height: 2.75rem;
+          margin: 0 1rem;
+          vertical-align: top;
+        }
+
+        .fest-date-item {
+          display: inline-block;
+          max-width: 25%;
+          vertical-align: top;
+
+          &.red b {
+            background-color: #FF557E;
+            color: #fff;
+          }
+
+          &.final b {
+            background-color: #B84BFF;
+            color: #fff;
+          }
+
+          b {
+            display: block;
+            background-color: $white;
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+          }
+
+          &>div {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .contest-posts-wrapper {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    .fest-users {
+      position: relative;
+      z-index: 1;
+
+      &>.header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+
+      .ui.horizontal.list {
+        &>.item {
+          width: 8%;
+
+          .user-avatar {
+            width: 5.5rem;
+
+            .user-avatar-inner {
+              width: 5.5rem;
+              height: 5.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .fest-posts-wrapper {
+      margin-top: 3rem;
+      position: relative;
+
+      .contest-posts-wrapper {
+        padding: 0;
+      }
+
+      .ui.segment {
+        background-color: transparent;
+
+        &.user-posts {
+          .fest-sort-panel {
+            margin-top: 0.5rem;
+          }
+
+          .ui.horizontal.list>.item {
+            &:first-child {
+              padding-left: 1.2rem !important;
+            }
+          }
+        }
+      }
+    }
+
+    .ui.card.sidebar-card {
+      background-color: transparent;
+    }
+
+    .fest-page-content {
+      overflow: hidden;
+    }
+  }
+}
+
+.cities-list {
+  text-align: left;
+
+  .city-column {
+    display: inline-block;
+    padding: 1rem;
+    width: 25%;
+  }
+
+  .city-item {
+    font-size: 1.4rem;
+    line-height: 2em;
+    max-height: 2.5rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main;
+    }
+  }
+}
+
+.coronavirus-page {
+  min-width: 320px;
+  text-align: left;
+  overflow: hidden;
+  background-color: #F47357;
+  color: #fff;
+
+  h3,
+  h1 {
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1rem 0;
+    position: relative;
+  }
+
+  .head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5rem 4rem;
+    margin: 0 auto;
+
+    .back-img {
+      bottom: -4rem;
+    }
+
+    .information {
+      position: relative;
+      max-width: 50%;
+
+      .head-subtitle {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .ui.button {
+    padding: 1.3rem 3rem !important;
+    display: inline-block;
+    border-radius: 2rem;
+    box-shadow: 0 7px 11px -4px rgba(0, 0, 0, .25);
+    background-color: #fff !important;
+    color: #fff;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45rem;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #7861ff !important;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: none;
+
+    &.buy-button {
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+      padding: 1.3rem 5rem !important;
+    }
+  }
+
+  .gray-back {
+    position: absolute;
+    bottom: 1rem;
+    left: -3200px;
+    display: block;
+    width: 6200px;
+    height: 40rem;
+    background-color: #ecf0ff;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    z-index: 1;
+  }
+
+  .section {
+    position: relative;
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, -o-transform 1s ease-in-out;
+    will-change: transform;
+    padding: 8rem 5rem 8.5rem;
+
+    .section-container {
+      margin: 0 auto;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .section-text {
+    max-width: 60%;
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .section-whatisit {
+    background-color: #fff;
+    color: #191919;
+
+    h3 {
+      color: #191919;
+    }
+
+    .section-container {
+      display: flex;
+      align-items: center;
+
+      .whatisit-background {
+        position: relative;
+        background-image: url(https://cdn.ryfma.com/defaults/landings/coronavirus/pic1.png);
+        width: 30rem;
+        height: 30rem;
+        margin: 0 3rem;
+      }
+    }
+  }
+
+  .section-poems {
+    background-color: #fff;
+
+    h3,
+    p {
+      color: #141414;
+    }
+
+    h3 {
+      position: absolute;
+      left: 0;
+      top: -3rem;
+      width: 5rem;
+    }
+
+    .thumbs {
+      position: absolute;
+      right: 525px;
+      top: 624px;
+    }
+
+    .ui.horizontal.list {
+      width: 100%;
+      text-align: center;
+
+      .main-item {
+        display: block;
+        width: 100% !important;
+        margin: 0 auto !important;
+        margin-bottom: 2rem !important;
+
+        .header {
+          div {
+            font-weight: 300;
+          }
+        }
+      }
+
+      .item {
+        width: 12%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+        .user-avatar {
+          margin: 0 auto;
+          width: 7rem;
+          display: block;
+
+          .user-avatar-inner {
+            width: 7rem;
+            height: 7rem;
+          }
+        }
+      }
+
+      .header {
+        margin-top: .5rem;
+        height: 2.3rem;
+        overflow: hidden;
+      }
+    }
+
+    .read-more-wrapper {
+      position: relative;
+      text-align: center;
+      z-index: 3;
+    }
+  }
+
+  .section-reviews {
+    background-color: $white;
+    color: $black;
+
+    h3 {
+      color: $black;
+    }
+
+    .review-inner {
+      p {
+        font-size: 1.3rem;
+
+        a {
+          margin-left: 0.35rem;
+          font-size: 0.9rem;
+          color: $main;
+        }
+      }
+
+      .user-item {
+        img {
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  .section-register {
+    background: #F47357;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #F58743 0%, #F47357 100%, #2989d8 100%, #1e5799 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #F58743 0%, #F47357 100%, #2989d8 100%, #1e5799 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, #F58743 0%, #F47357 100%, #2989d8 100%, #1e5799 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F58743', endColorstr='#F47357', GradientType=0);
+
+    /* IE6-9 */
+    .section-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .section-book {
+    background-color: #fff;
+    text-align: center;
+
+    .book-preview-item {
+      width: 390px;
+      height: 550px;
+      display: block;
+      margin: 0 auto;
+
+      .book-preview-cover {
+        background-position: center;
+      }
+
+      .book-preview-left {
+        h2 {
+          color: #43598F;
+          width: 40rem;
+          text-align: left !important;
+          padding-left: 1rem
+        }
+      }
+
+      .book-preview-book,
+      .book-preview-back,
+      .book-preview-left,
+      .book-preview-right {
+        height: 100%;
+      }
+
+      .book-preview-back {
+        width: 100%;
+      }
+
+      .book-preview-front {
+        width: 100%;
+        height: 100%;
+
+        &>div {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    h2 {
+      color: #141414;
+    }
+
+    .ui.button.download {
+      background-color: #EE2463 !important;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      font-size: 1.3rem !important;
+      font-weight: bold !important;
+    }
+
+    .share-menu {
+      .item {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .back-img {
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    width: 35rem;
+    height: 35rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .virus-back-1 {
+    position: absolute;
+    z-index: 10;
+    bottom: -1rem;
+    left: 3rem;
+    width: 12rem;
+    height: 12rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.ryfma.com/defaults/landings/coronavirus/virus.png);
+  }
+
+  .virus-back-2 {
+    position: absolute;
+    z-index: 10;
+    top: -6rem;
+    right: 5rem;
+    width: 24rem;
+    height: 24rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.ryfma.com/defaults/landings/coronavirus/virus.png);
+  }
+
+  .head-background {
+    background-image: url(https://cdn.ryfma.com/defaults/landings/coronavirus/book-cover.png);
+  }
+
+  .register-background {
+    position: relative;
+    background-image: url(https://cdn.ryfma.com/defaults/landings/coronavirus/pic2.png);
+    width: 30rem;
+    height: 30rem;
+    right: auto;
+    top: auto;
+    margin: 0 3rem 0 4rem;
+  }
+}
+
+.ui.tiny.modal.subtotal-modal {
+  position: relative;
+  width: 35%;
+
+  .scrolling.content {
+    max-height: calc(59vh);
+  }
+
+  .ui.input {
+    display: block;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .ui.warning.message {
+    display: block;
+    color: #222 !important;
+    font-size: 0.9rem;
+  }
+
+  .delivery-info,
+  .customer-info,
+  .order-info {
+    margin-top: 2rem;
+  }
+
+  .order-info {
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .login-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .total-sum-wrapper {
+    .total-sum {
+      background-color: $gray-light;
+      position: sticky;
+      bottom: 0;
+      border-radius: 4px;
+      padding: 0.5rem 0;
+
+      .total-sum-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+
+        &.total {
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin-top: 4px;
+          border-top: 1px solid $gray;
+        }
+      }
+    }
+
+    .buy-button {
+      display: block;
+      padding: 1.3rem 3rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: $white;
+      font-size: 1.25rem !important;
+      font-weight: bold !important;
+      line-height: 1.45rem;
+      border: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #7861ff;
+      box-shadow: none;
+    }
+  }
+}
+
+/* VProfessii */
+
+
+/* Advertisement */
+.rekl-page {}

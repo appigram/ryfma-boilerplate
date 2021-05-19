@@ -1,0 +1,21 @@
+{
+  "header": "Find yout authors",
+  "subheader": "There are hundreds of communities on Ryfma to explore. Check out some of our favorites below or search for topics.",
+  "emptyBookHeader": "Books not found",
+  "emptyBookText": "We can't find any books.",
+  "emptyPostHeader": "Posts not found",
+  "emptyPostText": "We can't find any posts.",
+  "emptyUserHeader": "Users not found",
+  "emptyUserText": "We can't find any users.",
+  "emptyTagHeader": "Tgs not found",
+  "emptyTagText": "We can't find any tags.",
+  "noResults": "Results not found. Try again",
+  "searchByUsers": "People",
+  "searchByPosts": "Publications",
+  "searchByBooks": "Books",
+  "searchByTags": "Tags",
+  "searchRyfma": "Search Ryfma",
+  "searchAnyRyfma": "Search for author or posts or books",
+  "searchFor": "Search for ",
+  "searchBooksRyfma": "Find your book, ex. Harry Potter, Fantasy or George R. R. Martin"
+}

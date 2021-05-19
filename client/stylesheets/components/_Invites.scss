@@ -2,7 +2,7 @@
   border-bottom: $border;
   text-align: left;
   padding: 2rem 0;
-  border-radius: 4px;
+  border-radius: $border-radius-big;
   margin-bottom: 1rem;
   .sub.header {
     max-width: 100%;
@@ -22,7 +22,7 @@
   }
   .send-invite {
     width: 100%;
-    border-radius: 4px!important;
+    border-radius: $border-radius-big!important;
   }
 }
 

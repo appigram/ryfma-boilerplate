@@ -1,0 +1,18 @@
+{
+  "createDialog": "Craete chat room",
+  "listOfDialogs": "List of dialogs",
+  "createRoom": "Create new chat",
+  "enterRoomName": "Enter chat name",
+  "enterLastFirstName": "Enter user name",
+  "searchUsers": "Search users",
+  "noRooms": "No rooms",
+  "noRoomsDesc": "You have no one chat dialogs yet.",
+  "noRoomsFound": "No rooms found.",
+  "noMessages": "No messages",
+  "writeFirstMessage": "Write your first message",
+  "createChat": "Create chat",
+  "addNew": "Add new",
+  "chats": "Chats",
+  "messages": "Messages",
+  "selectChat": "Please select a chat"
+}

@@ -1,0 +1,344 @@
+<!-- Thumbnail Right, Text Left : BEGIN -->
+<tr>
+  <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+  <td dir="rtl" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;" itemscope itemtype="http://schema.org/Article">
+    <h1 style="text-align:left; font-weight: bold; font-size: 30px; margin: 0 12px; line-height: 25px; margin-bottom: 30px;">
+      {{event.title}}
+    </h1>
+    <!--[if mso]>
+    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+    <tr>
+    <td valign="top" width="660">
+    <![endif]-->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+      <tr>
+        <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+        {{#if event.coverImg}}
+          <!--[if mso]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+          <tr>
+          <td valign="top" width="220" style="width: 220px;">
+          <![endif]-->
+          <div style="display:block; margin: 0 -2px; min-width:320px; vertical-align:top;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                  <a href="https://ryfma.com/e/{{event.slug}}?utm_source=email&amp;utm_medium=eventreminder&amp;utm_campaign={{event.slug}}&amp;utm_content=image"  data-saferedirecturl="https://www.google.com/url?hl=ru&q=https://ryfma.com/e/{{event.slug}}?utm_source=email&amp;utm_medium=eventreminder&amp;utm_campaign={{event.slug}}&amp;utm_content=image" style="display:block;vertical-align:middle;text-decoration:none;text-align:center;">
+                    <img itemprop="image" border="0" alt="{{event.title}}" style="display:inline-block;border:none;outline:none;text-decoration:none;margin:0 8px 0 0;line-height: 0;border-radius: 8px; max-height: 225px;max-width: 100%;" src="{{event.coverImg}}" class="center-on-narrow">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso]>
+          </td>
+          <td valign="top" width="440" style="width: 540px;">
+          <![endif]-->
+        {{/if}}
+        <div style="display:block; margin: 0 -2px; min-width:320px; vertical-align:top;" class="stack-column">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+              <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;">
+                <!--[if mso]>
+                <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                <tr>
+                <td valign="top" width="660" style="width: 660px;">
+                <![endif]-->
+                <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                      <!--[if mso]>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                      <tr>
+                      <td valign="top" width="220" style="width: 220px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 64px; min-width:48px; vertical-align:top; width:100%;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                              <img src="https://cdn.ryfma.com/defaults/icons/ticket.png" width="48" height="" border="0" class="center-on-narrow" style="width: 100%; max-width: 48px; height: auto;  font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td valign="top" width="440" style="width: 540px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 540px; min-width:320px; vertical-align:top;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;" class="center-on-narrow">
+                              <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">{{ticketsCount}} x Билетов</h2>
+                              <p style="margin: 0 0 10px 0;">Сумма заказа: {{ticketsTotal}}Руб.</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+
+            <tr>
+              <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+              <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;">
+                <!--[if mso]>
+                <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                <tr>
+                <td valign="top" width="660" style="width: 660px;">
+                <![endif]-->
+                <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                      <!--[if mso]>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                      <tr>
+                      <td valign="top" width="220" style="width: 220px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 64px; min-width:48px; vertical-align:top; width:100%;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                              <img src="https://cdn.ryfma.com/defaults/icons/clock.png" width="48" height="" border="0" class="center-on-narrow" style="width: 100%; max-width: 48px; height: auto;  font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td valign="top" width="440" style="width: 540px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 540px; min-width:320px; vertical-align:top;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;" class="center-on-narrow">
+                              <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">{{eventFormatDate}}</h2>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+
+            <tr>
+              <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+              <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;">
+                <!--[if mso]>
+                <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                <tr>
+                <td valign="top" width="660" style="width: 660px;">
+                <![endif]-->
+                <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                      <!--[if mso]>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                      <tr>
+                      <td valign="top" width="220" style="width: 220px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 64px; min-width:48px; vertical-align:top; width:100%;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                              <img src="https://cdn.ryfma.com/defaults/icons/placeholder.png" width="48" height="" border="0" class="center-on-narrow" style="width: 100%; max-width: 48px; height: auto;  font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td valign="top" width="440" style="width: 540px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 540px; min-width:320px; vertical-align:top;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;" class="center-on-narrow">
+                              <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">{{event.place}}</h2>
+                              <p>
+                                {{event.city}},{{event.country}}
+                              </p>
+                              <a href='https://yandex.ru/maps/213/moscow/?from=api-maps&l=map&ll={{eventYCoords}}%2C{{eventXCoords}}&mode=routes&origin=jsapi_2_1_74&rtext=~{{eventYCoords}}%2C{{eventXCoords}}&rtt=pd&ruri=~&z=16'>(Посмотреть на карте)</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+      </td>
+    </tr>
+
+    <tr>
+      <td style="background-color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          {{#each ticketsIds}}
+            <tr>
+              <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+              <td dir="ltr" height="100%" valign="top" width="100%">
+                <!--[if mso]>
+                <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                <tr>
+                <td valign="top" width="660" style="width: 660px;">
+                <![endif]-->
+                <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;border-collapse: collapse;border-spacing: 0;color: rgb(51,51,51);background-color: rgb(245,245,245);border-radius: 3px;font-size: 16px;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;border-style: solid;border-color: white;border-left-width: 0;border-right-width: 0;border-bottom-width: 1px;border-top-width: 0px;">
+                      <!--[if mso]>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                      <tr>
+                      <td valign="top" width="220" style="width: 220px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 420px; min-width:400px; vertical-align:top; width:100%;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="padding: 0 0 0 10px; color: #222222; font-size: 20px;">
+                              Билет #{{this}}
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td valign="top" width="440" style="width: 540px;">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -2px; max-width: 190px; min-width:160px; vertical-align:top;" class="stack-column">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="font-family: sans-serif;" class="center-on-narrow">
+                              <a href='https://ryfma.com/e/ticket/{{this}}' style="font-family: sans-serif; padding: 12px; color: #005ceb;background-image: none;font-size: 18px;">Распечатать билет</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          {{else}}
+          <tr>
+            <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+            <td dir="ltr" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;">
+              <!--[if mso]>
+              <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+              <tr>
+              <td valign="top" width="660" style="width: 660px;">
+              <![endif]-->
+              <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+                <tr>
+                  <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                    <p>
+                      Tickets not found
+                    </p>
+                    <!--[if mso]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+              <!--[if mso]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          {{/each}}
+
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="background-color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr>
+            <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: center; padding-bottom: 50px;">
+              <h3>Организуй свое мероприятие</h3>
+              <div className='users'>
+                <a href='https://ryfma.com/u/polina' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/uDco4MHxQYr2FhQLq/users/user_middle_1566067826858_127a7663-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt="Полина Шибеева" />
+                </a>
+                <a href='https://ryfma.com/u/stefaniya-danilova' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/HM8WcheduyyPCroxS/users/user_middle_1568150751201__mg_6254-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt=" Стефания Данилова" />
+                </a>
+                <a href='https://ryfma.com/u/eugenia-onegina' target='_blank'>
+                  <img src='https://cdn.ryfma.com/images/BLqiQk2BNrBbxJRzb/users/user_middle_1555681099107_sq7-wpjxyy-jpg.jpg' style='border-radius: 500px; margin: 0 4px;' alt="Евгения Онегина" />
+                </a>
+              </div>
+              <p style='margin-bottom: 0px;'>Многие авторы организуют свои события на Ryfma</p>
+              <p>Попробуй и ты</p>
+              <a href='https://ryfma.com/e/new-event'>Организуй свое мероприятие</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+  </td>
+</tr>
+<!-- Thumbnail Right, Text Left : END -->

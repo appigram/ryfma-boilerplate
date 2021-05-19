@@ -1,10 +1,9 @@
 import loginWithFacebook from './loginWithFacebook'
 import loginWithGoogle from './loginWithGoogle'
 import loginWithLinkedIn from './loginWithLinkedIn'
-import loginWithTwitter from './loginWithTwitter'
 import loginWithVK from './loginWithVK'
 import hasService from './hasService'
-import {Accounts} from 'meteor/accounts-base'
+import {Accounts} from 'meteor/appigram:accounts-base'
 
 export default function (options) {
   const oauth = {}
@@ -31,15 +30,6 @@ export default function (options) {
     oauth.loginWithLinkedIn = loginWithLinkedIn
     try {
       Accounts.oauth.registerService('linkedin')
-    } catch (error) {
-      // dont log this error
-    }
-  }
-
-  if (hasService(options, 'twitter')) {
-    oauth.loginWithTwitter = loginWithTwitter
-    try {
-      Accounts.oauth.registerService('twitter')
     } catch (error) {
       // dont log this error
     }

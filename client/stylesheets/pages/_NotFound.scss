@@ -1,0 +1,40 @@
+.error-page {
+  text-align: center;
+  height: 100vh!important;
+  .inner {
+    max-width: 640px;
+  }
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  a {
+    font-size: 1.7rem!important;
+    font-weight: bold;
+    margin-top: 2rem!important;
+  }
+  img {
+    max-width: 500px;
+  }
+}
+
+.error-content {
+  text-align: center;
+  padding-top: 5em;
+  h1 {
+    margin-top: 0;
+  }
+  i.icon {
+    font-size: 5em;
+  }
+  a {
+    color: #00a9ff;
+    font-size: 1.2em;
+  }
+}

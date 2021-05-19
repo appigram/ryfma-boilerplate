@@ -1,2 +1,11 @@
-export MAIL_URL=smtp://email:pass@smtp.mailgun.org:587/
-meteor --settings settings-development.json
+export MAIL_URL=
+export METEOR_OFFLINE_CATALOG=1
+export NODE_ENV=development
+export METEOR_DISABLE_AUTO_COMPRESS=1
+export METEOR_DISABLE_OPTIMISTIC_CACHING=1
+export METEOR_TOOL_ENABLE_REIFY_RUNTIME_CACHE=true
+export DISABLE_WEBSOCKETS=1
+export DISABLE_REACT_FAST_REFRESH=1
+export REDIS_URL=redis://127.0.0.1:6379
+rm -rf ./node_modules/.cache/babel-loader
+meteor run --settings settings-development.json --exclude-archs web.browser.legacy,web.cordova

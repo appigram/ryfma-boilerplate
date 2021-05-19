@@ -1,0 +1,117 @@
+<!-- Thumbnail Right, Text Left : BEGIN -->
+<tr>
+  <style>
+    .social-button {
+      display: inline-block;
+      font-size: 18px;
+      min-width: 25%;
+      text-align: center;
+    }
+    .social-button a {
+      display: block;
+      padding: 6px 16px;
+      margin: 12px 10px;
+      border-radius: 4px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .social-button.vk a {
+      background-color: #46668C;
+    }
+    .social-button.tw a {
+      background-color: #1DADEB;
+    }
+    .social-button.fb a {
+      background-color: #3D5A96;
+    }
+    .stat-block {
+      max-width: 50%;
+      text-align: center;
+      display: inline-block;
+      font-size: 20px;
+    }
+    .stat-block strong {
+      font-size: 54px;
+      display: block;
+      line-height: 1.2;
+    }
+    .stat-block.gold {
+      max-width: 65%;
+      background-color: #ffcf64;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      font-size: 20px;
+      border-radius: 8px;
+    }
+    .divider {
+      border-left: 1px solid #f1f1f1;
+      height: 90px;
+      margin: 20px 40px;
+    }
+  </style>
+  <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+  <td dir="rtl" height="100%" valign="top" width="100%" style="padding: 10px 0; background-color: #ffffff;" itemscope itemtype="http://schema.org/Article">
+    <h1 style="text-align:center; font-size: 22px; margin: 0 60px;line-height: 25px;">
+      Продвигайте свое творчество на Ryfma
+    </h1>
+    <!--[if mso]>
+    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+    <tr>
+    <td valign="top" width="660">
+    <![endif]-->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+      <tr>
+        <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+        <!--[if mso]>
+        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+        <tr>
+        <td valign="top" width="220" style="width: 220px;">
+        <![endif]-->
+        <div style="display:block; margin: 0 -2px; min-width:320px; vertical-align:top;" class="stack-column">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td dir="ltr" style="padding: 0 10px 10px 10px;">
+                <a href="https://ryfma.com/u/{{user.username}}?utm_source=email&amp;utm_campaign=promote&amp;utm_content=image"  data-saferedirecturl="https://www.google.com/url?hl=ru&q=https://ryfma.com/u/{{user.username}}?utm_source=email&amp;utm_campaign=promote&amp;utm_content=image" style="display:block;vertical-align:middle;text-decoration:none;text-align:center;">
+                  <img itemprop="image" border="0" alt="{{user.profile.name}}" style="display:inline-block;border:none;outline:none;text-decoration:none;margin:0 8px 0 0;line-height: 0;border-radius: 8px; max-height: 300px;max-width: 100%;" src="https://cdn.ryfma.com/defaults/emails/promotions/cool_cat.png" class="center-on-narrow">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--[if mso]>
+        </td>
+        <td valign="top" width="440" style="width: 440px;">
+          <![endif]-->
+
+          <div style="display:block; margin: 0 -2px; margin-top: 20px; min-width:320px; vertical-align:top; text-align: center;background-color: #ffbf31;color: #ffffff;border-radius: 8px;padding-top: 24px;padding-bottom: 36px;" class="stack-column">
+            <table dir="ltr" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td style='font-weight: bold; font-size: 16px;text-align: center; color: #222;margin-bottom: 12px;width: 100%; text-transform: uppercase;letter-spacing: 1px;'>
+                  У вас имеется
+                </td>
+              <tr>
+                <td class="stat-block">
+                  <img src="https://cdn.ryfma.com/defaults/icons/Sunduk.png" style="max-width: 120px;"/>
+                  <strong>{{user.coins}}</strong>
+                  монет
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+  </td>
+</tr>
+<!-- Thumbnail Right, Text Left : END -->

@@ -1,0 +1,253 @@
+.fest-ratings {
+  .curatorInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4, h5 {
+      margin: 0;
+    }
+    .content {
+      text-align: left;
+    }
+    .meta a {
+      color: $main;
+    }
+    .ui.avatar.image img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+.ratings-wrapper-page {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+  font-size: 1rem;
+  .ui.table {
+    border: none;
+    thead th {
+      background-color: transparent;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $gray;
+      font-size: 0.9em;
+      &.eight.wide {
+        width: 50%!important;
+      }
+    }
+    td.rank {
+      padding-right: 0;
+    }
+  }
+  .ui.relaxed.items > .item {
+    margin: 0;
+    .user-avatar {
+      display: block;
+    }
+  }
+  .user-info {
+    height: auto;
+  }
+  .ui.items > .item > .content {
+    font-size: 0.85em;
+    align-items: center;
+  }
+  .user-info .content {
+    justify-content: flex-start;
+    .user-info-content {
+      width: auto;
+      .header {
+        a {
+          word-break: break-word;
+          white-space: normal;
+        }
+      }
+      .user-stat {
+        & > span {
+          margin-right: 0.35rem;
+        }
+      }
+    }
+  }
+  .ui.form {
+    .field.search-field {
+      margin: 2rem 0 1rem;
+      .ui.input {
+        input {
+          font-size: 1.35rem;
+          border: $border;
+          border-radius: 12px;
+          border-width: 2px;
+          padding: 1.2rem 1.2rem 1.2rem 3rem;
+          width: 100%;
+          text-align: left;
+        }
+        &:active, &:focus {
+          input {
+            border-color: $main-light;
+            box-shadow: 2px 2px 16px rgba(51, 186, 255, 0.5);
+          }
+          i.icon {
+            color: $main-light;
+          }
+        }
+        i.icon {
+          font-size: 1.45rem;
+        }
+      }
+    }
+  }
+  .achievements {
+    .badge-wrapper {
+      display: inline-block;
+      .badge {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.3rem;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  .rank {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .karma, .karma-change {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .sort-classic {
+    .alpha-sort {
+      p {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      a {
+        display: inline-block;
+        padding: 0.25rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        cursor: pointer;
+        &.active, &:hover {
+          color: $main!important;
+        }
+      }
+    }
+    .ui.horizontal.list {
+      font-size: 1rem;
+      margin: 0;
+      margin-top: 1.5rem;
+      text-align: left;
+      a {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        &.active, &:hover {
+          color: $main!important;
+        }
+      }
+    }
+  }
+  .classic-page {
+    margin-top: 1.5rem;
+    .ui.card {
+      box-shadow: none;
+      a.user-avatar {
+        display: block;
+        margin: 0 auto;
+        height: 100px;
+        img.avatar {
+          width: 100px!important;
+          height: 100px!important;
+          border-radius: 500rem!important;
+          display: block;
+        }
+      }
+      .content {
+        border: none;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+.fairytails-page {
+  .ui.grid {
+    .rad-wrapper {
+      display: block;
+      width: 100%;
+    }
+    .column {
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  .slide-down-button {
+    display: block;
+    margin: 2rem auto 4rem;
+    width: 75%;
+    background-color: transparent;
+    opacity: 0.9;
+    border: 2px solid $main;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1rem;
+    &:hover, &:active, &:focus {
+      background-color: $main;
+      color: $white;
+    }
+  }
+  .ui.card {
+    box-shadow: none;
+    cursor: pointer;
+    a.user-avatar {
+      display: block;
+      margin: 0 auto;
+      height: 100px;
+      img.avatar {
+        width: 100px!important;
+        height: 100px!important;
+        border-radius: 500rem!important;
+        display: block;
+      }
+    }
+    .content {
+      border: 0;
+    }
+  }
+  .authors {
+    .ui.card {
+      text-align: center;
+    }
+  }
+  .countries {
+    .ui.card {
+      box-shadow: none;
+      border: 2px solid $gray-light;
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      .user-avatar {
+        display: inline-block;
+        margin: 0;
+        width: 120px;
+        img {
+          margin: 0;
+        }
+      }
+      &:hover, &:active, &:focus {
+        border-color: $main;
+        border-width: 2px;
+      }
+    }
+  }
+}

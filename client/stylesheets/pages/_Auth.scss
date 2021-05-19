@@ -1,49 +1,172 @@
 .auth-page {
-  text-align: center;
-  max-width: 380px;
-  margin: 0 auto;
-  height: 100vh;
-  position: relative;
-  .social-login {
-    margin-top: 1.5rem;
-    button {
-      background: none;
-      color: $white;
-      border: 0;
-      margin: 0 8px;
-      padding: 0.78571429em 1.18571429em 0.78571429em!important;
-      border-radius: 3px;
-      width: 45.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  .auth-sidebar {
+    position: relative;
+    width: 514px;
+    flex-grow: 0;
+    color: $black;
+    a, p {
+      color: $black!important;
     }
-    .facebook-login-button {
-      background: #4666A0;
+    .auth-sidebar-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
-    .vk-login-button {
-      background-color: #507299;
+    header {
+      max-width: 100%;
+      margin: 0;
+      padding: 64px 64px 30px 64px;
+      .logo {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 2rem;
+          margin-right: 0.5rem;
+        }
+      }
+      h1 {
+        font-size: 25px;
+        line-height: 30px;
+        display: block;
+        padding-right: 30px;
+      }
+    }
+    .screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex-grow: 1;
+      .screen-img {
+        flex-grow: 1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin: 0 4rem;
+      }
+      .screen-attribution {
+        font-size: 14px;
+        line-height: 14px;
+        color: inherit;
+        padding: 25px 64px 35px;
+        margin: 0;
+        a {
+          font-size: 1.1rem;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
     }
   }
-  .ui.form .field .ui.input input {
-    height: 3rem;
-  }
-  .fullwidth-button {
-    font-size: 1.2em!important;
-    border-radius: 4px!important;
-    margin-top: 1rem;
-  }
-  a {
-    font-weight: bold;
-  }
-  .auth-footer {
+  .content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    &.text-center {
-      text-align: center;
-      display: block;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    width: 100%;
+    .inner-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      margin: 0;
+      padding: 0;
+      .auth-content {
+        width: 100%;
+        max-width: 30rem;
+        margin: 0;
+      }
     }
-    div {
-      padding: 0 1rem;
+    .social-login {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        display: inline-block!important;
+        background: none;
+        cursor: pointer;
+        color: $white;
+        border: 0!important;
+        margin: 0 4px;
+        padding: 0.75em!important;
+        font-size: 1em!important;
+        border-radius: 3px!important;
+        box-shadow: none!important;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .vk-login-button {
+        background-color: #507299!important;
+        padding: .75em 1.75em!important;
+        svg {
+          margin-right: 0.25rem;
+        }
+      }
+      .facebook-login-button {
+        background-color: #c3d5f5!important;
+        color: $gray-dark;
+        width: 4.5rem;
+        &:hover, &:focus {
+          color: #4666a0;
+          svg {
+            fill: #4666a0;
+          }
+        }
+      }
+      .google-login-button {
+        background-color: #fbc8c5!important;
+        color: $gray-dark;
+        width: 4.5rem;
+        &:hover, &:focus {
+          color: #E8453C;
+          svg {
+            fill: #E8453C;
+          }
+        }
+      }
+    }
+    .ui.form .field .ui.input input {
+      height: 3rem;
+    }
+    .fullwidth-button {
+      font-size: 1.2em!important;
+      margin-top: 1rem;
+    }
+    a {
+      font-weight: bold;
+    }
+    .auth-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      &.text-center {
+        text-align: center;
+        display: block;
+      }
+      div {
+        padding: 0 1rem;
+      }
+    }
+    .ui.negative.message, .ui.attached.negative.message {
+      text-align: left;
+      font-size: 0.85em;
+    }
+    .spam-mark {
+      font-size: 0.9rem;
+      color: $gray-dark;
     }
   }
 }

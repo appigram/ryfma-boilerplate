@@ -2,7 +2,7 @@
   background: #2d2d2d!important;
   margin-top: 0!important;
   border-radius: 0!important;
-  padding: 2em 0!important;
+  padding: 4em 0 3em!important;
   margin-bottom: 0!important;
   .ui.page.grid {
     padding-left: 10%;
@@ -10,19 +10,21 @@
   }
   .ui.grid > .row {
     &.pages-links {
-      padding: 2em 0 3em 0;
+      padding: 2em 0 6em;
       .ui.link.list .item, .ui.link.list a.item, .ui.link.list .item a:not(.ui) {
         &.header {
-          font-size: 1.3em;
-          font-weight: 500;
+          font-size: 1.5em;
+          font-weight: bold;
           color: rgba(255,255,255,0.8);
+          padding-bottom: 1.7rem!important;
           &:hover {
             color: rgba(255,255,255,0.8)!important;
           }
         }
-        padding-bottom: 0.85em;
-        font-weight: 100;
-        &:hover {
+        padding-bottom: 1.3rem;
+        font-weight: 300;
+        font-size: 1.1rem;
+        a:hover {
           color: $main!important;
         }
       }
@@ -32,39 +34,60 @@
     }
   }
   .logo {
-    font-weight: 800;
-    color: #ffffff;
-    font-size: 16pt;
+    display: flex;
+    align-items: center;
     padding: 0!important;
-    margin-bottom: 8px;
-  }
-  .button {
-    display: block;
-    width: 9rem;
-    border-radius: 500px;
-    margin: 0 auto;
-    .hidden {
-      display: block;
+    margin-top: -0.45rem;
+    svg {
+      margin-top: 4px;
+    }
+    span {
+      color: #ffffff;
+      font-weight: 600!important;
+      font-size: 2rem;
+    }
+    &:hover {
+      span {
+        color: $white!important;
+      }
     }
   }
-  .android-app {
-    .button {
-      float: right;
+  .ryfma-desc {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem!important;
+    padding-right: 3rem!important;
+    padding-bottom: 0!important;
+    margin-top: 0.5rem;
+    line-height: 1.55!important;
+  }
+  .mobile-links {
+    .item {
+      padding-bottom: 0.85rem!important;
+    }
+    .ui.animated.button {
+      width: 9.5rem;
+      height: 3rem;
+      margin: 0;
+      padding: 0!important;
+      font-size: 1.1rem!important;
+      font-weight: bold!important;
+      background-color: transparent!important;
+      border-radius: 4px!important;
+      img {
+        width: 9.5rem;
+      }
     }
   }
   .social-links {
     text-align: right!important;
     padding: 0 0.5em!important;
   }
-  .menu-copyright {
-    border-top: 1px solid #444444;
-    margin-top: 8px;
-    padding-bottom: 0!important;
-    font-size: 0.7rem;
-  }
-  .payment-menu {
-    i {
-      color: #AFAFAF!important;
+  .ui.grid>.row.footer-bottom {
+    justify-content: space-between!important;
+    padding-left: 1rem;
+    padding-right: 4.2rem;
+    .item {
+      font-size: 0.85rem!important;
     }
   }
 }
@@ -91,6 +114,7 @@
         display: inline-block;
         margin: 0;
         font-size: 0.75em!important;
+        max-width: 85%;
       }
     }
     .vk {

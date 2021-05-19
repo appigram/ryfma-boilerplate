@@ -39,7 +39,7 @@ export default function (options) {
     mutations.push(`
     type Mutation {
       # Login the user with a facebook access token
-      loginWithFacebook (accessToken: String!): LoginMethodResponse
+      loginWithFacebook (accessToken: String!, invitedByUserId: String): LoginMethodResponse
     }`)
   }
 
@@ -47,7 +47,7 @@ export default function (options) {
     mutations.push(`
     type Mutation {
       # Login the user with a facebook access token
-      loginWithGoogle (accessToken: String!, tokenId: String): LoginMethodResponse
+      loginWithGoogle (accessToken: String!, tokenId: String, invitedByUserId: String): LoginMethodResponse
     }`)
   }
 
@@ -55,7 +55,7 @@ export default function (options) {
     mutations.push(`
     type Mutation {
       # Login the user with a linkedin access token
-      loginWithLinkedIn (code: String!, redirectUri: String!): LoginMethodResponse
+      loginWithLinkedIn (code: String!, redirectUri: String!, invitedByUserId: String): LoginMethodResponse
     }`)
   }
 
@@ -63,7 +63,7 @@ export default function (options) {
     mutations.push(`
     type Mutation {
       # Login the user with a vk access token
-      loginWithVK (code: String!, redirectUri: String!): LoginMethodResponse
+      loginWithVK (code: String, redirectUri: String, userData: String, access_token: String, email: String, invitedByUserId: String): LoginMethodResponse
     }`)
   }
 

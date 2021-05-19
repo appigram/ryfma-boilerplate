@@ -1,0 +1,114 @@
+.ryfmaWeb.idea {
+  /*overflow-y: auto;
+  overflow-x: hidden;*/
+  background: #EEEEE2;
+  .top-header.ui.secondary.menu {
+    border-bottom: 1px solid #d6d6bc;
+    &.transparent {
+      background: transparent;
+      border-bottom: 0;
+    }
+  }
+  .readability-mode {
+    border: 1px solid #d6d6bc;
+  }
+  .ui.table {
+    td.negative, td.positive {
+      background: none!important;
+    }
+  }
+  .ui.secondary.menu .language-toggle, .ui.secondary.menu .readability-mode {
+    border: 0;
+  }
+  .ui.basic.label {
+    background: transparent;
+  }
+  .ui.table, .ui.segment, .spinner, .ui.card {
+    background: #EEEEE2;
+  }
+  .ui.segment.footer {
+    background: #252525!important;
+  }
+  .search-page .search-field .ui.input input {
+    border-bottom: 1px solid #d6d6bc;
+  }
+  .search-results .ui.horizontal.list {
+    border-bottom: 1px solid #d6d6bc;
+  }
+  .book-page .book-text .description.part-hidden:after {
+    background: linear-gradient(0deg, #EEEEE2, rgba(255,255,255,0.2))
+  }
+  .ui.grid.dashboard, .ui.grid.invites {
+    .ui.card {
+      background: #e6e6d9!important;
+      border: 1px solid #d6d6bc;
+      &:hover, &:active, &:focus {
+        background: #dadac6!important;
+      }
+    }
+  }
+  .referral-block, .settings h3.ui.header {
+    border-bottom: 1px solid #d6d6bc;
+  }
+  .faq-page {
+    .faq-header {
+      background: transparent;
+    }
+  }
+  #backto-left, #backto-top {
+    &:hover, &:active, &:focus {
+      #backto-bg {
+        opacity: 0.6;
+      }
+    }
+  }
+  .rooms-inner-content {
+    background-color: #eeeee2;
+  }
+  .reader-page .reader-header .reader-wrapper {
+    background: transparent;
+  }
+  .ui.card.recommended.horizontal.related-posts {
+    background-color: #e2e2d2;
+  }
+  .post-like-label {
+    background-color: #eeeee2!important;
+    &:hover {
+      background-color: #e2e2d2!important;
+    }
+  }
+  .remove-likes {
+    background-color: #eeeee2;
+  }
+  .ui.comments .submitCommentForm .ui.comments .comment .content {
+    background-color: #e2e2d2;
+    .review-editor {
+      background-color: #e2e2d2;
+    }
+  }
+  .ui.comments .loadmore-button {
+    background-color: #e2e2d2;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .ryfmaWeb.idea {
+    height: auto;
+  }
+  .ryfmaWeb.idea .ui.secondary.menu.top-mobile-header {
+    border-bottom: 1px solid #d6d6bc;
+    background: #e4e4d4;
+  }
+  .ryfmaWeb.idea .ui.secondary.menu.mobile-nav {
+    border-top: 1px solid #d6d6bc;
+    background: #e4e4d4;
+    .item {
+      .write-post i.icon {
+        color: #ffffff;
+      }
+      i.icon {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}

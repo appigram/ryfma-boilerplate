@@ -1,0 +1,154 @@
+/* inline Toolbar */
+.bpsgbes {
+  display: inline-block;
+}
+
+.b181v2oy {
+  background-color: #1b1c1d;
+  font-size: 1.2em;
+  padding: 3px 0 0;
+  border-radius: .35rem;
+  border: 1px solid #1b1c1d;
+  vertical-align: bottom;
+  height: 28px;
+  width: 30px;
+  margin: 0 .2em;
+  color: #fff;
+}
+
+.b181v2oy:focus,
+.b181v2oy:hover {
+  background: #444;
+  border-radius: .35rem;
+  border: 1px solid #444;
+  cursor: pointer;
+  outline: 0;
+}
+
+.b181v2oy svg {
+  fill: #f5f5f5;
+}
+
+.a9immln {
+  background: #efefef;
+  color: #444;
+}
+
+.a9immln svg {
+  fill: #444;
+}
+
+.tukdd6b {
+  left: 50%;
+  transform: translate(-50%) scale(0);
+  position: absolute;
+  background: #1b1c1d;
+  color: #fff;
+  border: 0;
+  border-radius: .5rem;
+  box-shadow: 1px 2px 3px -2px #222;
+  z-index: 1000;
+  padding: .5em;
+  box-sizing: border-box;
+}
+
+.tukdd6b:after,
+.tukdd6b:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.tukdd6b:after {
+  border: 6px solid transparent;
+  border-top-color: #1b1c1d;
+  margin-left: -6px;
+}
+
+.tukdd6b:before {
+  border: 6px solid transparent;
+  border-top-color: #1b1c1d;
+  margin-left: -6px;
+}
+
+.s1o2cezu {
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  height: 24px;
+  margin: 0 0.5em;
+}
+/* Static Toolbar */
+.bi09khh {
+  display: inline-block;
+}
+
+.bc4rxid {
+  background: #fbfbfb;
+  color: #888;
+  font-size: 18px;
+  border: 0;
+  padding-top: 5px;
+  vertical-align: bottom;
+  height: 34px;
+  width: 36px;
+}
+
+.bc4rxid:focus,
+.bc4rxid:hover {
+  background: #f3f3f3;
+  outline: 0;
+}
+
+.bc4rxid svg {
+  fill: #1b1c1d;
+}
+
+.akzb7t5 {
+  background: #efefef;
+  color: #444;
+}
+
+.akzb7t5 svg {
+  fill: #444;
+}
+
+.t16lpgj {
+  display: block;
+  position: fixed;
+  transform: translate(0) scale(1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+  padding: .5rem .35rem;
+  border: 0;
+  box-shadow: none;
+  border-top: 1px solid #e2e2e2;
+}
+
+.t16lpgj:after {
+  border-color: rgba(255,255,255,0);
+  border-top-color: #fff;
+  border-width: 4px;
+  margin-left: -4px;
+}
+
+.t16lpgj:before {
+  border-color: #1b1c1d;
+  border-top-color: #ddd;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.s6m29i4 {
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  height: 24px;
+  margin: 0 0.5em;
+}

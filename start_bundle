@@ -1,0 +1,8 @@
+export MAIL_URL=
+export METEOR_OFFLINE_CATALOG=1
+export METEOR_DISABLE_AUTO_COMPRESS=1
+export METEOR_DISABLE_OPTIMISTIC_CACHING=1
+export DISABLE_WEBSOCKETS=1
+export REDIS_URL=redis://127.0.0.1:6379
+rm -rf ./node_modules/.cache/babel-loader
+meteor --extra-packages bundle-visualizer --production --settings settings-production.json

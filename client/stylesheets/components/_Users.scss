@@ -1,17 +1,83 @@
+.user-cover {
+  position: relative;
+  overflow: hidden;
+  height: 40vh;
+  min-height: 10rem;
+  margin-bottom: -9rem;
+  .image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: translate3d(0, 0, 0);
+  }
+  .image-editor-wrapper {
+    height: 40vh;
+    min-height: 10rem;
+    .avatar-editor-drop {
+      height: 40vh;
+      min-height: 10rem;
+    }
+    .image-editor-actions {
+      display: none;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 40vh;
+      background-color: $black;
+      text-align: center;
+      opacity: 0.35;
+      .set-cover-desc {
+        font-size: 1.5rem;
+        color: #fff;
+        i.icon {
+          pointer-events: none;
+          font-size: 4rem;
+          margin: 0 auto 1rem;
+          opacity: 1;
+          color: #fff;
+          position: relative;
+        }
+      }
+    }
+    &:hover, &:active, &:focus {
+      .image-editor-actions {
+        display: block;
+      }
+    }
+  }
+}
+
 .user-page {
   padding-top: 3em;
   font-size: 1rem;
   .user-basic-info {
+    position: relative;
     margin-bottom: 0;
+    padding: 0 0.5rem;
+    & > div {
+      position: relative;
+      /* a, .extra, i.icon {
+        color: $white!important;
+      }*/
+    }
     .user-avatar-wrapper {
       position: relative;
-      width: 11.6rem;
-      height: 11.6rem;
+      width: 11.5rem;
+      height: 11.5rem;
       margin: 0 auto;
       margin-bottom: 1rem;
       border-radius: 500px;
-      padding: 4px;
+      padding: 0;
       z-index: 10;
+      border: 4px solid $white;
       &.user-status-online {
         &.user-status-online {
           border: 2px solid $success;
@@ -30,6 +96,12 @@
       margin: 0 auto;
       .image-editor-preview, .avatar-editor-drop {
         height: 100%;
+        overflow: hidden;
+        border-radius: 500rem;
+        img {
+          width: 100%!important;
+          height: 100%!important;
+        }
       }
       .image-editor-actions {
         display: none;
@@ -37,8 +109,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        width: 10.75rem;
-        height: 10.75rem;
+        width: 11rem;
+        height: 11rem;
         background-color: $black;
         border-radius: 999em;
         text-align: center;
@@ -57,43 +129,113 @@
       opacity: 1;
       color: $white;
     }
-    .ui.avatar.image {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        left: 50%;
-        top: 25%;
-        transform: translateY(-25%) translateX(-50%);
-      }
-    }
-    .header {
+    .user-name {
       position: relative;
-      display: inline-block;
-      .verified {
-        font-size: 0.85em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .header {
+        margin-bottom: 0;
+        &.verified::after {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+      .share-button {
+        background-color: transparent;
+        border-radius: 500rem!important;
+        border: $border;
+        padding: .4rem!important;
+        margin: 0 0.35rem!important;
+        width: 30px;
+        height: 30px;
         position: absolute;
-        top: 0.35em;
-        right: -1.75em;
+        right: 0;
+        top: 0;
+        svg {
+          color: $main;
+        }
+        &:hover, &:focus {
+          background-color: $main-lighter;
+          border-color: $main;
+        }
       }
     }
-    .user-website {
+    .website-city {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 1em;
+      .user-website {
+        margin-right: 1em;
+      }
+    }
+    .karma {
+      color: $gray-dark;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      font-weight: bold;
+      i.icon {
+        font-size: 1.1em;
+      }
     }
     .extra {
       margin-top: 12px;
-      padding: 0 10em;
+      padding: 0 5em;
+      font-size: 1.2em;
+      line-height: 1.5;
       .user-bio {
-        text-align: justify;
+        text-align: left;
+        span {
+          margin-left: 4px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
       }
       .slide-down-button {
         text-align: center;
       }
     }
+    .donation-block {
+      margin: 1rem auto;
+      .error {
+        margin-bottom: 0.5rem;
+      }
+      .ui.button.donate-button {
+        font-size: 1.2rem!important;
+        font-weight: bold!important;
+        background-color: $danger;
+        color: $white;
+        height: 3.3rem;
+        &.sponsored {
+          background-color: $white;
+          border: 2px solid $danger;
+          color: $danger;
+          cursor: default;
+          svg {
+            fill: $danger;
+            stroke: $danger;
+          }
+          &:hover {
+            background-color: $white;
+          }
+        }
+        span {
+          display: flex;
+          align-items: center;
+        }
+        svg {
+          margin-right: 0.5rem;
+        }
+        &:hover {
+          background-color: $danger-light;
+        }
+      }
+    }
+  }
+  .gifts-block {
+    margin-bottom: 1rem;
   }
   .ui.container {
     padding-left: 0;
@@ -101,7 +243,7 @@
   }
   .user-profile-menu{
     border: none;
-    h3 {
+    .ui.header {
       display: inline-block;
       margin-right: 20px;
       text-align: center;
@@ -114,14 +256,29 @@
         }
       }
     }
+    svg {
+      margin: 0 .42857143em 0 -.21428571em;
+    }
     a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       &:hover, &:active, &:focus {
         color: $main;
         .sub.header {
           color: $main;
         }
       }
+    }
+    .user-settings-label {
+      padding: .77143em 1.27143em!important;
+      i {
+        margin-right: 0!important;
+      }
+    }
+    .flex.actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
   .user-profile-stat {
@@ -130,13 +287,38 @@
     }
   }
   .user-profile-actions {
-    .ui.button.follow {
-      font-size: 1.1em !important;
-      margin-top: 1em;
+    .ui.button {
+      font-size: 1rem!important;
+      margin-top: 1rem;
     }
     .ui.grey.button.follow {
       &:hover, &:active, &:focus {
         background-color: $gray-lighter!important;
+      }
+    }
+    .user-settings-label {
+      font-size: 1rem!important;
+      padding: .77143em .67143em!important;
+      i.icon {
+        margin: 0!important;
+      }
+    }
+  }
+  .ui.card.sidebar-card.sponsors {
+    .body.content {
+      .ui.horizontal.list {
+        .item.card-info {
+          margin-left: 0;
+          margin-right: .42rem;
+          .user-avatar {
+            display: inline-block;
+            width: 3rem!important;
+            height: 3rem!important;
+          }
+        }
+      }
+      .more-sponsors {
+        font-weight: bold;
       }
     }
   }
@@ -144,24 +326,90 @@
     margin-top: 12px;
     .twelve.wide.column {
       padding-top: 0.5em;
+      .ui.segment {
+        max-width: 54rem;
+      }
+    }
+    .book-published {
+      padding: 0!important;
+      &>.column {
+        padding: 0;
+      }
     }
     .sidebar-card {
-      text-align: right;
+      text-align: left;
       .ui.horizontal.list.share-menu.big {
-        text-align: right;
+        text-align: left;
+        padding: 0;
+      }
+      &>.content {
+        padding: 1rem 0;
+        &>.header:not(.ui) {
+          padding: 0;
+        }
+      }
+    }
+    .user-badges {
+      .body.content {
+        .ui.avatar.image {
+          width: 5rem;
+          height: 5rem;
+          margin-right: 0;
+          img {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
 }
 
-.user-list {
-
-}
-
 .user-page-content {
   .user-posts {
-    .post-list {
-      max-width: 680px;
+    padding: 0;
+    &.all-posts {
+      .item.post-list-item .content .post-title .post-title-info .post-title-header h3 {
+        font-weight: 400!important;
+      }
+    }
+    .new-post-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid $main-light;
+      padding: 0.75rem;
+      margin-bottom: 2rem;
+      background-color: #eff9ff;
+      &:hover {
+        background-color: $main-lighter;
+        border-color: $main-lighter;
+      }
+      svg {
+        margin-right: 4px;
+      }
+    }
+    .user-posts-actions {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      min-height: 3rem;
+    }
+    .ui.horizontal.list {
+      font-size: 1.2rem;
+      z-index: 1;
+      margin: 0;
+      a {
+        margin-right: 1rem;
+        cursor: pointer;
+        display: inline-block;
+        &.active {
+          color: $main;
+        }
+      }
     }
   }
   .user-posts, .book-list {
@@ -182,43 +430,97 @@
  }
 }
 
+.post-extra-actions {
+  min-width: 5rem;
+  .action {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    &:hover {
+      color: $main;
+    }
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.user-search-posts-form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: 2;
+  background-color: $white;
+  .field.search-field, .ui.input, input {
+    width: 100%;
+  }
+  .ui.input>input {
+    padding-left: 3rem;
+    padding-right: 2.5rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .search-icon {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.6rem;
+  }
+  svg {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.6rem;
+    z-index: 3;
+    color: $gray;
+  }
+}
+
 .user-info {
   align-items: center;
   position: relative;
-  .user-info-link {
+  .user-avatar {
     margin-right: 16px;
-    position: relative;
-    .ui.avatar.image {
-      width: 60px;
-      height: 60px;
-      margin: 0;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
   }
   .content {
     display: flex!important;
     justify-content: space-between;
     align-items: center;
+    flex: 1!important;
     .user-info-content {
-      width: 100%;
+      flex: 1;
     }
     .header {
       margin: -0.21425em 0em 0em;
       font-size: 1.28571429em;
       font-weight: bold;
+      .likes {
+        margin-left: 0.5em;
+        color: $gray;
+      }
     }
     .description {
-      max-height: 28px;
+      max-height: 32px;
       padding-right: 40px;
       overflow: hidden;
-      line-height: 2;
+      line-height: 16px;
+      font-size: 0.9em;
+      margin-top: 4px;
     }
   }
   .ui.green.button.follow {
     margin: 0;
+    &.outline {
+      background-color: transparent;
+      border: 1px solid $success;
+      border-radius: 4px!important;
+      color: $success;
+      font-size: .7em!important;
+      padding: .25rem .45rem 0.3rem!important;
+      margin-left: 1rem;
+    }
   }
   .user-achievements {
     margin-left: 12px;
@@ -230,6 +532,68 @@
         height: 44px;
       }
     }
+  }
+}
+
+.item.user-info.vertical {
+  position: relative;
+  display: inline-block;
+  width: 16.5rem;
+  height: 24rem;
+  margin: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
+  border: 1px solid $gray-light;
+  border-radius: $border-radius-big;
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+  text-align: center;
+  .user-avatar {
+    display: block;
+    margin: 0 auto;
+    width: 6rem;
+    height: 6rem;
+    &.full {
+      width: 6rem;
+      height: 6rem;
+      .star-badge {
+        left: 37%;
+        bottom: -1rem;
+        width: 2rem;
+        height: 2rem;
+        i.icon {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+  .header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+  .user-stat {
+    color: $gray-dark;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    span {
+      margin: 0 0.5rem;
+    }
+  }
+  p {
+    line-height: 1.3;
+    font-size: 0.85rem;
+    height: 5.5rem;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .content {
+
+  }
+  .ui.button {
+    font-weight: bold!important;
+    margin-top: 1rem;
+    font-size: 1.1rem!important;
   }
 }
 
@@ -249,5 +613,343 @@
   }
   &.idle {
     background-color: $warning;
+  }
+}
+
+.admin-settings {
+  position: absolute!important;
+  left: 0;
+  top: 0;
+  i.icon {
+    font-size: 1.2em;
+  }
+}
+
+#certCanvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.back-to-userpage {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.download-cert {
+  margin: 2em auto!important;
+  display: block!important;
+  width: 17em;
+  font-size: 1.3em!important;
+}
+
+.ui.modal.sendMessage {
+  .user-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 500rem;
+    margin-right: 1rem;
+  }
+  .content {
+    textarea {
+      padding: 1rem;
+      width: 100%;
+      border-radius: 6px;
+      border-color: $gray;
+    }
+  }
+  .actions {
+    text-align: center;
+  }
+}
+
+.user-settings-block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    &:hover {
+      background-color: $gray-lighter;
+      cursor: pointer;
+      color: $danger;
+    }
+  }
+}
+
+.billing-history {
+  margin-top: 2rem;
+  .no-billing-history {
+    padding: 2rem;
+  }
+  .ui.table td {
+    text-align: center;
+    img {
+      max-width: 2rem;
+    }
+  }
+}
+
+.ui.tiny.modal.showDonationModal {
+  width: 40%;
+  .content {
+  }
+  .donate-user {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid $gray-light;
+    background-color: #8055ad;
+    color: $white;
+    .donate-user-wrapper {
+      display: flex;
+      align-items: center;
+      .user-avatar {
+        display: block;
+        margin: 0 1rem;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 3rem;
+        .user-avatar-inner {
+          width: 8rem;
+          height: 8rem;
+          img {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+      }
+    }
+    .donate-desc {
+      text-align: left;
+      font-size: 1.2rem;
+      .header {
+        margin-bottom: 1rem;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      .text {
+        line-height: 1.3;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .buy-coffee {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .donate-button {
+    width: 100%;
+    background-color: $danger-light;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .qty-total-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .qty-wrapper {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      .qty {
+        display: inline-block;
+        padding: 0.4rem 0;
+        border: 1px solid $danger;
+        color: $danger;
+        cursor: pointer;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 500rem;
+        text-align: center;
+        &:hover, &:focus, &:active {
+          background-color: $danger;
+          color: $white;
+        }
+      }
+      .qty-minus {
+        font-size: 1.35rem;
+      }
+      .qty-plus {
+
+      }
+      .field {
+        display: inline-block;
+        min-width: 3rem;
+        max-width: 4rem;
+        margin: 0 0.5rem;
+        input {
+          text-align: center;
+        }
+      }
+    }
+    .total-wrapper {
+      & > div {
+        padding: 0.1rem 0.75rem;
+      }
+      .total {
+        padding: 0.35rem 0.75rem;
+        border: 1px solid $gray-light;
+        border-radius: 0.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .donate-actions {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    .hint {
+      color: $gray-dark;
+      font-size: .8rem;
+      line-height: 1.2;
+      text-align: left;
+      &.signed {
+        font-size: 1.1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          border-radius: 500rem;
+          margin-left: 0.5rem;
+          margin-right: 0.15rem;
+          width: 1.5rem;
+        }
+      }
+      a {
+        color: $main;
+      }
+    }
+    .add-payment-modal.blueCard {
+      padding: 0 1rem 0.5rem;
+      margin: 0;
+      .ui.form {
+        max-width: 100%;
+      }
+    }
+    .ui.button {
+      width: 100%;
+      padding: .57143em 1.87143em!important;
+      font-size: 1.5rem!important;
+      border-radius: .25rem!important;
+      background-color: $danger;
+      color: $white;
+      &:hover, &:focus, &:active {
+        background-color: $danger-light;
+      }
+      svg {
+        margin-right: 0.35rem;
+      }
+    }
+  }
+
+  .back-to-all-memberships {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .tier-packages {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 1rem 0;
+    .tier {
+      position: relative;
+      text-align: center;
+      border: $border;
+      padding: 0.5rem;
+      margin: 0 1%;
+      width: 25%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.3rem;
+      &.custom {
+        padding: 1.5rem 0.5rem;
+      }
+      &.active, &:hover, &:focus {
+        background-color: $main-lighter;
+        border-color: $main-lighter;
+      }
+      .tier-icon {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        img {
+          max-width: 100%;
+        }
+      }
+      .tariff {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+      .ui.input {
+        max-width: 7rem;
+        margin-top: 0.35rem;
+        input {
+          text-align: center;
+        }
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  .choose-tier-header {
+    font-size: 1.2rem;
+  }
+  .hint {
+    color: $gray;
+  }
+  .ui.button {
+    font-size: 1.3rem!important;
+    width: 50%;
+  }
+  .add-payment-modal {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.ui.tiny.modal.shareUserModal {
+  width: 40%;
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .ui.input {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: $gray-lighter;
+    border: $border;
+    input {
+      border-radius: 0;
+      border: 0;
+      background-color: transparent;
+    }
+    .ui.button {
+      color: $main;
+      background-color: transparent;
+      border-radius: 0;
+      font-size: 1.3rem!important;
+      padding: 0.7rem 1rem 0.7rem 3.75rem!important;
+    }
   }
 }

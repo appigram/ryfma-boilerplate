@@ -1,2 +1,9 @@
-export MAIL_URL=smtp://email:pass@smtp.mailgun.org:587/
+export MONGO_URL=''
+export MAIL_URL=
+export NODE_ENV=production
+export METEOR_OFFLINE_CATALOG=1
+export METEOR_DISABLE_AUTO_COMPRESS=1
+export METEOR_DISABLE_OPTIMISTIC_CACHING=1
+export DISABLE_WEBSOCKETS=1
+rm -rf ./node_modules/.cache/babel-loader
 meteor run --production --settings settings-production.json

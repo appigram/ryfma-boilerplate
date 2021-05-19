@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'appigram:apollo-accounts',
-  version: '3.2.3',
+  version: '3.2.12',
   // Brief, one-line summary of the package.
   summary: 'Meteor accounts in GraphQL',
   // URL to the Git repository containing the source code for this package.
@@ -13,21 +13,19 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.4.1.2')
-
   api.use([
-    'tmeasday:check-npm-versions@0.3.1',
+    'tmeasday:check-npm-versions@1.0.0',
     'check',
-    'accounts-base',
-    'oauth2',
+    'appigram:accounts-base',
+    'appigram:oauth2',
     'npm-bcrypt',
     'random',
     'ecmascript',
     'http',
     'random',
-    'oauth',
-    'service-configuration',
-    'accounts-oauth'
+    'appigram:oauth',
+    'appigram:service-configuration',
+    'appigram:accounts-oauth'
   ], 'server')
 
   api.mainModule('src/index.js', 'server')

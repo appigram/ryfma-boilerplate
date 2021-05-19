@@ -1,0 +1,69 @@
+.audio-block {
+  margin-bottom: 2rem;
+}
+
+.audio-editor-drop {
+  text-align: center;
+  height: 10rem;
+  padding: 20px 12px;
+  width: 100%;
+  border: dashed 2px #999999;
+  color: #999999;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2em;
+  i.icon {
+    margin-bottom: 8px;
+  }
+}
+
+.audio-list {
+  padding: 0;
+  margin-top: 1em;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      i.icon {
+        vertical-align: 50%;
+        margin: 0;
+      }
+      &:hover, &:focus, &:active {
+        background-color: $gray-lighter;
+        border-radius: 0.3rem;
+      }
+      .jp-title {
+        width: 100%;
+      }
+      .jp-remove {
+        cursor: pointer;
+      }
+    }
+  }
+  .audio-item {
+    display: flex;
+    align-items: center;
+    .plyr {
+      width: 100%;
+    }
+    .remove-icon {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      padding: .3rem 0.45rem;
+      border-radius: 4px;
+      &:hover {
+        background-color: $danger-light;
+        svg {
+          color: $white;
+        }
+      }
+      svg {
+        color: $danger;
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Ryfma",
+  "short_name": "Ryfma",
+  "description": "Ryfma PWA",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait",
+  "display": "minimal-ui",
+  "background_color": "#FAFAFA",
+  "theme_color": "#005ceb",
+  "prefer_related_applications": false,
+  "prompt_message": "Добавить иконку на Рабочий стол для быстрого доступа к Ryfma",
+  "icons": [
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/favicon-196x196.png",
+      "sizes": "126x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/mstile-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/mstile-310x310.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/mstile-310x310.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.ryfma.com/defaults/icons/mstile-310x310.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "gcm_sender_id": "764374681772",
+  "gcm_user_visible_only": true,
+  "status": "ok"
+}
