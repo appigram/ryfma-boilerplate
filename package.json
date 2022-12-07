@@ -55,7 +55,7 @@
     "datebook": "^6.5.3",
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fast-async": "^7.0.6",
     "fast-xml-parser": "^3.19.0",
     "fibers": "^5.0.0",
